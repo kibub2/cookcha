@@ -26,7 +26,7 @@
 		<div class="col-md-4 col-sm-4">
 			<!-- 로그인 버튼 시작 ▼ -->
 			<div class="btn-login-md">
-				<a class="login-link" href="#">
+				<a class="login-link" href="member/login.do">
 					<!-- Image -->
 					<img class="img-responsive" src="resources/img/login_icon_black.png" alt="" />
 					<!-- Heading -->
@@ -181,13 +181,6 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="resources/img/nav-menu/nav5.jpg" class="img-responsive" alt="" /> Pages <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="error.html">404 Error</a></li>
-								<li><a href="0-base.html">Blank Page</a></li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="blog-single.html">Blog Single</a></li>
-								<li><a href="components.html">Components</a></li>
-								<li><a href="general.html">General</a></li>
-								<li><a href="nutrition-info.html">Nutrition Info</a></li>
 								<li><a href="recipe.html">Recipes</a></li>
 							</ul>
 						</li>
