@@ -171,10 +171,10 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" /> Shop <b class="caret"></b></a>
 							<ul class="dropdown-menu">
+								<li><a href="book1.do">Reservation</a></li>
 								<li><a href="items.html">Shopping</a></li>
 								<li><a href="item-single.html">Order Now</a></li>
 								<li><a href="checkout.html">Checkout</a></li>
-								<li><a href="reserve-seats.html">Reservation</a></li>
 								<li><a href="contact.html">Contact Us</a></li>
 							</ul>
 						</li>
