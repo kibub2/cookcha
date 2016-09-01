@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+#ro_image{
+  margin:50px 50px;z-index:10;
+}
+#ro_n_id{position:absolute;left:610px;top:220px;z-index:20;}
+.roulet-space{
+	margin-top:20px;
+}
