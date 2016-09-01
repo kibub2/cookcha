@@ -5,14 +5,14 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
-    <definition name="index" template="/WEB-INF/views/template/layout.jsp">
-        <put-attribute name="title"  value="타일스 샘플 메인"/>
-        <put-attribute name="modal"   value="/WEB-INF/views/template/modal.jsp"/>
-        <put-attribute name="header" value="/WEB-INF/views/template/header.jsp"/>
-        <put-attribute name="banner" value="/WEB-INF/views/template/banner.jsp"/>
-        <put-attribute name="body"   value="/WEB-INF/views/body.jsp"/>
-        <put-attribute name="footer" value="/WEB-INF/views/template/footer.jsp"/>
-     </definition>
+    <definition name="roulet" extends="index">
+     	 <put-attribute name="title"  value="룰렛"/>
+        <put-attribute name="body" value="/WEB-INF/views/event/roulet.jsp"/>
+    </definition>
+    <definition name="ticket" extends="index">
+     	 <put-attribute name="title"  value="티켓"/>
+        <put-attribute name="body" value="/WEB-INF/views/event/ticket.jsp"/>
+    </definition>
     <!-- 
     <definition name="menu1" extends="index">
         <put-attribute name="body"   value="/WEB-INF/views/body-menu1.jsp"/>
