@@ -25,10 +25,11 @@
 				</div>
 				<div class="form-group">
 					<label for="passwd">비밀번호</label>
-					<form:input path="passwd" class="form-control" placeholder="비밀번호"/>
+					<form:password path="passwd" class="form-control" placeholder="비밀번호"/>
 					<form:errors path="passwd"/>
 				</div>
 				<div class="form-group text-center">
+				    <div align="center"><form:errors/></div>
     		    	<button type="submit" class="btn btn-info">로그인</button>
     		    	<button type="button" class="btn btn-warning" onclick="location.href='write.do'">회원가입</button>
     		    	<button type="button" class="btn btn-default" onclick="location.href='../index.do'" >홈으로</button>

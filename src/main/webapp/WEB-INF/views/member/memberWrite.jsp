@@ -14,6 +14,7 @@
 <body>
 	<div class="container-fluid">
 		<form:form action="write.do" commandName="command">
+		<form:errors element="div" class="error-color"/>
 			<div class="col-md-4 col-md-offset-4">
 				<div class="text-center" style="margin: 50px 0 50px 0;">
 					<h2>Cookcha 회원가입</h2>

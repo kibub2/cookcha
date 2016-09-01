@@ -2,19 +2,31 @@ package kr.spring.member.domain;
 
 import java.sql.Date;
 
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class MemberCommand {
 	
+	@NotEmpty
+	@Email
 	private String id;
 	private int idnum;
+	@NotEmpty
 	private String name;
+	@Size(min=4, max=10, message="4자 이상 10자 이하로 입력하세요")
 	private String passwd;
 	private int rate_count;
 	private Date register;
+	@NotEmpty
 	private String birth;
+	@NotEmpty
 	private String sex;
 	private int grade;
 	private int point;
 	private String picture;
+	@NotEmpty
 	private String phone;
 	
 	public boolean isCheckedPasswd(String userPasswd) {
