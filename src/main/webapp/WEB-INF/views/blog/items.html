@@ -1,0 +1,57 @@
+
+<!-- Shopping Start -->
+
+<div class="shopping">
+	<div class="container">
+		<!-- Shopping items content -->
+		<div class="shopping-content">
+			<!-- jquery 반복문으로 리스트 출력 -->
+			<c:forEach >
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<!-- Shopping items -->
+						<div class="shopping-item">
+							<!-- Image -->
+							<a href="item-single.html"><img class="img-responsive"
+								src="img/shopping/shop1.jpg" alt="" /></a>
+							<!-- Shopping item name / Heading -->
+							<h4 class="pull-left">
+								<a href="item-single.html">Quasi Architects</a>
+							</h4>
+							<span class="item-price pull-right">$49</span>
+							<div class="clearfix"></div>
+							<!-- Paragraph -->
+							<p>Lorem ipsum dolor sit amet, conse ctetur adipis cicing
+								elit.</p>
+							<!-- Buy now button -->
+							<div class="visible-xs">
+								<a class="btn btn-danger btn-sm" href="#">Buy Now</a>
+							</div>
+							<!-- Shopping item hover block & link -->
+							<div class="item-hover br-red hidden-xs"></div>
+							<a class="link hidden-xs" href="#">Add to cart</a>
+						</div>
+					</div>
+				</div>
+			</c:forEach>
+			<!-- 아이템 출력 끝 -->
+		</div>
+
+		<!-- Pagination -->
+		<div class="shopping-pagination">
+			<ul class="pagination">
+				<li class="disabled"><a href="#">&laquo;</a></li>
+				<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">&raquo;</a></li>
+			</ul>
+		</div>
+		<!-- Pagination end-->
+	</div>
+</div>
+</div>
+
+<!-- Shopping End -->
