@@ -13,17 +13,19 @@
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
-	<!-- ojdbc6 설정시 -->   
+	
+	<!--ojdbc6 설정시  -->
 	<repositories>
- 		<repository>
-        	<id>oracle</id>
-        	<name>ORACLE JDBC Repository</name>
-        	<url>http://maven.jahia.org/maven2</url>
-   		</repository>
+	   <repository>
+	      <id>oracle</id>
+	      <name>ORACLE JDBC Repository</name>
+	      <url>http://maven.jahia.org/maven2</url>  
+	   </repository>
 	</repositories>
-	<!-- ojdbc6 설정시 --> 
+	<!--ojdbc6 설정시  --> 
+	
 	<dependencies>
-		<!-- Spring -->
+	<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -117,11 +119,11 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		
+		<!--기본설정 -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-			<version>3.2.3.RELEASE</version>
+			<version>3.2.4.RELEASE</version>
 		</dependency>
 
 		<dependency>
@@ -141,68 +143,79 @@
 			<artifactId>commons-collections</artifactId>
 			<version>20040616</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>com.atomikos</groupId>
 			<artifactId>transactions</artifactId>
 			<version>3.9.3</version>
 		</dependency>
-
+		
 		<dependency>
 			<groupId>org.aspectj</groupId>
 			<artifactId>aspectjweaver</artifactId>
 			<version>1.7.3</version>
 		</dependency>
-
-		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis-spring</artifactId>
-			<version>1.1.1</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.mybatis</groupId>
-			<artifactId>mybatis</artifactId>
-			<version>3.2.2</version>
-		</dependency>
 		
 		<dependency>
-        	<groupId>com.oracle</groupId>
-        	<artifactId>ojdbc6</artifactId>
-        	<version>11.1.0.7.0</version>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.1.0.7.0</version>
 		</dependency>
-	
-		<!-- board에서 추가된부분 -->
-		<dependency>
-        	<groupId>commons-fileupload</groupId>
-        	<artifactId>commons-fileupload</artifactId>
-        	<version>1.3.1</version>
+	   <!--기본설정 끝  -->
+	   
+	   <!--파일업로드 설정  -->
+	   	<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.1</version>
 		</dependency>
-
-		<dependency>
-        	<groupId>org.hibernate</groupId>
-        	<artifactId>hibernate-validator</artifactId>
-        	<version>4.3.1.Final</version>
+	   <!--파일업로드 설정 끝  -->
+	   
+	   <!--어노테이션을 이용한 유효성 체크 설정  -->
+	    <dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>4.3.1.Final</version>
 		</dependency>
+		<!--어노테이션을 이용한 유효성 체크 설정 끝  -->
 		
-		<!-- Tiles -->
+		<!--tiles 설정  -->
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-servlet</artifactId>
 			<version>3.0.1</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
 			<artifactId>tiles-jsp</artifactId>
 			<version>3.0.1</version>
 		</dependency>
-		<!-- AJAX 사용 설정 -->
+		<!--tiles 설정 끝  -->
+		
+		<!--jackon 설정  -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.3.3</version>
+			<version>2.7.3</version>
 		</dependency>
-	
+		<!--jackon 설정 끝 -->
+		
+		  <!--mybatis 설정  -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>3.2.2</version>
+		</dependency>
+		<!--mybatis설정 끝  -->
+		
+
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>

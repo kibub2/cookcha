@@ -9,22 +9,22 @@
 	
 	<!-- autoscan 추가 목록 -->
 	<context:component-scan base-package="kr.spring.tiles.controller" />
-<<<<<<< HEAD
+
 	<context:component-scan base-package="kr.spring.member.controller" />
-=======
+
 	<context:component-scan base-package="kr.spring.event.controller" />
->>>>>>> master
+
 	
 	<!-- tiles 설정-->
 	<beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
 		<beans:property name="definitions">
 			<beans:list>
 				<beans:value>/WEB-INF/tiles-def/main.xml</beans:value>
-<<<<<<< HEAD
+
 				<!-- <beans:value>/WEB-INF/tiles-def/member.xml</beans:value> -->
-=======
+
 				<beans:value>/WEB-INF/tiles-def/event.xml</beans:value>
->>>>>>> master
+
 			</beans:list>
 		</beans:property>
 	</beans:bean>
