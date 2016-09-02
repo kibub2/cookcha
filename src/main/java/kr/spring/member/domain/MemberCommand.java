@@ -7,6 +7,7 @@ import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.NumberFormat;
 
 public class MemberCommand {
 	
@@ -21,7 +22,6 @@ public class MemberCommand {
 	private int rate_count;
 	private Date register;
 	@NotEmpty
-	@DateTimeFormat
 	private String birth;
 	@NotEmpty
 	private String sex;
