@@ -2,7 +2,6 @@
     pageEncoding="UTF-8"%>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery.min.js"></script> 
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jQueryRotate.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/roulet.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/ticket.js"></script>
-<div align="center">
+
 </div>

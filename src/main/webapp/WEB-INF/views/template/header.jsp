@@ -181,12 +181,10 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav5.jpg" class="img-responsive" alt="" /> 이벤트 <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-<<<<<<< HEAD
-								<li><a href="recipe.html">Recipes</a></li>
-=======
+
 								<li><a href="${pageContext.request.contextPath }/event/roulet.do">룰렛이벤트</a></li>
 								<li><a href="${pageContext.request.contextPath }/event/ticket.do">티켓교환</a></li>
->>>>>>> master
+
 							</ul>
 						</li>
 						<li><a href="aboutus.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav6.jpg" class="img-responsive" alt="" /> About</a></li>
