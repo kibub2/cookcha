@@ -1,5 +1,8 @@
 package kr.spring.book.Service;
 
-public interface BookService {
+import kr.spring.book.domain.BookCommand;
 
+public interface BookService {
+	
+	public void insert(BookCommand book);
 }

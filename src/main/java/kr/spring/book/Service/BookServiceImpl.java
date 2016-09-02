@@ -1,5 +1,12 @@
 package kr.spring.book.Service;
 
-public class BookServiceImpl {
+import kr.spring.book.domain.BookCommand;
+
+public class BookServiceImpl implements BookService{
+
+	@Override
+	public void insert(BookCommand book) {
+		bookCommand
+	}
 
 }
