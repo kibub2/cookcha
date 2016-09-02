@@ -6,7 +6,7 @@
 			<div class="footer-widget">
 				<!-- Logo area -->
 				<div class="logo">
-					<img class="img-responsive" src="resources/img/logo.png" alt="" />
+					<img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/logo.png" alt="" />
 					<!-- Heading -->
 					<h1>CakeFactory</h1>
 				</div>
@@ -16,14 +16,14 @@
 				<!-- Heading -->
 				<h6>On-line Payment Clients</h6>
 				<!-- Images -->
-				<a href="#"><img class="payment img-responsive" src="resources/img/payment/2co.gif" alt="" /></a>
-				<a href="#"><img class="payment img-responsive" src="resources/img/payment/authorizenet.gif" alt="" /></a>
-				<a href="#"><img class="payment img-responsive" src="resources/img/payment/discover.gif" alt="" /></a>
-				<a href="#"><img class="payment img-responsive" src="resources/img/payment/egold.gif" alt="" /></a>
-				<a href="#"><img class="payment img-responsive" src="resources/img/payment/mastercard.gif" alt="" /></a>
-				<a href="#"><img class="payment img-responsive" src="resources/img/payment/paypal.gif" alt="" /></a>
-				<a href="#"><img class="payment img-responsive" src="resources/img/payment/visa.gif" alt="" /></a>
-				<a href="#"><img class="payment img-responsive" src="resources/img/payment/worldpay.gif" alt="" /></a>
+				<a href="#"><img class="payment img-responsive" src="${pageContext.request.contextPath}/resources/img/payment/2co.gif" alt="" /></a>
+				<a href="#"><img class="payment img-responsive" src="${pageContext.request.contextPath}/resources/img/payment/authorizenet.gif" alt="" /></a>
+				<a href="#"><img class="payment img-responsive" src="${pageContext.request.contextPath}/resources/img/payment/discover.gif" alt="" /></a>
+				<a href="#"><img class="payment img-responsive" src="${pageContext.request.contextPath}/resources/img/payment/egold.gif" alt="" /></a>
+				<a href="#"><img class="payment img-responsive" src="${pageContext.request.contextPath}/resources/img/payment/mastercard.gif" alt="" /></a>
+				<a href="#"><img class="payment img-responsive" src="${pageContext.request.contextPath}/resources/img/payment/paypal.gif" alt="" /></a>
+				<a href="#"><img class="payment img-responsive" src="${pageContext.request.contextPath}/resources/img/payment/visa.gif" alt="" /></a>
+				<a href="#"><img class="payment img-responsive" src="${pageContext.request.contextPath}/resources/img/payment/worldpay.gif" alt="" /></a>
 			</div> <!--/ Footer widget end -->
 		</div>
 		<div class="col-md-3 col-sm-6">
@@ -32,15 +32,15 @@
 				<!-- Heading -->
 				<h4>Famous Dishes</h4>
 				<!-- Images -->
-				<a href="#"><img class="dish img-responsive" src="resources/img/dish/dish1.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="resources/img/dish/dish1.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="resources/img/dish/dish1.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="resources/img/dish/dish1.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="resources/img/dish/dish1.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="resources/img/dish/dish1.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="resources/img/dish/dish1.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="resources/img/dish/dish1.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
 			</div> <!--/ Footer widget end -->
 		</div>
 		<div class="clearfix visible-sm"></div>

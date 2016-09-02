@@ -2164,3 +2164,22 @@ div.ppt { display:none !important; }
 .div-center {
 	margin: 0 auto;
 }
+
+/* 맛집찾기 part */
+#map_svg {
+    background-color: lightskyblue;
+    fill: none;
+	pointer-events: all;
+}
+
+.municipality {
+	fill: #eee;
+    stroke: #999;
+    stroke-width: 1.5px;
+  	stroke-linejoin: round;
+  	stroke-linecap: round;
+}
+    
+.municipality:hover {
+    fill: orange;
+}

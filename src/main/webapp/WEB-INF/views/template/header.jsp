@@ -26,9 +26,9 @@
 		<div class="col-md-4 col-sm-4">
 			<!-- 로그인 버튼 시작 ▼ -->
 			<div class="btn-login-md">
-				<a class="login-link" href="member/login.do">
+				<a class="login-link" href="${pageContext.request.contextPath}/member/login.do">
 					<!-- Image -->
-					<img class="img-responsive" src="resources/img/login_icon_black.png" alt="" />
+					<img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" />
 					<!-- Heading -->
 					<h4>Cookcha Login</h4>
 					<span>로그인</span>
@@ -82,10 +82,10 @@
 <div class="row">
 	<div class="col-md-4 col-sm-5">
 		<!-- Link -->
-		<a href="index.html">
+		<a href="${pageContext.request.contextPath}/index.html">
 			<!-- Logo area -->
 			<div class="logo">
-				<img class="img-responsive" src="resources/img/logo.png" alt="" />
+				<img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/logo.png" alt="" />
 				<!-- Heading -->
 				<h1>CakeFactory</h1>
 				<!-- Paragraph -->
@@ -110,9 +110,9 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html"><img src="resources/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Home</a></li>
+						<li><a href="${pageContext.request.contextPath}/index.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Home</a></li>
 						<li class="dropdown hidden-xs">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="resources/img/nav-menu/nav2.jpg" class="img-responsive" alt="" /> Menu <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav2.jpg" class="img-responsive" alt="" /> Menu <b class="caret"></b></a>
 							<ul class="dropdown-menu dropdown-md">
 								<li>
 									<div class="row">
@@ -122,11 +122,11 @@
 												<!-- Heading -->
 												<h3>Vegetarian</h3>
 												<!-- Image -->
-												<img src="resources/img/dish/dish1.jpg" class="img-responsive" alt="" />
+												<img src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" class="img-responsive" alt="" />
 												<!-- Paragraph -->
 												<p>Sea nut perspicacity under omni piste natures mirror of there with consequent.</p>
 												<!-- Button -->
-												<a href="menu.html" class="btn btn-danger btn-xs">View Menu</a>
+												<a href="${pageContext.request.contextPath}/menu.html" class="btn btn-danger btn-xs">View Menu</a>
 											</div>
 										</div>
 										<div class="col-md-4 col-sm-6">
@@ -135,7 +135,7 @@
 												<!-- Heading -->
 												<h3>Non-Vegetarian</h3>
 												<!-- Image -->
-												<img src="resources/img/dish/dish2.jpg" class="img-responsive" alt="" />
+												<img src="${pageContext.request.contextPath}/resources/img/dish/dish2.jpg" class="img-responsive" alt="" />
 												<!-- Paragraph -->
 												<p>Sea nut perspicacity under omni piste natures mirror as precode consequent.</p>
 												<!-- Button -->
@@ -148,7 +148,7 @@
 												<!-- Heading -->
 												<h3>Special Menu</h3>
 												<!-- Image -->
-												<img src="resources/img/dish/dish3.jpg" class="img-responsive" alt="" />
+												<img src="${pageContext.request.contextPath}/resources/img/dish/dish3.jpg" class="img-responsive" alt="" />
 												<!-- Paragraph -->
 												<p>Sea nut perspicacity under omni piste natures mirror consequent.</p>
 												<!-- Button -->
@@ -159,17 +159,20 @@
 								</li>
 							</ul>
 						</li>
+						
 						<li class="dropdown visible-xs">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="menu.html">Vegetarian</a></li>
-								<li><a href="menu.html">Non Vegetarian</a></li>
-								<li><a href="menu.html">Special Menu</a></li>
+								<li><a href="${pageContext.request.contextPath}/menu.html">Vegetarian</a></li>
+								<li><a href="${pageContext.request.contextPath}/menu.html">Non Vegetarian</a></li>
+								<li><a href="${pageContext.request.contextPath}/menu.html">Special Menu</a></li>
 							</ul>
 						</li>
-						<li><a href="gallery.html"><img src="resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" /> Gallery</a></li>
+						
+						<li><a href="${pageContext.request.contextPath}/member/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" />맛집찾기</a></li>
+						
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" /> Shop <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" /> Shop <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="items.html">Shopping</a></li>
 								<li><a href="item-single.html">Order Now</a></li>
@@ -179,12 +182,12 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="resources/img/nav-menu/nav5.jpg" class="img-responsive" alt="" /> Pages <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav5.jpg" class="img-responsive" alt="" /> Pages <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="recipe.html">Recipes</a></li>
 							</ul>
 						</li>
-						<li><a href="aboutus.html"><img src="resources/img/nav-menu/nav6.jpg" class="img-responsive" alt="" /> About</a></li>
+						<li><a href="aboutus.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav6.jpg" class="img-responsive" alt="" /> About</a></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
