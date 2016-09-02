@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <div class="container">
 <!-- Header top area content -->
 <div class="header-top">
@@ -25,6 +26,7 @@
 		</div>
 		<div class="col-md-4 col-sm-4">
 			<!-- 로그인 버튼 시작 ▼ -->
+			<c:if test="${empty userId}">
 			<div class="btn-login-md">
 				<a class="login-link" href="member/login.do">
 					<!-- Image -->
@@ -74,7 +76,61 @@
 				<!-- 드롭다운 끝 -->
 				<div class="clearfix"></div>
 			</div>
+			</c:if>
 			<!-- 로그인 버튼 끝 ▲ -->
+			<!-- 로그아웃 버튼 시작 ▼ -->
+			<c:if test="${!empty userId}">
+			<div class="btn-login-md">
+				<a class="login-link" href="member/logout.do">
+					<!-- Image -->
+					<img class="img-responsive" src="resources/img/login_icon_black.png" alt="" />
+					<!-- Heading -->
+					<h4 style="color: #FF9436;">${userId}님 환영합니다.</h4>
+					<span>로그아웃</span>
+					<div class="clearfix"></div>
+				</a>
+				<!-- 드롭다운 시작 -->
+				<!--
+				<ul class="login-dropdown" role="menu">
+					<li>
+						<div class="login-item">
+							<a href="#"><i class="fa fa-times"></i></a>
+							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav1.jpg" alt="" />
+							<span class="login-title"><a href="#">Exception Reins Evocative</a></span>
+							<span class="cart-price pull-right red">$200/-</span>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+					<li>
+						<div class="login-item">
+							<a href="#"><i class="fa fa-times"></i></a>
+							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav2.jpg" alt="" />
+							<span class="login-title"><a href="#">Taut Mayoress Alias Appendicitis</a></span>
+							<span class="cart-price pull-right red">$190/-</span>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+					<li>
+						<div class="login-item">
+							<a href="#"><i class="fa fa-times"></i></a>
+							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav3.jpg" alt="" />
+							<span class="login-title"><a href="#">Sinter et Molests Perfectionist</a></span>
+							<span class="cart-price pull-right red">$99/-</span>
+							<div class="clearfix"></div>
+						</div>
+					</li>
+					<li>
+						<div class="login-item">
+							<a class="btn btn-danger" data-toggle="modal" href="#shoppingcart1">Checkout</a>
+						</div>
+					</li>
+				</ul>
+				-->
+				<!-- 드롭다운 끝 -->
+				<div class="clearfix"></div>
+			</div>
+			</c:if>
+			<!-- 로그아웃 버튼 끝 ▲ -->
 			<div class="clearfix"></div>
 		</div>
 	</div>
@@ -82,14 +138,14 @@
 <div class="row">
 	<div class="col-md-4 col-sm-5">
 		<!-- Link -->
-		<a href="index.html">
+		<a href="${pageContext.request.contextPath}/index.do">
 			<!-- Logo area -->
 			<div class="logo">
 				<img class="img-responsive" src="resources/img/logo.png" alt="" />
 				<!-- Heading -->
-				<h1>CakeFactory</h1>
+				<h1>Cookcha</h1>
 				<!-- Paragraph -->
-				<p>Facility ester expedite instinct.</p>
+				<p>Delicious Food</p>
 			</div>
 		</a>
 	</div>

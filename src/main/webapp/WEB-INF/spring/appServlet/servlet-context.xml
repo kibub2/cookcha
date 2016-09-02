@@ -9,6 +9,7 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	
 	
+	<!-- Spring3 Validation anotation 사용 설정 -->
 	<mvc:annotation-driven/>
 	
 	<!-- autoscan 추가 목록 -->
