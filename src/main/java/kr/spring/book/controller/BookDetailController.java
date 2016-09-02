@@ -1,15 +1,18 @@
 package kr.spring.book.controller;
 
+
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 @Controller
-public class BookController {
+public class BookDetailController {
 	private Logger log = Logger.getLogger(this.getClass());
-		
-	@RequestMapping("/bookView.do")
+
+	
+	@RequestMapping("/bookDetail.do")
 	public String form(){
-		return "bookView";
+		return "bookDetail";
 	}
 }
