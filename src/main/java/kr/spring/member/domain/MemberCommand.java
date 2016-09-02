@@ -13,7 +13,7 @@ public class MemberCommand {
 	@NotEmpty
 	@Email
 	private String id;
-	private int idnum;
+	private int id_num;
 	@NotEmpty
 	private String name;
 	@Size(min=4, max=10, message="4자 이상 10자 이하로 입력하세요")
@@ -44,11 +44,11 @@ public class MemberCommand {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public int getIdnum() {
-		return idnum;
+	public int getId_num() {
+		return id_num;
 	}
-	public void setIdnum(int idnum) {
-		this.idnum = idnum;
+	public void setId_num(int id_num) {
+		this.id_num = id_num;
 	}
 	public String getName() {
 		return name;
@@ -112,7 +112,7 @@ public class MemberCommand {
 	}
 	@Override
 	public String toString() {
-		return "MemberCommand [id=" + id + ", idnum=" + idnum + ", name=" + name + ", passwd=" + passwd
+		return "MemberCommand [id=" + id + ", idnum=" + id_num + ", name=" + name + ", passwd=" + passwd
 				+ ", rate_count=" + rate_count + ", register=" + register + ", birth=" + birth + ", sex=" + sex
 				+ ", grade=" + grade + ", point=" + point + ", picture=" + picture + ", phone=" + phone + "]";
 	}
