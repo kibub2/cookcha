@@ -81,9 +81,9 @@
 			<!-- 로그아웃 버튼 시작 ▼ -->
 			<c:if test="${!empty userId}">
 			<div class="btn-login-md">
+				<!-- Image -->
+				<a href="#"><img class="img-responsive" src="resources/img/login_icon_black.png" alt="" /></a>
 				<a class="login-link" href="member/logout.do">
-					<!-- Image -->
-					<img class="img-responsive" src="resources/img/login_icon_black.png" alt="" />
 					<!-- Heading -->
 					<h4 style="color: #FF9436;">${userId}님 환영합니다.</h4>
 					<span>로그아웃</span>

@@ -290,7 +290,7 @@ table { background: #fff; }
 }
 
 .header .navbar-default .navbar-nav>li>a img{
-	max-width: 60px;
+	max-width: 40px;
 	margin: 0px auto;
 	margin-bottom: 12px;
 	border: 2px solid #fff;
