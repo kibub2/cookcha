@@ -2,6 +2,7 @@ package kr.spring.member.dao;
 
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
 import kr.spring.member.domain.MemberCommand;
@@ -13,5 +14,7 @@ public interface MemberMapper {
 	public void insert(MemberCommand member);
 	@Select("SELECT * FROM member WHERE id = #{id}")
 	public MemberCommand select(String id);
+	@Update("UPDATE member SET point=#{point} WHERE id=#{id}")
+	public void update(MemberCommand member);
 
 }

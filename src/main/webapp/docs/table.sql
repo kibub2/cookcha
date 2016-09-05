@@ -1,6 +1,6 @@
 CREATE TABLE member (
   id varchar2(40) not null primary key,
-  idnum number(7) not null,
+  id_num number(7) not null,
   name varchar2(16) not null,
   passwd varchar2(15) not null,
   rate_count number(5),

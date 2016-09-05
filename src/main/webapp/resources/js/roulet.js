@@ -55,6 +55,20 @@ window.onload = function(){
     	alert(result);
     	
     	//ajax 통신
+    	 $.ajax({
+             url:'roulet.do',
+             type:'post',
+             data:{result:$('#result').val()},
+             dataType:'json',
+             cache:false,
+             timeout:30000,
+             success:function(data){
+              
+             },
+             error:function(){
+               alert('네트워크 오류 발생');
+             }
+          });
     	
     }
 
