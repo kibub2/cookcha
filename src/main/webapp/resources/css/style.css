@@ -2166,9 +2166,22 @@ div.ppt { display:none !important; }
 }
 
 /* 맛집찾기 part */
+.container-fluid{
+	margin-top: 20px;
+}
+
+#findShop, #findShop-result {
+	height: 500px;
+	overflow: hidden;
+}
+
+#findShop-result {
+	border: 1px solid black;
+}
+
 #map_svg {
+	fill: none;
     background-color: lightskyblue;
-    fill: none;
 	pointer-events: all;
 }
 
@@ -2182,4 +2195,45 @@ div.ppt { display:none !important; }
     
 .municipality:hover {
     fill: orange;
+}
+
+#shop-nav{
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    /* border: 1px solid black; */
+    font-size: 20px;
+}
+
+#shop-nav li{
+	padding-left: 10px;
+    border-bottom: 1px solid #efefef;
+}
+
+#shop-nav li:BEFORE {
+	content: ">";
+    padding-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 5px 6px 0px;
+}
+
+/* #shop-nav li:ACTIVE {
+	
+} */
+
+.shopList {
+	height: 200px;
+	display: none;
+}
+
+.photoZone {
+	height: 100%; 
+	background-color: yellow;
+}
+
+.shop-introduction {
+	height: 100%;
+	background-color: red;
 }
