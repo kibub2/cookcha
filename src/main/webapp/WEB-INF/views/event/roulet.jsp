@@ -8,9 +8,10 @@
 <div align="center" class="roulet-space">
 <img src="${pageContext.request.contextPath}/resources/img/roulette.png" id="ro_image">
 <img src="${pageContext.request.contextPath}/resources/img/niddle.png" id="ro_n_id">
-<br />
-<input type='button' value='시작' id='start_btn'></input>
+<br /><br>
 <div id="result_id"></div>
 <div id="result_id2"></div>
 <div id="result_id3"></div>
+<input type='button' value='시작' id='start_btn'></input>
+
 </div>

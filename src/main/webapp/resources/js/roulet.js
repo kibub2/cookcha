@@ -1,6 +1,7 @@
 window.onload = function(){
      
     var pArr = ["0","1","2","3","4:꽝","5","6","7","8","9"];
+    var result = "";
  
     $('#start_btn').click(function(){
         rotation();
@@ -30,18 +31,31 @@ window.onload = function(){
  
         if(part < 1){
             $('#result_id3').html("<p>당첨내역:" + pArr[0] + "</p>");
+			result = pArr[0];
+			start_ajax();
             return;
         }
- 
-        if(part >= 10){
+        if(part >= 10){
             $('#result_id3').html("<p>당첨내역:" + pArr[pArr.length-1] + "</p>");
-            return;
+            result = pArr[pArr.length-1];
+            start_ajax();
+            return;
         }
- 
-        $('#result_id3').html("<p>당첨내역:" + pArr[part] + "</p>");
+        $('#result_id3').html("<p>당첨내역:" + pArr[part] + "</p>");
+        result = pArr[part];
+      
+        start_ajax();
     }
  
     function randomize($min, $max){
         return Math.floor(Math.random() * ($max - $min + 1)) + $min;
     }
+
+    function start_ajax(){
+    	alert(result);
+    	
+    	//ajax 통신
+    	
+    }
+
 };
