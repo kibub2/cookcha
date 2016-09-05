@@ -21,7 +21,7 @@ public class MemberLoginController {
 	@Resource
 	private MemberService memberService;
 	
-	@ModelAttribute("member")
+	@ModelAttribute("command")
 	public MemberCommand initCommand() {
 		return new MemberCommand();
 	}
@@ -32,13 +32,12 @@ public class MemberLoginController {
 	}
 	
 	@RequestMapping(value="/member/login.do", method=RequestMethod.POST)
-	public String submit(@ModelAttribute("member") @Valid MemberCommand memberCommand, BindingResult result, HttpSession session) {
+	public String submit(@ModelAttribute("command") @Valid MemberCommand memberCommand, BindingResult result, HttpSession session) {
 		
 		if(log.isDebugEnabled()) {
 			log.debug("memberCommand : " + memberCommand);
 		}
 		
-		//아이디 비밀번호가 틀릴경우 로그인 form으로
 		if(result.hasFieldErrors("id") || result.hasFieldErrors("passwd")) {
 			return form();
 		}
@@ -46,6 +45,8 @@ public class MemberLoginController {
 		try{
 			MemberCommand member = memberService.select(memberCommand.getId());
 			boolean check = false;
+			
+			System.out.println(member);
 		
 			//DB에서 가져온 자바빈과 입력한 자바빈 passwd 값을 비교
 			if(member != null){
@@ -53,13 +54,15 @@ public class MemberLoginController {
 			}
 			//위 자바빈의 passwd 값이 일치해 true를 반환하였을 경우 session에 입력한 자바빈 id를 userId값으로 생성
 			if(check){
+				System.out.println("true");
 				session.setAttribute("userId", memberCommand.getId());
 				return "redirect:/index.do";
 			}else{
+				System.out.println("esle");
 				throw new Exception();
 			}
 		}catch(Exception e){
-
+			result.reject("invalidIdOrPassword");
 			return form();
 		}
 		
