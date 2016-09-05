@@ -7,6 +7,7 @@ CREATE TABLE book (
   code number not null,
   phone varchar2(15) not null,
   seat number(2) default 0 not null,
+  content clob not null,
   constraint book_member_fk1 foreign key(id) references member(id),
   constraint book_shop_fk1 foreign key(code) references shop(code)
 );
