@@ -30,7 +30,7 @@
 <tiles:insertAttribute name="modal"/></div>
 <div class="wrapper">
 	<div class="header"><tiles:insertAttribute name="header"/></div>
-	<div class="tp-banner-container" style="height:100%;"><tiles:insertAttribute name="banner"/></div>
+	<div class="tp-banner-container"><tiles:insertAttribute name="banner"/></div>
 	<div class="main-content"><tiles:insertAttribute name="body"/></div>	
 	
 	<!-- Footer Start -->

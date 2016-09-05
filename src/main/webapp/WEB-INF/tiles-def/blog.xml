@@ -12,7 +12,7 @@
         <put-attribute name="banner" value="/WEB-INF/views/blog/left.jsp"/>
         <put-attribute name="body"   value="/WEB-INF/views/blog/main.jsp"/>
         <put-attribute name="footer" value="/WEB-INF/views/template/footer.jsp"/>
-        <put-attribute name="footer2" value="/WEB-INF/views/template/footer.jsp"/>
+        <put-attribute name="footer2" value="/WEB-INF/views/blog/footer2.jsp"/>
     </definition> 
     <!-- 
     <definition name="menu1" extends="index">
