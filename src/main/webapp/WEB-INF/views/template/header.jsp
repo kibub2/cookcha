@@ -28,9 +28,9 @@
 			<!-- 로그인 버튼 시작 ▼ -->
 			<c:if test="${empty userId}">
 			<div class="btn-login-md">
+				<!-- Image -->
+				<a href="#"><img class="img-responsive" src="resources/img/login_icon_black.png" alt="" /></a>
 				<a class="login-link" href="member/login.do">
-					<!-- Image -->
-					<img class="img-responsive" src="resources/img/login_icon_black.png" alt="" />
 					<!-- Heading -->
 					<h4>Cookcha Login</h4>
 					<span>로그인</span>

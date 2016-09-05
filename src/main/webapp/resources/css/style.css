@@ -381,7 +381,8 @@ table { background: #fff; }
 	font-weight: 700;
 }
 
-.btn-login-md a.login-link img {
+
+.img-responsive {
 	max-width: 40px;
 	float: left;
 }
