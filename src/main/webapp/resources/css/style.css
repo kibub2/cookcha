@@ -2164,3 +2164,84 @@ div.ppt { display:none !important; }
 .div-center {
 	margin: 0 auto;
 }
+
+/* 맛집찾기 part */
+.container-fluid{
+	margin-top: 20px;
+}
+
+#mapSearch-div {
+	margin: 0 auto;
+}
+
+#findShop, #findShop-result {
+	height: 500px;
+	overflow: hidden;
+}
+
+/* #findShop-result {
+	border: 1px solid black;
+} */
+
+#map_svg {
+	fill: none;
+    background-color: lightskyblue;
+	pointer-events: all;
+}
+
+.municipality {
+	fill: #eee;
+    stroke: #999;
+    stroke-width: 1.5px;
+  	stroke-linejoin: round;
+  	stroke-linecap: round;
+}
+    
+.municipality:hover {
+    fill: orange;
+}
+
+#shop-nav{
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    /* border: 1px solid black; */
+    font-size: 20px;
+}
+
+#shop-nav li{
+	padding-left: 10px;
+    border-bottom: 1px solid #efefef;
+}
+
+#shop-nav li:BEFORE {
+	content: ">";
+    padding-right: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 5px 6px 0px;
+}
+
+/* #shop-nav li:ACTIVE {
+	
+} */
+
+.shopList {
+	height: 280px;
+}
+
+.photoZone {
+	height: 100%; 
+	background-color: yellow;
+}
+
+.shop-introduction {
+	height: 100%;
+	background-color: red;
+}
+
+.panel-default>.panel-heading {
+	background-color: #64B5F6;
+	/* background-color: #448AFF; */
+}
