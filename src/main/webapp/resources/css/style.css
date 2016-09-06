@@ -2170,18 +2170,14 @@ div.ppt { display:none !important; }
 	margin-top: 20px;
 }
 
-#mapSearch-div {
-	margin: 0 auto;
-}
-
 #findShop, #findShop-result {
 	height: 500px;
 	overflow: hidden;
 }
 
-/* #findShop-result {
+#findShop-result {
 	border: 1px solid black;
-} */
+}
 
 #map_svg {
 	fill: none;
@@ -2228,7 +2224,8 @@ div.ppt { display:none !important; }
 } */
 
 .shopList {
-	height: 280px;
+	height: 200px;
+	display: none;
 }
 
 .photoZone {
@@ -2239,9 +2236,4 @@ div.ppt { display:none !important; }
 .shop-introduction {
 	height: 100%;
 	background-color: red;
-}
-
-.panel-default>.panel-heading {
-	background-color: #64B5F6;
-	/* background-color: #448AFF; */
 }
