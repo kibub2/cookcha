@@ -12,7 +12,8 @@
     	<put-attribute name="menu" value="/WEB-INF/views/admin/template/menu.jsp"/>
     </definition>
     <definition name="shopRegister" extends="admin">
-    	<put-attribute name="title"></put-attribute>
+    	<put-attribute name="title" value="가게 등록"/>
+    	<put-attribute name="body" value="/WEB-INF/views/admin/template/shopRegister.jsp"/>
     </definition>
     
     <!-- 

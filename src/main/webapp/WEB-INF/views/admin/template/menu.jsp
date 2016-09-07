@@ -33,7 +33,7 @@
                         </div>
                         
                         <ul class="main-menu">
-                            <li class="active"><a href="shopRegister.do"><i class="md md-home"></i> 가게 정보 등록</a></li>
+                            <li class="active"><a href="admin/shopRegister.do"><i class="md md-home"></i> 가게 정보 등록</a></li>
                             <li><a href="typography.html"><i class="md md-format-underline"></i> Typography</a></li>
                             
                         </ul>
