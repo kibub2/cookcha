@@ -17,14 +17,14 @@
 	        
 	        <br/>
 	        <!-- 가게 정보 입력 -->
-	       	
+	       	<form action="shopRegister.do" enctype="multipart/form-data" method="post">
 	        <div class="row">
-	        <form:form action="shopRegister.do" enctype="multipart/form-data" commandName="shop">
+	        
 	            <div class="col-sm-6">                       
 	                <div class="input-group">
 	                    <span class="input-group-addon"><i class="md md-account-box"></i></span>
 	                    <div class="fg-line">
-	                            <form:input path="name" type="text" cssClass="form-control" placeholder="가게 이름"/>
+	                            <input type="text" class="form-control" name="name" id="name" placeholder="가게 이름"/>
 	                    </div>
 	                </div>
 	                
@@ -33,7 +33,7 @@
 	                <div class="input-group">
 	                    <span class="input-group-addon"><i class="md md-local-phone"></i></span>
 	                    <div class="fg-line">
-	                        <form:input path="phone" type="text" class="form-control" placeholder="가게 전화번호"/>
+	                        <input type="text" name="phone" id="phone" class="form-control" placeholder="가게 전화번호"/>
 	                    </div>
 	                </div>
 	                
@@ -42,7 +42,7 @@
 	                <div class="input-group">
 	                    <span class="input-group-addon"><i class="md md-home"></i></span>
 	                    <div class="fg-line">
-	                        <form:input path="address" type="text" class="form-control" placeholder="가게 주소 (도/시/구)"/>
+	                        <input name="address" id="address" type="text" class="form-control" placeholder="가게 주소 (도/시/구)"/>
 	                    </div>
 	                </div>
 	                
@@ -51,7 +51,7 @@
 	                <div class="input-group">
 	                    <span class="input-group-addon"><i class="md md-trending-neutral"></i></span>
 	                    <div class="fg-line">
-	                        <form:input path="sub_address" type="text" class="form-control" placeholder="상세주소(동외 상세...)"/>
+	                        <input name="sub_address" id="sub_address" type="text" class="form-control" placeholder="상세주소(동외 상세...)"/>
 	                    </div>
 	                </div>
 	                 <br/>
@@ -63,7 +63,7 @@
 	                       <div class="fg-line">
 	                           <div class="select">
 	                          
-	                               <form:select path="classify" class="form-control">
+	                               <select name="classify" id="classify" class="form-control">
 	                                   <option>가게 분류</option>
 	                                   <option>한식</option>
 	                                   <option>일식</option>
@@ -77,7 +77,7 @@
 	                                   <option>치킨</option>
 	                                   <option>주점</option>
 	                                   <option>기타</option>
-	                               </form:select>
+	                               </select>
 	                           </div>
 	                        </div>
 	                  </div>
@@ -86,11 +86,11 @@
 	                      <span class="input-group-addon"><i class="md md-done"></i></span>
 	                       <div class="fg-line">
 	                           <div class="select">
-	                               <form:select path="able_coupon" class="form-control">
+	                               <select name="able_coupon" id="able_coupon" class="form-control">
 	                                   <option>쿠폰 가능 여부</option>
 	                                   <option>가능</option>
 	                                   <option>불가능</option>
-	                               </form:select>
+	                               </select>
 	                           </div>
 	                        </div>
 	                  </div>
@@ -99,11 +99,11 @@
 	                      <span class="input-group-addon"><i class="md md-done"></i></span>
 	                       <div class="fg-line">
 	                           <div class="select">
-	                               <form:select path="able_book" class="form-control">
+	                               <select name="able_book" class="form-control">
 	                                   <option>예약 가능 여부</option>
 	                                   <option>가능</option>
 	                                   <option>불가능</option>
-	                               </form:select>
+	                               </select>
 	                           </div>
 	                        </div>
 	                  </div>
@@ -111,13 +111,13 @@
 					<div class="input-group">
 						<span class="input-group-addon"><i class="md md-filter-9-plus"></i></span>
 						<div class="fg-line">
-							<form:input path="maxtable" type="text" class="form-control" placeholder="예약가능 테이블 수(숫자만...) "/>
+							<input name="maxtable" id="maxtable" type="text" class="form-control" placeholder="예약가능 테이블 수(숫자만...) "/>
 						</div>
 					</div>
 				</div>
 					
 				<!-- 가게 정보 입력 -->
-				</form:form>
+				
 			</div>
 			<br></br>
 			<br></br>
@@ -135,7 +135,7 @@
 		                       <span class="btn btn-info btn-file">
 		                           <span class="fileinput-new">Select image</span>
 		                           <span class="fileinput-exists">Change</span>
-		                           <input type="file" name="...">
+		                           <input type="file" name="upload1" id="upload1">
 		                       </span>
 		                       <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
 		                   </div>
@@ -152,7 +152,7 @@
 			                         <span class="btn btn-info btn-file">
 			                             <span class="fileinput-new">Select image</span>
 			                             <span class="fileinput-exists">Change</span>
-			                             <input type="file" name="...">
+			                             <input type="file" name="upload2" id="upload2">
 			                         </span>
 			                         <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
 							</div>
@@ -166,9 +166,10 @@
                        <form:textarea path="introduction" class="form-control" rows="5" placeholder="가게 상세정보 입력...."/>
                     </div>
               	</div>
-	        	<div class="col-sm-3" style="float:right;">
-					<input type="submit" class="btn btn-primary btn-lg waves-effect waves-button waves-float" value="보내기">
-				</div>  
+	        	
+	        	<div>
+					<button type="submit" class="btn btn-primary btn-sm m-t-10 waves-effect waves-button waves-float">Submit</button>
+				</div>
 				
 	           
 	           
@@ -176,9 +177,9 @@
 		
 				
 			
-			
-		</div>
+			</form>
 		
+		</div>
 	</div>
 	
 </div>
