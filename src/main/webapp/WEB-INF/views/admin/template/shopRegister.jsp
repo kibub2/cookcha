@@ -160,16 +160,16 @@
 					</div>
 					
               	</div>
-              	<div class="col-sm-3">
+              	<div class="col-sm-4">
               		
               		<div class="fg-line">
-                       <form:textarea path="introduction" class="form-control" rows="5" placeholder="가게 상세정보 입력...."/>
+                       <textarea name="introduction" class="form-control" rows="9" placeholder="가게 상세정보 입력...."></textarea>
                     </div>
               	</div>
 	        	
-	        	<div>
-					<button type="submit" class="btn btn-primary btn-sm m-t-10 waves-effect waves-button waves-float">Submit</button>
-				</div>
+	        	<div class="col-sm-2">
+					<button type="submit" class="btn btn-primary btn-sm waves-effect waves-button waves-float">등록</button>
+				</div> 
 				
 	           
 	           
