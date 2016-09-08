@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <!-- Title here -->
@@ -454,43 +453,33 @@
 								<h3>예약</h3>
 
 								<!-- Booking form -->
-								<form:form role="form" action="bookDetail.do" commnadName="command">
+								<form role="form">
+
 									<label>예약자</label>
 									<div class="form-group">
-										<!-- Form input -->										
-										<form:input path="name" placeholder="Name"/>
-										<form:errors element="div" class="error-color"/>
-									</div>
-									
-									<label>예약자ID</label>
-									<div class="form-group">
-										<!-- Form input -->										
-										<form:input path="id" readonly="true"/>
-										<form:errors element="div" class="error-color"/>
+										<!-- Form input -->
+										<input class="form-control" type="text" placeholder="Name" />
 									</div>
 
 									<label>예약일</label>
 									<div class="form-group">
 										<!-- Form drop down -->
-										<form:input path="book_date" type="date"/>									
-										<form:errors element="div" class="error-color"/>
+										<input class="form-control" type="date" >
 									</div>
 
 									<label>예약시간</label>
 									<div class="form-group">
 										<!-- Form drop down -->
-										<form:select path="book_time">
+										<select class="form-control">
 											<option>점심</option>
 											<option>저녁</option>
-										</form:select>
-										<form:errors element="div" class="error-color"/>
+										</select>
 									</div>
 
 									<label>전화번호</label>
 									<div class="form-group">
 										<!-- Form input -->
-										<form:input path="phone" value="${command.phone}"/>
-										<form:errors element="div" class="error-color"/>
+										<input class="form-control" type="text" placeholder="Phone" />
 									</div>
 
 									<label>테이블</label>
@@ -513,13 +502,13 @@
 									<label>메시지</label>
 									<div class="form-group">
 										<!-- Form text area -->
-										<form:textarea path="content" rows="3" placeholder="내용입력"/>
+										<textarea class="form-control" rows="3" placeholder="내용입력"></textarea>
 									</div>
 									<!-- Form button -->
-									<button class="btn btn-danger btn-sm" type="submit" onclick="location.href='bookDetail.do'">예약확인</button>
+									<button class="btn btn-danger btn-sm" type="submit">예약확인</button>
 									&nbsp;
-
-								</form:form>
+									<button class="btn btn-default btn-sm" type="reset">예약취소</button>
+								</form>
 							</div>
 						</div>
 						<!-- 예약 정보 -->
