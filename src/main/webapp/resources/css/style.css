@@ -2171,7 +2171,7 @@ div.ppt { display:none !important; }
 }
 
 #mapSearch-div {
-	margin: 0 auto;
+	margin: 20px auto;
 }
 
 #findShop, #findShop-result {
@@ -2201,14 +2201,13 @@ div.ppt { display:none !important; }
     fill: orange;
 }
 
-#shop-nav{
+/* #shop-nav{
     list-style: none;
     margin: 0px;
     padding: 0;
     width: 100%;
-    /* border: 1px solid black; */
     font-size: 20px;
-}
+} */
 
 #shop-nav li{
 	padding-left: 10px;
@@ -2233,15 +2232,50 @@ div.ppt { display:none !important; }
 
 .photoZone {
 	height: 100%; 
-	background-color: yellow;
+	background-image: url("../img/menu/menu1.jpg");
+	background-size: 100% 100%;
+	/* background-color: yellow; */
 }
 
 .shop-introduction {
 	height: 100%;
-	background-color: red;
+	/* background-color: red; */
+}
+
+.panel-default{
+	border: none;
+}
+
+.panel-default h4{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight:bold;
 }
 
 .panel-default>.panel-heading {
-	background-color: #64B5F6;
-	/* background-color: #448AFF; */
+	border-radius: 10px;
+	border: 1px solid;
 }
+
+.shopList hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.hertIcon {
+	margin-right: 5px;
+}
+
+#collapseOneOfB {
+	float: right;
+}
+
+.panel-title img{
+	margin-right: 10px;
+}
+
+/* .glyphicon-heart-empty {
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/icon/glyphicons-20-heart-empty.png");
+} */
