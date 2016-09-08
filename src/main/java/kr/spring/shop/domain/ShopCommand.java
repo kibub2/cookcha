@@ -14,7 +14,7 @@ public class ShopCommand {
 	private String back_picture;
 	private String introduction;
 	private int rater;
-	private int classify;
+	private String classify;
 	private int maxtable;
 	private int able_book;
 	private int able_coupon;
@@ -74,10 +74,10 @@ public class ShopCommand {
 	public void setRater(int rater) {
 		this.rater = rater;
 	}
-	public int getClassify() {
+	public String getClassify() {
 		return classify;
 	}
-	public void setClassify(int classify) {
+	public void setClassify(String classify) {
 		this.classify = classify;
 	}
 	public int getMaxtable() {

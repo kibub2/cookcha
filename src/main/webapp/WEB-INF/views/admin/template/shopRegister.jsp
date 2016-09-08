@@ -88,8 +88,8 @@
 	                           <div class="select">
 	                               <select name="able_coupon" id="able_coupon" class="form-control">
 	                                   <option>쿠폰 가능 여부</option>
-	                                   <option>가능</option>
-	                                   <option>불가능</option>
+	                                   <option value="1">가능</option>
+	                                   <option value="0">불가능</option>
 	                               </select>
 	                           </div>
 	                        </div>
@@ -101,8 +101,8 @@
 	                           <div class="select">
 	                               <select name="able_book" class="form-control">
 	                                   <option>예약 가능 여부</option>
-	                                   <option>가능</option>
-	                                   <option>불가능</option>
+	                                   <option value="1">가능</option>
+	                                   <option value="0">불가능</option>
 	                               </select>
 	                           </div>
 	                        </div>

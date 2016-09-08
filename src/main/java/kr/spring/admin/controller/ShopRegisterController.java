@@ -4,9 +4,11 @@ package kr.spring.admin.controller;
 import java.io.File;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -28,8 +30,14 @@ public class ShopRegisterController {
 	@Resource
 	private ShopService shopService;
 	
+	
+	
 	@RequestMapping(value="/admin/shopRegister.do", method=RequestMethod.GET)
-	public String form(){
+	public String form(HttpSession session, Model model){
+		
+		ShopCommand shop=new ShopCommand();
+		
+		model.addAttribute("shop",shop);
 		
 		return "shopRegister";
 	}
