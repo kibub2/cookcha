@@ -1,4 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<script type="text/javascript" src="${pageContext.request.contextPath }/resources/js/shopDetailReply.js"></script>
 <div class="container">
 <div class="row">
 <div class="shopping">
@@ -37,37 +39,40 @@
 										<span style="font-size:14px;">
 										${shop.introduction }
 										</span>
-									
 									</div>
 									<!-- 코멘트 시작 -->
-									<div class="comments">
-										<div class="title"><h5>2 Comments</h5></div>
+									 <div class="comments-${comm.code }">
 										<ul class="comment-list">
 											<li class="comment">
 												<a class="pull-left" href="#">
 													<img class="avatar" style="max-width: 50px; margin-right: 10px;"src="${pageContext.request.contextPath }/resources/img/user.jpg" alt="">
 												</a>
-												<div class="comment-author"><a href="#">Uiousve Rsionsha</a></div>
-												<div class="cmeta">Commented on 26/1/2014</div>
-												<p>Nulla facilisi. Sed justo dui, scelerisque ut consectetur vel, eleifend id erat. Phasellus condimentum rutrum aliquet. Quisque eu consectetur erat.</p>
+												<div class="comment-author"><a href="#">유저명 ${comm.mem_id }Uiousve Rsionsha</a></div>
+												<div class="cmeta">남긴날짜 - ${comm.register }</div>
+												<p>댓글 내용 ${comm.content }</p>
 												<div class="clearfix"></div>
 											</li>
 										</ul>
 										<div class="clearfix"></div>
-									</div>								
+									</div>		
+									
+	
+															
 								</div>
 
 							</div>
 						</div>
 						<!-- 모달 끝 -->
 						<!-- Shopping item name / Heading -->
-						<h4 class="pull-left">
+						<h4 class="pull-left" style="overflow:hidden;">
 							<a href="item-single.html">${shop.name }</a>
 						</h4>
+						<!-- 
 						<span class="item-price pull-right">$49</span>
+						 -->
 						<div class="clearfix"></div>
 						<!-- Paragraph -->
-						<p>${shop.introduction }</p>
+						<p style="overflow:hidden; height:185px;">${shop.introduction }</p>
 						<!-- Buy now button -->
 						<div class="visible-xs">
 							<a class="btn btn-danger btn-sm" href="#">Buy Now</a>
@@ -85,3 +90,5 @@
 </div>
 </div>
 </div>
+<br><br>
+<div align="center">${pagingHtml }</div>
