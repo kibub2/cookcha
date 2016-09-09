@@ -59,8 +59,8 @@ public class ShopRegisterController {
 		shop.setSub_address(param.get("sub_address"));
 		shop.setClassify(Integer.parseInt(param.get("classify")));
 		shop.setAble_coupon(Integer.parseInt(param.get("able_coupon")));
-		
-	
+		shop.setShop_rating(0);
+		shop.setRater(0);
 		
 		if(log.isDebugEnabled()){
 			log.debug("shopCommand : "+shop);
@@ -94,7 +94,7 @@ public class ShopRegisterController {
 			shop.getUpload2().transferTo(file);
 		}
 		
-		return "redirect:/admin/register.do";
+		return "redirect:/admin/shopRegister.do";
 		
 	}
 }
