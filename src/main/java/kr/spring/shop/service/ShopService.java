@@ -7,4 +7,5 @@ import kr.spring.shop.domain.ShopCommand;
 @Transactional
 public interface ShopService {
 	public void register(ShopCommand shop);
+	public int lastShopCode();
 }

@@ -17,4 +17,10 @@ public class ShopServiceImpl implements ShopService {
 		
 		shopMapper.register(shop);
 	}
+
+	@Override
+	public int lastShopCode() {
+		// TODO Auto-generated method stub
+		return shopMapper.lastShopCode();
+	}
 }

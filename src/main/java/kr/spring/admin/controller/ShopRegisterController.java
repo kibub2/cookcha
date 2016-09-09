@@ -50,8 +50,8 @@ public class ShopRegisterController {
 						@RequestParam Map<String, String> param, 
 						@RequestParam("upload1")MultipartFile multi1,
 						@RequestParam("upload2")MultipartFile multi2)throws Exception{
-		
-		shop.setUpload1(multi1);
+		shop.setCode(shopService.lastShopCode()+1);
+		/*shop.setUpload1(multi1);
 		shop.setUpload1(multi1);
 		shop.setName(param.get("name"));
 		shop.setPhone(param.get("phone"));
@@ -60,7 +60,7 @@ public class ShopRegisterController {
 		shop.setClassify(Integer.parseInt(param.get("classify")));
 		shop.setAble_coupon(Integer.parseInt(param.get("able_coupon")));
 		shop.setShop_rating(0);
-		shop.setRater(0);
+		shop.setRater(0);*/
 		
 		if(log.isDebugEnabled()){
 			log.debug("shopCommand : "+shop);
@@ -74,11 +74,11 @@ public class ShopRegisterController {
 		String newName2="";
 		System.out.println("shop.");
 		if(!shop.getUpload1().isEmpty()){
-			newName1 = FileUtil.rename(shop.getUpload1().getOriginalFilename());
+			newName1 = FileUtil.rename(shop.getUpload1().getOriginalFilename(),shop.getCode()+"-1");
 			shop.setMain_picture(newName1);
 		}
 		if(!shop.getUpload2().isEmpty()){
-			newName2 = FileUtil.rename(shop.getUpload2().getOriginalFilename());
+			newName2 = FileUtil.rename(shop.getUpload2().getOriginalFilename(),shop.getCode()+"-2");
 			shop.setBack_picture(newName2);
 		}
 		
