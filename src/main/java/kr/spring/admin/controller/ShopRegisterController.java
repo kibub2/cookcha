@@ -33,8 +33,6 @@ public class ShopRegisterController {
 	@Resource
 	private ShopService shopService;
 	
-	
-	
 	@RequestMapping(value="/admin/shopRegister.do", method=RequestMethod.GET)
 	public String form(HttpSession session, Model model){
 		
@@ -50,7 +48,7 @@ public class ShopRegisterController {
 	@RequestParam("upload1")MultipartFile multi1,
 	@RequestParam("upload2")MultipartFile multi2*/
 	@RequestMapping(value="/admin/shopRegister.do", method=RequestMethod.POST)
-	public String submit(ShopCommand shop, SessionStatus status)throws Exception{
+	public String submit(@ModelAttribute ShopCommand shop, SessionStatus status)throws Exception{
 		shop.setCode(shopService.lastShopCode()+1);
 		/*shop.setUpload1(multi1);
 		shop.setUpload1(multi1);
