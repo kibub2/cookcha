@@ -1,8 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
-
 <section id="main">
 <section id="content">
 <div class="container">
@@ -111,7 +109,7 @@
 					<div class="input-group">
 						<span class="input-group-addon"><i class="md md-filter-9-plus"></i></span>
 						<div class="fg-line">
-							<input name="maxtable" id="maxtable" type="text" class="form-control" placeholder="예약가능 테이블 수(숫자만...) "/>
+							<input name="maxtable" id="maxtable" type="text" class="form-control" placeholder="예약가능 테이블 수(숫자만...)" value="0"/>
 						</div>
 					</div>
 				</div>

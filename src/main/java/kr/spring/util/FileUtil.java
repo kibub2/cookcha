@@ -11,7 +11,7 @@ import javax.imageio.ImageIO;
 
 public class FileUtil {
 
-	public static String UPLOAD_PATH="C:/Users/kibub2/Documents/cookcha/src/main/webapp/upload";
+	public static String UPLOAD_PATH="C:/Users/user2/Documents/GitHub/Cookcha/src/main/webapp/upload";
 	
 	public static String rename(String fileName)throws Exception{
 
@@ -27,7 +27,7 @@ public class FileUtil {
 
 		File file = new File(UPLOAD_PATH,fileName);
 
-		//占쏙옙占싹몌옙占쏙옙 占쏙옙占싹댐옙 占쏙옙占쏙옙占쏙옙占쏙옙 占쏙옙占쏙옙占싹깍옙
+		//�뜝�룞�삕�뜝�떦紐뚯삕�뜝�룞�삕 �뜝�룞�삕�뜝�떦�뙋�삕 �뜝�룞�삕�뜝�룞�삕�뜝�룞�삕�뜝�룞�삕 �뜝�룞�삕�뜝�룞�삕�뜝�떦源띿삕
 		int idx = fileName.lastIndexOf(".");
 
 		String extention = "";
@@ -36,16 +36,16 @@ public class FileUtil {
 		if(idx !=-1){
 			extention = fileName.substring(idx);
 		}
-		//newName 占쏙옙占쌨쏙옙 확占쏙옙占쌘몌옙 占쏙옙占쏙옙占쌔억옙 占쏙옙占쏙옙占쏙옙 확占쏙옙占쌘몌옙 占쏙옙占쏙옙占쏙옙 占쏙옙占쏙옙 占쏙옙占쏙옙占쏙옙
+		//newName �뜝�룞�삕�뜝�뙣�룞�삕 �솗�뜝�룞�삕�뜝�뙓紐뚯삕 �뜝�룞�삕�뜝�룞�삕�뜝�뙏�뼲�삕 �뜝�룞�삕�뜝�룞�삕�뜝�룞�삕 �솗�뜝�룞�삕�뜝�뙓紐뚯삕 �뜝�룞�삕�뜝�룞�삕�뜝�룞�삕 �뜝�룞�삕�뜝�룞�삕 �뜝�룞�삕�뜝�룞�삕�뜝�룞�삕
 		int newIdx = newName.lastIndexOf(".");
 		if(newIdx !=-1){
 			newName = newName.substring(0,newIdx);
 		}
-		//확占쏙옙占쏙옙 占쏙옙占쏙옙 占쏙옙占싸울옙 占쏙옙占싹몌옙
+		//�솗�뜝�룞�삕�뜝�룞�삕 �뜝�룞�삕�뜝�룞�삕 �뜝�룞�삕�뜝�떥�슱�삕 �뜝�룞�삕�뜝�떦紐뚯삕
 		newFileName = newName + extention.toLowerCase();
 
 		File fs = new File(UPLOAD_PATH,newFileName);
-		file.renameTo(fs); //占쏙옙占싹몌옙占쏙옙 占쏙옙占쏙옙
+		file.renameTo(fs); //�뜝�룞�삕�뜝�떦紐뚯삕�뜝�룞�삕 �뜝�룞�삕�뜝�룞�삕
 
 		return newFileName;
 	}
@@ -63,12 +63,12 @@ public class FileUtil {
 	public static String createThumbnail(String uploadedFile,String thumbnailFile,int thumbnailWidth, int thumbnailHeight){
 		if(thumbnailFile==null){
 			int index = uploadedFile.lastIndexOf(".");
-			if(index !=-1){//占쏙옙占쏙옙占쏙옙占� 확占쏙옙占쌘댐옙 jpg占쏙옙 占쏙옙占쏙옙
+			if(index !=-1){//�뜝�룞�삕�뜝�룞�삕�뜝�룞�삕�뜝占� �솗�뜝�룞�삕�뜝�뙓�뙋�삕 jpg�뜝�룞�삕 �뜝�룞�삕�뜝�룞�삕
 				thumbnailFile = "s" + uploadedFile.substring(0,index) + ".jpg";
 			}
 		}else{
 			int index = thumbnailFile.lastIndexOf(".");
-			if(index !=-1){//占쏙옙占쏙옙占쏙옙占� 확占쏙옙占쌘댐옙 jpg占쏙옙 占쏙옙占쏙옙
+			if(index !=-1){//�뜝�룞�삕�뜝�룞�삕�뜝�룞�삕�뜝占� �솗�뜝�룞�삕�뜝�뙓�뙋�삕 jpg�뜝�룞�삕 �뜝�룞�삕�뜝�룞�삕
 				thumbnailFile = thumbnailFile.substring(0,index) + ".jpg";
 			}
 		}
@@ -81,9 +81,9 @@ public class FileUtil {
 			int width;
 			int height;
 
-			if(thumbnailHeight == 0){//占쏙옙占싱몌옙 0占쏙옙占쏙옙 占쏙옙占쏙옙占쏙옙占쏙옙 占쏙옙占� 占쏙옙占싱몌옙 
+			if(thumbnailHeight == 0){//�뜝�룞�삕�뜝�떛紐뚯삕 0�뜝�룞�삕�뜝�룞�삕 �뜝�룞�삕�뜝�룞�삕�뜝�룞�삕�뜝�룞�삕 �뜝�룞�삕�뜝占� �뜝�룞�삕�뜝�떛紐뚯삕 
 
-				int radio = im.getWidth() / thumbnailWidth;//占쏙옙占쏙옙占� 占쏙옙占쏙옙占쏙옙 占쏙옙占쏙옙
+				int radio = im.getWidth() / thumbnailWidth;//�뜝�룞�삕�뜝�룞�삕�뜝占� �뜝�룞�삕�뜝�룞�삕�뜝�룞�삕 �뜝�룞�삕�뜝�룞�삕
 
 				width = thumbnailWidth;
 				height = im.getHeight() / radio;

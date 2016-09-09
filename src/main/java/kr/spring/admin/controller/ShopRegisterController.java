@@ -45,11 +45,12 @@ public class ShopRegisterController {
 		return "shopRegister";
 	}
 	
+	/*, 
+	@RequestParam Map<String, String> param, 
+	@RequestParam("upload1")MultipartFile multi1,
+	@RequestParam("upload2")MultipartFile multi2*/
 	@RequestMapping(value="/admin/shopRegister.do", method=RequestMethod.POST)
-	public String submit(ShopCommand shop, SessionStatus status, 
-						@RequestParam Map<String, String> param, 
-						@RequestParam("upload1")MultipartFile multi1,
-						@RequestParam("upload2")MultipartFile multi2)throws Exception{
+	public String submit(ShopCommand shop, SessionStatus status)throws Exception{
 		shop.setCode(shopService.lastShopCode()+1);
 		/*shop.setUpload1(multi1);
 		shop.setUpload1(multi1);
@@ -99,7 +100,7 @@ public class ShopRegisterController {
 	}
 }
 
-
+ 
 
 
 
