@@ -17,7 +17,7 @@
 	        
 	        <br/>
 	        <!-- 가게 정보 입력 -->
-	       	<form action="shopRegister.do" enctype="multipart/form-data" method="post">
+	       	<form:form commandName="shop" action="shopRegister.do" enctype="multipart/form-data" method="post">
 	        <div class="row">
 	        
 	            <div class="col-sm-6">                       
@@ -65,18 +65,18 @@
 	                          
 	                               <select name="classify" id="classify" class="form-control">
 	                                   <option>가게 분류</option>
-	                                   <option>한식</option>
-	                                   <option>일식</option>
-	                                   <option>중식</option>
-	                                   <option>아시아퓨전</option>
-	                                   <option>서양음식</option>
-	                                   <option>패밀리레스토랑</option>
-	                                   <option>분식</option>
-	                                   <option>패스트푸드</option>
-	                                   <option>피자</option>
-	                                   <option>치킨</option>
-	                                   <option>주점</option>
-	                                   <option>기타</option>
+	                                   <option value="1">한식</option>
+	                                   <option value="2">일식</option>
+	                                   <option value="3">중식</option>
+	                                   <option value="4">아시아퓨전</option>
+	                                   <option value="5">서양음식</option>
+	                                   <option value="6">패밀리레스토랑</option>
+	                                   <option value="7">분식</option>
+	                                   <option value="8">패스트푸드</option>
+	                                   <option value="9">피자</option>
+	                                   <option value="10">치킨</option>
+	                                   <option value="11">주점</option>
+	                                   <option value="12">기타</option>
 	                               </select>
 	                           </div>
 	                        </div>
@@ -177,7 +177,7 @@
 		
 				
 			
-			</form>
+			</form:form>
 		
 		</div>
 	</div>

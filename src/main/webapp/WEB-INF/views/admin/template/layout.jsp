@@ -37,6 +37,7 @@
 <script src="${pageContext.request.contextPath}/resources/admin/vendors/waves/waves.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/admin/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/admin/vendors/sweet-alert/sweet-alert.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/admin/vendors/fileinput/fileinput.min.js"></script>
 
 <script src="${pageContext.request.contextPath}/resources/admin/js/flot-charts/curved-line-chart.js"></script>
 <script src="${pageContext.request.contextPath}/resources/admin/js/flot-charts/line-chart.js"></script>
