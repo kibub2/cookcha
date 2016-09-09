@@ -11,6 +11,7 @@ public class BookCommand {
 	private int code;
 	private String phone;
 	private int seat;
+	private String content;
 	public int getSeq() {
 		return seq;
 	}
@@ -59,6 +60,13 @@ public class BookCommand {
 	public void setSeat(int seat) {
 		this.seat = seat;
 	}
+	public String getContent() {
+		return content;
+	}
+	public void setContent(String content) {
+		this.content = content;
+	}
+	
 	@Override
 	public String toString() {
 		return "BookCommand [seq=" + seq + ", id=" + id + ", name=" + name + ", book_date=" + book_date + ", book_time="

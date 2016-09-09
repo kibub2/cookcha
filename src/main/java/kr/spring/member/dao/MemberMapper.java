@@ -14,4 +14,4 @@ public interface MemberMapper {
 	@Select("SELECT * FROM member WHERE id = #{id}")
 	public MemberCommand select(String id);
 
-}
+} 

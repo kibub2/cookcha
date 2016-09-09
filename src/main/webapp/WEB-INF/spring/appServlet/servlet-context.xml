@@ -26,7 +26,7 @@
 				<beans:value>/WEB-INF/tiles-def/book.xml</beans:value>
 			</beans:list>
 		</beans:property>
-	</beans:bean>
+	</beans:bean> 
 	<!-- tiles 뷰 설정 (tiles가 view를 생성하기 때문에 -> tiles만의 view resolver를 사용해야한다.) -->
 	<beans:bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
 		<beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"/>

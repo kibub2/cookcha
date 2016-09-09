@@ -19,13 +19,13 @@ public class BookServiceImpl implements BookService{
 	}
 
 	@Override
-	public BookCommand selectBook(String id) {
-		return bookMapper.selectBook(id);
+	public void updateCode(Integer code) {
+		bookMapper.updateCode(code);
 	}
 
 	@Override
-	public void update(BookCommand book) {
-		bookMapper.update(book);
+	public BookCommand selectBook(String id) {
+		return bookMapper.selectBook(id);
 	}
 
 	@Override
