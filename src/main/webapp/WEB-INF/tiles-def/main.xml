@@ -15,6 +15,7 @@
     </definition> 
     <definition name="pageError" extends="index">
         <put-attribute name="title"  value="오류발생"/>
+        <put-attribute name="banner"  value="/WEB-INF/views/board/bannerInit.jsp"/>
         <put-attribute name="body"   value="/WEB-INF/views/error/pageError.jsp"/>
     </definition>
     <!-- 

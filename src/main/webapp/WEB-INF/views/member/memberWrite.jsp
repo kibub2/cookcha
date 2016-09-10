@@ -90,7 +90,7 @@
 				</div>
 				<div class="form-group text-center">
 					<button type="submit" class="btn btn-info">회원가입</button>
-					<button type="button" class="btn btn-warning" onclick="location.href='../index.do'">홈으로</button>
+					<button type="button" class="btn btn-warning" onclick="location.href='${pageContext.request.contextPath}/index.do'">홈으로</button>
 				</div>
 			</div>
 		</form:form>

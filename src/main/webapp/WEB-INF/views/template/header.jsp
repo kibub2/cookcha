@@ -29,8 +29,8 @@
 			<c:if test="${empty userId}">
 			<div class="btn-login-md">
 				<!-- Image -->
-				<a href="#"><img class="img-responsive" src="resources/img/login_icon_black.png" alt="" /></a>
-				<a class="login-link" href="member/login.do">
+				<a href="#"><img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" /></a>
+				<a class="login-link" href="${pageContext.request.contextPath}/member/login.do">
 					<!-- Heading -->
 					<h4>Cookcha Login</h4>
 					<span>로그인</span>
@@ -82,8 +82,8 @@
 			<c:if test="${!empty userId}">
 			<div class="btn-login-md">
 				<!-- Image -->
-				<a href="#"><img class="img-responsive" src="resources/img/login_icon_black.png" alt="" /></a>
-				<a class="login-link" href="member/logout.do">
+				<a href="#"><img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" /></a>
+				<a class="login-link" href="${pageContext.request.contextPath}/member/logout.do">
 					<!-- Heading -->
 					<h4 style="color: #FF9436;">${userId}님 환영합니다.</h4>
 					<span>로그아웃</span>
@@ -141,7 +141,7 @@
 		<a href="${pageContext.request.contextPath}/index.do">
 			<!-- Logo area -->
 			<div class="logo">
-				<img class="img-responsive" src="resources/img/logo.png" alt="" />
+				<img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/logo.png" alt="" />
 				<!-- Heading -->
 				<h1>Cookcha</h1>
 				<!-- Paragraph -->
@@ -166,9 +166,9 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html"><img src="resources/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Home</a></li>
+						<li><a href="index.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Home</a></li>
 						<li class="dropdown hidden-xs">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="resources/img/nav-menu/nav2.jpg" class="img-responsive" alt="" /> Menu <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav2.jpg" class="img-responsive" alt="" /> Menu <b class="caret"></b></a>
 							<ul class="dropdown-menu dropdown-md">
 								<li>
 									<div class="row">
@@ -178,7 +178,7 @@
 												<!-- Heading -->
 												<h3>Vegetarian</h3>
 												<!-- Image -->
-												<img src="resources/img/dish/dish1.jpg" class="img-responsive" alt="" />
+												<img src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" class="img-responsive" alt="" />
 												<!-- Paragraph -->
 												<p>Sea nut perspicacity under omni piste natures mirror of there with consequent.</p>
 												<!-- Button -->
@@ -191,7 +191,7 @@
 												<!-- Heading -->
 												<h3>Non-Vegetarian</h3>
 												<!-- Image -->
-												<img src="resources/img/dish/dish2.jpg" class="img-responsive" alt="" />
+												<img src="${pageContext.request.contextPath}/resources/img/dish/dish2.jpg" class="img-responsive" alt="" />
 												<!-- Paragraph -->
 												<p>Sea nut perspicacity under omni piste natures mirror as precode consequent.</p>
 												<!-- Button -->
@@ -204,7 +204,7 @@
 												<!-- Heading -->
 												<h3>Special Menu</h3>
 												<!-- Image -->
-												<img src="resources/img/dish/dish3.jpg" class="img-responsive" alt="" />
+												<img src="${pageContext.request.contextPath}/resources/img/dish/dish3.jpg" class="img-responsive" alt="" />
 												<!-- Paragraph -->
 												<p>Sea nut perspicacity under omni piste natures mirror consequent.</p>
 												<!-- Button -->
@@ -223,9 +223,9 @@
 								<li><a href="menu.html">Special Menu</a></li>
 							</ul>
 						</li>
-						<li><a href="gallery.html"><img src="resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" /> Gallery</a></li>
+						<li><a href="gallery.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" /> Gallery</a></li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" /> Shop <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" /> Shop <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="items.html">Shopping</a></li>
 								<li><a href="item-single.html">Order Now</a></li>
@@ -235,12 +235,20 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="resources/img/nav-menu/nav5.jpg" class="img-responsive" alt="" /> Pages <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav5.jpg" class="img-responsive" alt="" /> Pages <b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="recipe.html">Recipes</a></li>
 							</ul>
 						</li>
-						<li><a href="aboutus.html"><img src="resources/img/nav-menu/nav6.jpg" class="img-responsive" alt="" /> About</a></li>
+						<!-- 게시판, 공지사항 ▼ -->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" />게시판/공지사항<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="${pageContext.request.contextPath}/board/boardList.do">자유게시판</a></li>
+							</ul>
+						</li>
+						<!-- 게시판, 공지사항 ▲ -->
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->

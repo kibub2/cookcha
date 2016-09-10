@@ -1,5 +1,7 @@
 package kr.spring.member.dao;
 
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
@@ -13,5 +15,7 @@ public interface MemberMapper {
 	public void insert(MemberCommand member);
 	@Select("SELECT * FROM member WHERE id = #{id}")
 	public MemberCommand select(String id);
+	@Select("SELECT count(*) FROM board")
+	public int getRowCount(Map<String, Object> map);
 
 }
