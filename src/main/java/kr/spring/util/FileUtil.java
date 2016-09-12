@@ -11,7 +11,7 @@ import javax.imageio.ImageIO;
 
 public class FileUtil {
 
-	public static String UPLOAD_PATH="C:/Users/user2/Documents/GitHub/Cookcha/src/main/webapp/upload";
+	public static String UPLOAD_PATH="C:/Users/kibub2/Documents/cookcha/src/main/webapp/upload";
 	
 	public static String rename(String fileName)throws Exception{
 
