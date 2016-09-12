@@ -26,7 +26,7 @@ public class BookDetailController {
 	@Resource
 	private MemberService memberService;
 		
-		@RequestMapping(value="/bookDetail.do", method=RequestMethod.GET)
+		@RequestMapping(value="/shop/bookDetail.do", method=RequestMethod.GET)
 		public String form(HttpSession session, Model model){
 			
 			String id = (String)session.getAttribute("userId");
@@ -38,6 +38,7 @@ public class BookDetailController {
 			
 		   			    	    //속성명	   속성값  
 			model.addAttribute("command",command);
+			//타일스네임이랑 동일 뽝
 			return "bookDetail";
 		}
 		
