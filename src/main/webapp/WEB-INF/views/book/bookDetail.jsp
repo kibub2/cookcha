@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<script type="text/javascript" src="${pageContext.request.contextPath }/resources/js/jquery-1.12.4.min.js"></script>
 <!DOCTYPE html>
 <html>
 <!-- Title here -->
@@ -491,22 +492,49 @@
 										<form:input path="phone"/>
 										<form:errors element="div" class="error-color"/>
 									</div>
+									<script type="text/javaScript">
+										$(function(){
+											$
+												.ajax({
+													url : 'bookDeduction.do',
+													success : function(data){
+													loadCombo(
+													$("#seat"),	data.locations);
+													$("#seat").val(" ");
+														}
+													});
+											$("#seat").change(
+												function(){
+													alert("Selected : " + $("#seat option:selected").text());
+												});
+											$("#seat option:selected").remove();
+											});
+
+										function loadCombo(target, data){
+											var dataArr = [];
+											var inx = 0;
+											target.empty();
+
+											$(data)
+												.each(
+													function(){
+														dataArr[inx++] = "<option value=" + this.locationId + ">" this.locationNm "</option> ";
+													});
+											
+											target.append(dataArr);
+										}
+									</script>
 
 									<label>테이블</label>
 									<div class="form-group">
 										<!-- Form drop down -->
-										<form:select class="form-control" path="seat">
-											<option>1</option>
-											<option>2</option>
-											<option>3</option>
-											<option>4</option>
-											<option>5</option>
-											<option>6</option>
-											<option>7</option>
-											<option>8</option>
-											<option>9</option>
-											<option>10</option>
-										</form:select>
+										<select class="form-control" id="seat">
+											<option value="01">1</option>
+											<option value="01">2</option>
+											<option value="01">3</option>
+											<option value="01">4</option>
+											<option value="01">5</option>
+										</select>
 									</div>
 
 									<label>메시지</label>
