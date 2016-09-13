@@ -2,14 +2,23 @@ package kr.spring.book.domain;
 
 import java.sql.Date;
 
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class BookCommand {
 	private int seq;
+	@NotEmpty
 	private String id;
+	@NotEmpty
 	private String name;
 	private Date book_date;
+	@NotEmpty
 	private String book_time;
 	private int code;
+	@NotEmpty
 	private String phone;
+	@NotNull
 	private int seat;
 	private String content;
 	public int getSeq() {

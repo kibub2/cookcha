@@ -42,7 +42,7 @@ public class BookDetailController {
 			return "bookDetail";
 		}
 		
-		@RequestMapping(value="/bookDetail.do", method=RequestMethod.POST)
+		@RequestMapping(value="/shop/bookDetail.do", method=RequestMethod.POST)
 		public String submit(@ModelAttribute("command") @Valid BookCommand bookCommand,
 												        BindingResult result){
 			if(log.isDebugEnabled()){
@@ -51,12 +51,13 @@ public class BookDetailController {
 			
 			//유효성 체크
 			if(result.hasErrors()){
+				//타일스와 동일하게 위치 지정
 				return "bookDetail";
 			}
 						
 			bookService.insert(bookCommand);
 			
-			return "redirect:/bookDetail.do";
+			return "redirect:/index.do";
 	}
 			
 }

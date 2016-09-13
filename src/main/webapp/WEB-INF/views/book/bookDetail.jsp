@@ -450,30 +450,32 @@
 						<!-- 예약 정보 -->
 						<div class="col-md-4">
 							<!-- Booking form area -->
-							<div class="booking-form">
+							<div class="booking-form" >
 								<!-- Heading -->
 								<h3>예약</h3>
 
 								<!-- Booking form -->
 								<form:form role="form" action="bookDetail.do" commandName="command">
+									<input type="hidden" name="code" id="code" value="${param.code}"/>
 									<label>예약ID</label>
 									<div class="form-group">
 										<!-- Form input -->
 										<form:input path="id" readonly="true"/>
-										<form:errors element="div" class="error-color"/>
+										<form:errors path="id" class="error-color"/>
 									</div>
 
 									<label>예약자</label>
 									<div class="form-group">
 										<!-- Form input -->
 										<form:input path="name"/>
-										<form:errors element="div" class="error-color"/>
+										<form:errors path="name" class="error-color"/>
 									</div>
 
 									<label>예약일</label>
 									<div class="form-group">
 										<!-- Form drop down -->
 										<input class="form-control" name="book_date" id="book_date" type="date" >
+									    <form:errors path="book_date" class="error-color"/>
 									</div>
 
 									<label>예약시간</label>
@@ -483,15 +485,16 @@
 											<option value="점심">점심</option>
 											<option value="저녁">저녁</option>
 										</form:select>
+										<form:errors path="book_time" class="error-color"/>
 									</div>
 
 									<label>전화번호</label>
 									<div class="form-group">
 										<!-- Form input -->
 										<form:input path="phone"/>
-										<form:errors element="div" class="error-color"/>
+										<form:errors path="phone" class="error-color"/>
 									</div>
-									<script type="text/javaScript">
+									 <script type="text/javaScript">
 										$(function(){
 											$
 												.ajax({

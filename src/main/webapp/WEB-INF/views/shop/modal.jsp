@@ -69,7 +69,7 @@
 						<!-- 모달 끝 -->
 						<!-- Shopping item name / Heading -->
 						<h4 class="pull-left" style="overflow:hidden;">
-							<a href="bookDetail.do">${shop.name }</a>
+							<a href="bookDetail.do?code=${shop.code}">${shop.name }</a>
 						</h4>
 						<!-- 
 						<span class="item-price pull-right">$49</span>
