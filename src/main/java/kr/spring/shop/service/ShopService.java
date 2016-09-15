@@ -8,4 +8,5 @@ import kr.spring.shop.domain.ShopCommand;
 public interface ShopService {
 	public void register(ShopCommand shop);
 	public int lastShopCode();
+	public String checkShop(String name);
 }

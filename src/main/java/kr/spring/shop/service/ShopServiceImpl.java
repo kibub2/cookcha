@@ -23,4 +23,10 @@ public class ShopServiceImpl implements ShopService {
 		// TODO Auto-generated method stub
 		return shopMapper.lastShopCode();
 	}
+
+	@Override
+	public String checkShop(String name) {
+		// TODO Auto-generated method stub
+		return shopMapper.checkShop(name);
+	}
 }

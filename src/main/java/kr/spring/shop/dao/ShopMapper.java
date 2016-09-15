@@ -15,4 +15,6 @@ public interface ShopMapper {
 	@Select("SELECT MAX(code) FROM shop")
 	public int lastShopCode();
 	
+	@Select("SELECT name FROM shop WHERE name LIKE '%'||#{name}||'%'")
+	public String checkShop(String name);
 }

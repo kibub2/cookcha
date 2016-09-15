@@ -15,11 +15,11 @@
 	        
 	        <br/>
 	        <!-- 가게 정보 입력 -->
-	       	<form:form commandName="shop" action="shopRegister.do" enctype="multipart/form-data" method="post">
+	       	<form:form commandName="shop" action="shopRegister.do"  method="post">
 	        <div class="row">
 	        
 	            <div class="col-sm-6">                       
-	                <div class="input-group">
+	                <div class="input-group" id="validation">
 	                    <span class="input-group-addon"><i class="md md-account-box"></i></span>
 	                    <div class="fg-line">
 	                            <input type="text" class="form-control" name="name" id="name" placeholder="가게 이름"/>
@@ -84,11 +84,11 @@
 	                      <span class="input-group-addon"><i class="md md-done"></i></span>
 	                       <div class="fg-line">
 	                           <div class="select">
-	                               <select name="able_coupon" id="able_coupon" class="form-control">
+	                               <form:select path="able_coupon" name="able_coupon" id="able_coupon" class="form-control">
 	                                   <option>쿠폰 가능 여부</option>
 	                                   <option value="1">가능</option>
 	                                   <option value="0">불가능</option>
-	                               </select>
+	                               </form:select>
 	                           </div>
 	                        </div>
 	                  </div>
@@ -97,7 +97,7 @@
 	                      <span class="input-group-addon"><i class="md md-done"></i></span>
 	                       <div class="fg-line">
 	                           <div class="select">
-	                               <select name="able_book" class="form-control">
+	                               <select name="able_book" id="able_book" class="form-control">
 	                                   <option>예약 가능 여부</option>
 	                                   <option value="1">가능</option>
 	                                   <option value="0">불가능</option>
@@ -109,7 +109,7 @@
 					<div class="input-group">
 						<span class="input-group-addon"><i class="md md-filter-9-plus"></i></span>
 						<div class="fg-line">
-							<input name="maxtable" id="maxtable" type="text" class="form-control" placeholder="예약가능 테이블 수(숫자만...)" value="0"/>
+							<input name="maxtable" id="maxtable" type="text" class="form-control" placeholder="예약가능 테이블 수(숫자만...)"/>
 						</div>
 					</div>
 				</div>
