@@ -5,12 +5,9 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
-    <definition name="index" template="/WEB-INF/views/template/layout.jsp">
-        <put-attribute name="title"  value="타일스 샘플 메인"/>
-        <put-attribute name="modal"  value="/WEB-INF/views/template/modal.jsp"/>
-        <put-attribute name="header" value="/WEB-INF/views/template/header.jsp"/>
-        <put-attribute name="body"   value="/WEB-INF/views/template/body.jsp"/>
-        <put-attribute name="footer" value="/WEB-INF/views/template/footer.jsp"/>
+    <definition name="recommend" extends="index">
+        <put-attribute name="title"  value="맞춤추천"/>
+        <put-attribute name="body"   value="/WEB-INF/views/recommend/recommend.jsp"/>
     </definition> 
     
     <!-- 

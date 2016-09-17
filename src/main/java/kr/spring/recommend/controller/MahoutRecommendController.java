@@ -16,15 +16,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class MahoutRecommandController {
-	@RequestMapping("/recommand.do")
-	public String process() throws IOException, TasteException{
-		DataModel model=new FileDataModel(new File(""));
+public class MahoutRecommendController {
+	@RequestMapping("/recommend.do")
+	public String process() {
+		/*DataModel model=new FileDataModel(new File(""));
 		UserSimilarity similarity=new PearsonCorrelationSimilarity(model);
 		UserNeighborhood neighborhood=new ThresholdUserNeighborhood(0.1, similarity, model);
-		UserBasedRecommender recommander=new GenericUserBasedRecommender(model, neighborhood, similarity);
+		UserBasedRecommender recommander=new GenericUserBasedRecommender(model, neighborhood, similarity);*/
 		
 		
-		return "recommand";
+		return "recommend";
 	}
 }
