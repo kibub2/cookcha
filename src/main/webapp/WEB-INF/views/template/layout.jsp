@@ -23,6 +23,7 @@
 <script src="${pageContext.request.contextPath}/resources/js/respond.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/html5shiv.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/addRating.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/home.js"></script>
 </head>
 <body>

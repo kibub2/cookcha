@@ -1,5 +1,8 @@
 package kr.spring.shop.dao;
 
+import java.util.List;
+import java.util.Map;
+
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
@@ -17,4 +20,9 @@ public interface ShopMapper {
 	
 	@Select("SELECT name FROM shop WHERE name LIKE '%'||#{name}||'%'")
 	public String checkShop(String name);
+	
+	public List<ShopCommand> shopList(Map<String, Object> map);
+	
+	@Select("SELECT COUNT(*) FROM shop")
+	public int getTotalCount();
 }

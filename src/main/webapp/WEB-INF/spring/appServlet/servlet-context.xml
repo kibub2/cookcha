@@ -15,6 +15,7 @@
 	<context:component-scan base-package="kr.spring.member.controller" />
 	<context:component-scan base-package="kr.spring.recommend.controller"/>
 	<context:component-scan base-package="kr.spring.admin.controller"/>
+	<context:component-scan base-package="kr.spring.rate.controller"/>
 	
 	<!-- Spring3 Validator -->
 	<mvc:annotation-driven/>
@@ -27,6 +28,7 @@
 				<beans:value>/WEB-INF/tiles-def/main.xml</beans:value>
 				<beans:value>/WEB-INF/tiles-def/admin.xml</beans:value>
 				<beans:value>/WEB-INF/tiles-def/recommend.xml</beans:value>
+				<beans:value>/WEB-INF/tiles-def/rate.xml</beans:value>
 				<!-- <beans:value>/WEB-INF/tiles-def/member.xml</beans:value> -->
 			</beans:list>
 		</beans:property>

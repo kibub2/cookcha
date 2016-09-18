@@ -1,5 +1,8 @@
 package kr.spring.shop.service;
 
+import java.util.List;
+import java.util.Map;
+
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
@@ -28,5 +31,17 @@ public class ShopServiceImpl implements ShopService {
 	public String checkShop(String name) {
 		// TODO Auto-generated method stub
 		return shopMapper.checkShop(name);
+	}
+
+	@Override
+	public List<ShopCommand> shopList(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		return shopMapper.shopList(map);
+	}
+
+	@Override
+	public int getTotalCount() {
+		// TODO Auto-generated method stub
+		return shopMapper.getTotalCount();
 	}
 }
