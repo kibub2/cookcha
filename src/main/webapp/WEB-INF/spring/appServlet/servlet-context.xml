@@ -9,6 +9,9 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	
 	
+
+	<!-- Spring3 Validator -->
+	<mvc:annotation-driven/>
 	
 	<!-- autoscan 추가 목록 -->
 	<context:component-scan base-package="kr.spring.tiles.controller" />
@@ -16,9 +19,9 @@
 	<context:component-scan base-package="kr.spring.recommend.controller"/>
 	<context:component-scan base-package="kr.spring.admin.controller"/>
 	<context:component-scan base-package="kr.spring.rate.controller"/>
+	<context:component-scan base-package="kr.spring.board.controller" />
 	
-	<!-- Spring3 Validator -->
-	<mvc:annotation-driven/>
+
 	
 	<mvc:resources location="/resources" mapping="/resources/**"/>
 	<!-- tiles 설정-->
@@ -29,6 +32,8 @@
 				<beans:value>/WEB-INF/tiles-def/admin.xml</beans:value>
 				<beans:value>/WEB-INF/tiles-def/recommend.xml</beans:value>
 				<beans:value>/WEB-INF/tiles-def/rate.xml</beans:value>
+				<beans:value>/WEB-INF/tiles-def/board.xml</beans:value>
+
 				<!-- <beans:value>/WEB-INF/tiles-def/member.xml</beans:value> -->
 			</beans:list>
 		</beans:property>
@@ -49,7 +54,26 @@
 	<!-- 파일 업로드 설정 -->
 	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<beans:property name="maxUploadSize" value="52428800"/> <!-- 50M이하 업로드설정 -->
-		<beans:property name="defaultEncoding" value="UTF-8"></beans:property>
+		<beans:property name="defaultEncoding" value="UTF-8"/>
+	</beans:bean>
+	<!-- messageSource 지정 -->
+	<beans:bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+		<beans:property name="basenames">
+			<beans:list>
+				<beans:value>messages.label</beans:value>
+				<beans:value>messages.validation</beans:value>
+			</beans:list>
+		</beans:property>
+	</beans:bean>
+	
+	<!-- exception 설정 -->
+	<beans:bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<beans:property name="exceptionMappings">
+			<beans:props>
+				<beans:prop key="java.lang.Throwable">pageError</beans:prop>
+			</beans:props>
+		</beans:property>
+
 	</beans:bean>
 	
 </beans:beans>

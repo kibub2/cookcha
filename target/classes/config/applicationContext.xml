@@ -57,6 +57,7 @@
     	<property name="basePackage" value="kr.spring.board.dao,
     										kr.spring.member.dao,
     										kr.spring.shop.dao"/>
+
     </bean>
     
 </beans>

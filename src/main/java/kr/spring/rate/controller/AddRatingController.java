@@ -33,6 +33,10 @@ public class AddRatingController {
 		String [] values=str.split("-");
 		String code=values[0];
 		String rating=values[2];
+		if(log.isDebugEnabled()){
+			log.debug("code : "+code);
+			log.debug("rating : "+rating);
+		}
 		
 		Map<String, String> map = new HashMap<String, String>();
 		try{
