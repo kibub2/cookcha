@@ -1,5 +1,7 @@
 package kr.spring.book.dao;
 
+import java.util.List;
+
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
@@ -7,6 +9,7 @@ import org.apache.ibatis.annotations.Update;
 import org.springframework.stereotype.Repository;
 
 import kr.spring.book.domain.BookCommand;
+import kr.spring.shop.domain.ShopCommand;
 
 @Repository
 public interface BookMapper {
@@ -23,10 +26,16 @@ public interface BookMapper {
 	@Delete("DELETE FROM book WHERE id=#{id}")
 	public void delete(String id);
 	
-	@Update("UPDATE book SET seat = seat-1 WHERE code = #{code}")
-	public void updateCode(int code);
+	@Update("UPDATE book SET seat = #{seat} WHERE code = #{code}")
+	public void updateCode(Integer code);
 	
 	@Select("SELECT * FROM book WHERE code = #{code}")
-	public BookCommand selectshop(int code);
+	public List<BookCommand> selectShop(Integer code);
+	
+	@Select("SELECT book_time, id FROM book WHERE seat = #{seat}")
+	public BookCommand selectTime(Integer seat);
+	
+	@Select("SELECT maxtable FROM shop WHERE code = #{code}")
+	public ShopCommand selectTable(Integer code);
 
 }

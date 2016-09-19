@@ -28,15 +28,12 @@
 			<!-- 로그인 버튼 시작 ▼ -->
 			<c:if test="${empty userId}">
 			<div class="btn-login-md">
-<<<<<<< HEAD
+
 				<!-- Image -->
 				<a href="#"><img class="img-responsive" src="resources/img/login_icon_black.png" alt="" /></a>
 				<a class="login-link" href="member/login.do">
-=======
 				<a class="login-link" href="${pageContext.request.contextPath}/member/login.do">
-					<!-- Image -->
-					<img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" />
->>>>>>> origin/NewBlog
+					
 					<!-- Heading -->
 					<h4>Cookcha Login</h4>
 					<span>로그인</span>

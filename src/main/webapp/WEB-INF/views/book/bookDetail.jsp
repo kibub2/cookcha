@@ -455,7 +455,7 @@
 								<h3>예약</h3>
 
 								<!-- Booking form -->
-								<form:form role="form" action="bookDetail.do" commandName="command">
+								<form:form role="form" action="bookDetail.do" commandName="command" id="book">
 									<input type="hidden" name="code" id="code" value="${param.code}"/>
 									<label>예약ID</label>
 									<div class="form-group">
@@ -482,8 +482,8 @@
 									<div class="form-group">
 										<!-- Form drop down -->
 										<form:select class="form-control" path="book_time">
-											<option value="점심">점심</option>
-											<option value="저녁">저녁</option>
+											<option value="점심(12:00~15:00)">점심(12:00~15:00)</option>
+											<option value="저녁(18:00~21:00)">저녁(18:00~21:00)</option>
 										</form:select>
 										<form:errors path="book_time" class="error-color"/>
 									</div>
@@ -494,49 +494,22 @@
 										<form:input path="phone"/>
 										<form:errors path="phone" class="error-color"/>
 									</div>
-									 <script type="text/javaScript">
-										$(function(){
-											$
-												.ajax({
-													url : 'bookDeduction.do',
-													success : function(data){
-													loadCombo(
-													$("#seat"),	data.locations);
-													$("#seat").val(" ");
-														}
-													});
-											$("#seat").change(
-												function(){
-													alert("Selected : " + $("#seat option:selected").text());
-												});
-											$("#seat option:selected").remove();
-											});
-
-										function loadCombo(target, data){
-											var dataArr = [];
-											var inx = 0;
-											target.empty();
-
-											$(data)
-												.each(
-													function(){
-														dataArr[inx++] = "<option value=" + this.locationId + ">" this.locationNm "</option> ";
-													});
-											
-											target.append(dataArr);
-										}
-									</script>
-
+									
 									<label>테이블</label>
 									<div class="form-group">
 										<!-- Form drop down -->
-										<select class="form-control" id="seat">
-											<option value="01">1</option>
-											<option value="01">2</option>
-											<option value="01">3</option>
-											<option value="01">4</option>
-											<option value="01">5</option>
+										<c:forEach begin="0" end="${seat}" step="1" var="i">
+										</c:forEach>
+																			
+										<select class="form-control" name="seat" id="seat" onclick="selected()">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+											<option value="5">5</option>
+										
 										</select>
+										
 									</div>
 
 									<label>메시지</label>
