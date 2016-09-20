@@ -1,5 +1,6 @@
 package kr.spring.rate.controller;
 
+
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -68,7 +69,7 @@ public class RateController {
 		mav.setViewName("rate");
 		mav.addObject("count", totalCount);
 		mav.addObject("shopList", shopList);
-		mav.addObject("rateList", ratingList);
+		mav.addObject("ratingList", ratingList);
 		mav.addObject("pagingHtml", page.getPagingHtml());
 		return mav;
 	}

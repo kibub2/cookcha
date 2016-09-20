@@ -12,13 +12,18 @@
 							<a href="#"><img class="img-responsive" src="upload/${shop.code }-1.jpg" alt="" /></a>
 							<!-- Shopping item name / Heading -->
 							<h4 class="pull-left hideOverflow"><a href="#" >${shop.name }</a></h4>
-							<span class="item-price pull-right">${shop.shop_rating }</span>
+							<span class="item-price pull-right">
+							
+								${shop.shop_rating }</span>
 							<div class="clearfix"></div>
 							<!-- Paragraph -->
 							<p>${shop.address }</p>
 							<!-- Buy now button -->
 							<div class="visible-xs">
-								<a class="btn btn-red btn-sm" href="#">Buy Now</a>
+								<a class="btn btn-red btn-sm" href="#">
+								
+								 Buy Now
+								</a>
 							</div>
 							<!-- Shopping item hover block & link -->
 							<div class="item-hover br-red hidden-xs">
@@ -34,7 +39,17 @@
 									<label class="star-4" id="${shop.code }-star-4">4</label>
 									<input type="radio" name="star" class="star-5" id="star-5">
 									<label class="star-5" id="${shop.code }-star-5">5</label>
-									<span style="width:20%"></span>
+									<c:set var="shopCode" value="${shop.code }"></c:set>
+									<c:forEach var="rate" items="${ratingList }">
+									<c:set var="rateCode" value="${rate.shop_code }"></c:set>
+									<c:if test="${shopCode == rateCode }">
+										<span style="width:${rate.private_rate * 20}%"></span>
+									</c:if>
+									<c:if test="${shopCode != rateCode }">
+										<span></span>
+									</c:if>
+									</c:forEach>
+									
 								</div>
 							</form>
 							</div>
