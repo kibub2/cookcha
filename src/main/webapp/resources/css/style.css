@@ -386,7 +386,7 @@ table { background: #fff; }
 	float: left;
 }
 
-/*·Î±×ÀÎ ¾ÆÀÌÄÜ*/
+/*ï¿½Î±ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .loginIcon{
 	max-width: 40px;
 }
@@ -2170,7 +2170,7 @@ div.ppt { display:none !important; }
 	margin: 0 auto;
 }
 
-/* ÇÑÁÙÃ³¸® (...) */
+/* ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ (...) */
 .hideOverflow{
 	overflow:hidden;
 	white-space:nowrap;
@@ -2178,7 +2178,7 @@ div.ppt { display:none !important; }
 	width:100%;
 	display:block;
 }
-/* º°Á¡ css */
+/* ï¿½ï¿½ï¿½ï¿½ css */
 form .stars {
   background: url("../img/stars.png") repeat-x 0 0;
   width: 150px;

@@ -5,7 +5,7 @@
 	<div class="shopping">
 		<div class="container">
 			<div class="row">
-			<c:forEach var="shop" items="${list }">
+			<c:forEach var="shop" items="${shopList }">
 					<div class="col-md-3 col-sm-6">
 						<div class="shopping-item">
 							<!-- Image -->
@@ -21,20 +21,20 @@
 								<a class="btn btn-red btn-sm" href="#">Buy Now</a>
 							</div>
 							<!-- Shopping item hover block & link -->
-							<div class="item-hover br-white hidden-xs">
+							<div class="item-hover br-red hidden-xs">
 							<form id="ratingsForm">
 								<div class="stars">
-									<input type="radio" name="star" class="star-1" id="star-1"/>
+									<input type="radio" name="star" class="star-1" id="star-1">
 									<label class="star-1" id="${shop.code }-star-1">1</label>
-									<input type="radio" name="star" class="star-2" id="star-2"/>
+									<input type="radio" name="star" class="star-2" id="star-2">
 									<label class="star-2" id="${shop.code }-star-2">2</label>
-									<input type="radio" name="star" class="star-3" id="star-3"/>
+									<input type="radio" name="star" class="star-3" id="star-3">
 									<label class="star-3" id="${shop.code }-star-3">3</label>
-									<input type="radio" name="star" class="star-4" id="star-4"/>
+									<input type="radio" name="star" class="star-4" id="star-4">
 									<label class="star-4" id="${shop.code }-star-4">4</label>
-									<input type="radio" name="star" class="star-5" id="star-5"/>
+									<input type="radio" name="star" class="star-5" id="star-5">
 									<label class="star-5" id="${shop.code }-star-5">5</label>
-									<span></span>
+									<span style="width:20%"></span>
 								</div>
 							</form>
 							</div>

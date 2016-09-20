@@ -12,14 +12,16 @@ $(document).ready(function() {
 			cache:false,
 			timeout:30000,
 			success:function(data){
-				alert('전송성공!'+data);
-				/*if(data.result=='nameDuplicated'){
-					$('#validation').attr('class','input-group has-error has-feedback');
-				}else if(data.result=='nameNotFound'){
-					$('#validation').attr('class','input-group has-success has-feedback');
+				
+				if(data.result=='success'){
+					alert('평가가 완료되었습니다!');
+				}else if(data.result=='requireLogin'){
+					alert('로그인하셔야 평가가 가능합니다!');
+				}else if(data.result=='failure'){
+					alert('평가정보 전송중 에러발생!');
 				}else{
 					alert('데이터 검색 오류!');
-				}*/
+				}
 			},
 			error:function(){
 				alert('네트워크 오류 발생!');

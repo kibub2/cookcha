@@ -8,7 +8,7 @@ public class ShopCommand {
 	private String phone;
 	private String address;
 	private String sub_address;
-	private int shop_rating;
+	private double shop_rating;
 	private MultipartFile upload1;
 	private String main_picture;
 	private MultipartFile upload2;
@@ -52,10 +52,10 @@ public class ShopCommand {
 	public void setSub_address(String sub_address) {
 		this.sub_address = sub_address;
 	}
-	public int getShop_rating() {
+	public double getShop_rating() {
 		return shop_rating;
 	}
-	public void setShop_rating(int shop_rating) {
+	public void setShop_rating(double shop_rating) {
 		this.shop_rating = shop_rating;
 	}
 	public String getMain_picture() {

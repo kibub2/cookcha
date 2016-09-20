@@ -48,7 +48,7 @@ public class ShopRegisterController {
 	@RequestParam("upload1")MultipartFile multi1,
 	@RequestParam("upload2")MultipartFile multi2*/
 	@RequestMapping(value="/admin/shopRegister.do", method=RequestMethod.POST)
-	public String submit(@ModelAttribute ShopCommand shop, SessionStatus status)throws Exception{
+	public String submit(@ModelAttribute ShopCommand shop)throws Exception{
 		shop.setCode(shopService.lastShopCode()+1);
 		/*shop.setUpload1(multi1);
 		shop.setUpload1(multi1);
@@ -82,7 +82,6 @@ public class ShopRegisterController {
 		}
 		
 		shopService.register(shop);
-		status.setComplete();
 		
 		if(!shop.getUpload1().isEmpty()){
 			File file=new File(FileUtil.UPLOAD_PATH+"/"+newName1);
