@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+
+<!DOCTYPE mapper   
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.spring.board.dao.BoardMapper">
+
+	<select id="list" parameterType="map" resultType="boardCommand">
+		SELECT
+		seq,
+		id,
+  		<![CDATA[
+  		REPLACE(REPLACE(subject,'<','&lt;'),'>','&gt;') subject,
+  		]]>
+		content,
+		reg_date
+		FROM (SELECT
+		a.*,
+		rownum rnum
+		FROM (SELECT
+		*
+		FROM board
+		<where>
+			<if test="keyword !='' and keyfield == 'subject'">
+				subject like '%' || #{keyword} || '%'
+			</if>
+			<if test="keyword !='' and keyfield == 'id'">
+				id like '%' || #{keyword} || '%'
+			</if>
+			<if test="keyword !='' and keyfield == 'content'">
+				content like '%' || #{keyword} || '%'
+			</if>
+			<if test="keyword !='' and keyfield == 'all'">
+				subject like '%' || #{keyword} || '%'
+				id like '%' || #{keyword} || '%'
+				content like '%' || #{keyword} || '%'
+			</if>
+		</where>
+		ORDER BY seq DESC)a)
+  		<![CDATA[
+  		WHERE rnum >= #{start} AND rnum <= #{end}
+  		]]>
+	</select>
+	<select id="getRowCount" parameterType="map" resultType="Integer">
+		SELECT
+		count(*)
+		FROM board
+		<where>
+			<if test="keyword !='' and keyfield == 'subject'">
+				subject like '%' || #{keyword} || '%'
+			</if>
+			<if test="keyword !='' and keyfield == 'id'">
+				id like '%' || #{keyword} || '%'
+			</if>
+			<if test="keyword !='' and keyfield == 'content'">
+				content like '%' || #{keyword} || '%'
+			</if>
+			<if test="keyword !='' and keyfield == 'all'">
+				subject like '%' || #{keyword} || '%'
+				id like '%' || #{keyword} || '%'
+				content like '%' || #{keyword} || '%'
+			</if>
+		</where>
+	</select>
+
+</mapper>

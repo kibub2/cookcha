@@ -28,9 +28,11 @@
 			<!-- 로그인 버튼 시작 ▼ -->
 			<c:if test="${empty userId}">
 			<div class="btn-login-md">
+
 				<!-- Image -->
 				<a href="#"><img class="img-responsive loginIcon" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" /></a>
 				<a class="login-link" href="${pageContext.request.contextPath}/member/login.do">
+
 					<!-- Heading -->
 					<h4>Cookcha Login</h4>
 					<span>로그인</span>
@@ -138,7 +140,9 @@
 <div class="row">
 	<div class="col-md-4 col-sm-5">
 		<!-- Link -->
+
 		<a href="${pageContext.request.contextPath}/index.do">
+
 			<!-- Logo area -->
 			<div class="logo">
 				<img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/logo.png" alt="" />
@@ -182,7 +186,7 @@
 												<!-- Paragraph -->
 												<p>Sea nut perspicacity under omni piste natures mirror of there with consequent.</p>
 												<!-- Button -->
-												<a href="menu.html" class="btn btn-danger btn-xs">View Menu</a>
+												<a href="${pageContext.request.contextPath}/menu.html" class="btn btn-danger btn-xs">View Menu</a>
 											</div>
 										</div>
 										<div class="col-md-4 col-sm-6">
@@ -215,15 +219,16 @@
 								</li>
 							</ul>
 						</li>
+						
 						<li class="dropdown visible-xs">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="menu.html">Vegetarian</a></li>
-								<li><a href="menu.html">Non Vegetarian</a></li>
-								<li><a href="menu.html">Special Menu</a></li>
+								<li><a href="${pageContext.request.contextPath}/menu.html">Vegetarian</a></li>
+								<li><a href="${pageContext.request.contextPath}/menu.html">Non Vegetarian</a></li>
+								<li><a href="${pageContext.request.contextPath}/menu.html">Special Menu</a></li>
 							</ul>
-						</li>
-						<li><a href="gallery.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" /> Gallery</a></li>
+						</li>		
+						<li><a href="${pageContext.request.contextPath}/member/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" />맛집찾기</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" /> Shop <b class="caret"></b></a>
 							<ul class="dropdown-menu">

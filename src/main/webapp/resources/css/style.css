@@ -2170,6 +2170,7 @@ div.ppt { display:none !important; }
 	margin: 0 auto;
 }
 
+
 /* ����ó�� (...) */
 .hideOverflow{
 	overflow:hidden;
@@ -2257,3 +2258,104 @@ form .stars span {
 	visibility: hidden;
 }
 
+/* 맛집찾기 part */
+.container-fluid{
+	margin-top: 20px;
+}
+
+#mapSearch-div {
+	margin: 20px auto;
+}
+
+#findShop, #findShop-result {
+	height: 500px;
+	overflow: hidden;
+}
+
+/* #findShop-result {
+	border: 1px solid black;
+} */
+
+#map_svg {
+	fill: none;
+    background-color: lightskyblue;
+	pointer-events: all;
+}
+
+.municipality {
+	fill: #eee;
+    stroke: #999;
+    stroke-width: 1.5px;
+  	stroke-linejoin: round;
+  	stroke-linecap: round;
+}
+    
+.municipality:hover {
+    fill: orange;
+}
+
+.shopList {
+	padding: 5px;
+	height: 280px;
+}
+
+.photoZone {
+	height: 100%; 
+	background-image: url("../img/menu/menu1.jpg");
+	background-size: 100% 100%;
+}
+
+.shop-introduction {
+	height: 100%;
+}
+
+.panel-default{
+	border: none;
+}
+
+.panel-default>.panel-heading {
+	border-radius: 10px;
+	border: 1px solid;
+	padding: 5px 10px;
+}
+
+.panel-heading h4{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.shopList hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.hertIcon {
+	margin-right: 5px;
+}
+
+/* #collapseOneOfB {
+	float: right;
+} */
+
+.likeButton {
+	float: right;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* .likeButton span {
+	font-size: 13px;
+	font-weight: bold;
+} */
+
+.panel-title img{
+	margin-right: 10px;
+}
+
+/* .glyphicon-heart-empty {
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/icon/glyphicons-20-heart-empty.png");
+} */
