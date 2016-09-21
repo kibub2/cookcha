@@ -15,6 +15,16 @@ $(document).ready(function() {
 				
 				if(data.result=='success'){
 					alert('평가가 완료되었습니다!');
+					alert(data.shop_rating+$(this).attr('class'));
+					
+					/*if($(this).next('span').attr('class')=='ratedShop')
+					{
+						$(this).next('span').removeAttr("style").css("width","60%");
+					}else{
+						$(this).next('span').css("width","60%");
+					}*/
+					/*alert(data.shop_rating);*/
+					/*$(this).attr(".item-price").text("data.shop_rating");*/
 				}else if(data.result=='requireLogin'){
 					alert('로그인하셔야 평가가 가능합니다!');
 				}else if(data.result=='failure'){
@@ -29,5 +39,6 @@ $(document).ready(function() {
 			}
 		});
 	});
+	$(".ratedShop").next().remove();
 	
 });

@@ -54,7 +54,8 @@ public class AddRatingController {
 				}
 				
 				int code=Integer.parseInt(values[0]);
-				int rating=Integer.parseInt(values[2]);		
+				int rating=Integer.parseInt(values[2]);	
+				int width=rating*20;
 				
 				//받아온 정보를 rateCommand에 저장
 				RateCommand rateCommand = new RateCommand();
@@ -84,10 +85,14 @@ public class AddRatingController {
 				
 				//shop테이블에 등록
 				//가게 평균 별점 갱신 등록
-				double shop_rating = Math.round((rateService.sumRating(rateCommand)/rateService.countRating(rateCommand))*100/100.0);
+				double shop_rating = Math.round((double)rateService.sumRating(rateCommand)/rateService.countRating(rateCommand)*100)/100.0;
+				log.debug("shop_rating : "+shop_rating);
 				rateCommand.setShop_rating(shop_rating);
 				rateService.updateShopRating(rateCommand);
-
+				map.put("shop_rating", Double.toString(shop_rating));
+				map.put("width", Integer.toString(width));
+				map.put("code", Integer.toString(code));
+				
 				map.put("result", "success");
 			}
 		}catch(Exception e){

@@ -2251,8 +2251,9 @@ form .stars span {
   transition: width 0.5s;
 }
 .br-white{
-	border:4px solid #f75353;
-	
+	border:4px solid #f75353;	
 }
-
+.ratedShop + span{
+	visibility: hidden;
+}
 
