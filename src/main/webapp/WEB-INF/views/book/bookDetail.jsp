@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+
 <!DOCTYPE html>
 <html>
 <!-- Title here -->
@@ -31,6 +32,7 @@
 
 <!-- Favicon -->
 <link rel="shortcut icon" href="#">
+<script type="text/javascript" src="${pageContext.request.contextPath }/resources/js/jquery-1.12.4.min.js"></script>
 </head>
 
 <body>
@@ -455,7 +457,7 @@
 								<h3>예약</h3>
 
 								<!-- Booking form -->
-								<form:form role="form" action="bookDetail.do" commandName="command" id="book">
+								<form:form role="form" action="bookDetail.do" commandName="bookCommand">
 									<input type="hidden" name="code" id="code" value="${param.code}"/>
 									<label>예약ID</label>
 									<div class="form-group">
@@ -497,19 +499,25 @@
 									
 									<label>테이블</label>
 									<div class="form-group">
-										<!-- Form drop down -->
-										<c:forEach begin="0" end="${seat}" step="1" var="i">
-										</c:forEach>
-																			
-										<select class="form-control" name="seat" id="seat" onclick="selected()">
+										<!-- Form drop down -->																		
+										<form:select class="form-control" path="seat" name="seat">	
+										<script type="text/javascript">
+											$(function(){
+												
+												$("select[name=seat]").attr("disable",true);
+											}) 										
+										</script>
 											<option value="1">1</option>
 											<option value="2">2</option>
 											<option value="3">3</option>
 											<option value="4">4</option>
 											<option value="5">5</option>
-										
-										</select>
-										
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>					
+										</form:select>										
 									</div>
 
 									<label>메시지</label>

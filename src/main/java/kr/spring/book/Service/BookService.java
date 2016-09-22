@@ -13,16 +13,17 @@ public interface BookService {
 	public void insert(BookCommand book);
 	
 	public BookCommand selectBook(String id);
-	/*
-	public void update(BookCommand book);
-	*/
+	
 	public void delete(String id);
 
-	public void updateCode(Integer code);
+	public BookCommand updateCode(int code);
 	
-	public List<BookCommand> selectShop(Integer code);
+	public List<BookCommand> selectShop(int code);
 	
-	public BookCommand selectTime(Integer seat);
+	public int selectTime(BookCommand bookCommand);
 	
-	public ShopCommand selectTable(Integer code);
+	public int shopTable(int code);
+	
+	public int selectTime2(BookCommand bookCommand);
+
 }

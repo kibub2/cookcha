@@ -75,12 +75,12 @@ public class BookCommand {
 	public void setContent(String content) {
 		this.content = content;
 	}
-	
 	@Override
 	public String toString() {
 		return "BookCommand [seq=" + seq + ", id=" + id + ", name=" + name + ", book_date=" + book_date + ", book_time="
-				+ book_time + ", code=" + code + ", phone=" + phone + ", seat=" + seat + "]";
+				+ book_time + ", code=" + code + ", phone=" + phone + ", seat=" + seat + ", content=" + content + "]";
 	}
+	
 	
 	
 }

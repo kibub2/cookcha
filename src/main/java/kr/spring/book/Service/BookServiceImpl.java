@@ -25,8 +25,8 @@ public class BookServiceImpl implements BookService{
 	}
 
 	@Override
-	public void updateCode(Integer code) {
-		bookMapper.updateCode(code);
+	public BookCommand updateCode(int code) {
+		return bookMapper.updateCode(code);
 	}	
 
 	@Override
@@ -34,26 +34,29 @@ public class BookServiceImpl implements BookService{
 		bookMapper.delete(id);
 	}
 
-
-
 	@Override
 	public BookCommand selectBook(String id) {
 		return bookMapper.selectBook(id);
 	}
 
 	@Override
-	public List<BookCommand> selectShop(Integer code) {
+	public List<BookCommand> selectShop(int code) {
 		return bookMapper.selectShop(code);
 	}	
 
 	@Override
-	public ShopCommand selectTable(Integer code) {
-		return bookMapper.selectTable(code);
+	public int selectTime(BookCommand bookCommand) {
+		return bookMapper.selectTime(bookCommand);
 	}
 
 	@Override
-	public BookCommand selectTime(Integer seat) {
-		return bookMapper.selectTime(seat);
+	public int selectTime2(BookCommand bookCommand) {
+		return bookMapper.selectTime2(bookCommand);
+	}
+
+	@Override
+	public int shopTable(int code) {
+		return bookMapper.shopTable(code);
 	}
 
 
