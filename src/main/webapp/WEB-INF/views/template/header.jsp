@@ -28,17 +28,14 @@
 			<!-- 로그인 버튼 시작 ▼ -->
 			<c:if test="${empty userId}">
 			<div class="btn-login-md">
-<<<<<<< HEAD
 				<a class="login-link" href="${pageContext.request.contextPath}/member/login.do">
 					<!-- Image -->
 					<img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" />
-=======
 
 				<!-- Image -->
 				<a href="#"><img class="img-responsive loginIcon" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" /></a>
 				<a class="login-link" href="${pageContext.request.contextPath}/member/login.do">
 
->>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
 					<!-- Heading -->
 					<h4>Cookcha Login</h4>
 					<span>로그인</span>
@@ -146,13 +143,8 @@
 <div class="row">
 	<div class="col-md-4 col-sm-5">
 		<!-- Link -->
-<<<<<<< HEAD
 		<a href="${pageContext.request.contextPath}/index.html">
-=======
-
 		<a href="${pageContext.request.contextPath}/index.do">
-
->>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
 			<!-- Logo area -->
 			<div class="logo">
 				<img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/logo.png" alt="" />
@@ -180,11 +172,8 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-<<<<<<< HEAD
 						<li><a href="${pageContext.request.contextPath}/index.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Home</a></li>
-=======
 						<li><a href="index.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Home</a></li>
->>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
 						<li class="dropdown hidden-xs">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav2.jpg" class="img-responsive" alt="" /> Menu <b class="caret"></b></a>
 							<ul class="dropdown-menu dropdown-md">
@@ -241,15 +230,12 @@
 								<li><a href="${pageContext.request.contextPath}/menu.html">Non Vegetarian</a></li>
 								<li><a href="${pageContext.request.contextPath}/menu.html">Special Menu</a></li>
 							</ul>
-<<<<<<< HEAD
 						</li>
 						
 						<li><a href="${pageContext.request.contextPath}/member/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" />맛집찾기</a></li>
-						
-=======
+
 						</li>		
 						<li><a href="${pageContext.request.contextPath}/member/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" />맛집찾기</a></li>
->>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" /> Shop <b class="caret"></b></a>
 							<ul class="dropdown-menu">
@@ -266,9 +252,7 @@
 								<li><a href="recipe.html">Recipes</a></li>
 							</ul>
 						</li>
-<<<<<<< HEAD
 						<li><a href="aboutus.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav6.jpg" class="img-responsive" alt="" /> About</a></li>
-=======
 						<!-- 게시판, 공지사항 ▼ -->
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" />게시판/공지사항<b class="caret"></b></a>
@@ -278,7 +262,6 @@
 							</ul>
 						</li>
 						<!-- 게시판, 공지사항 ▲ -->
->>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->

@@ -32,8 +32,6 @@ $(document).ready(function(){
     	//mapScratch();
     });
     
-<<<<<<< HEAD
-=======
     $(".likeButton").on("click", function(){
     	var img = this.getElementsByTagName("img")[0];
     	if(this.value == 0){
@@ -45,7 +43,6 @@ $(document).ready(function(){
     	}
     });
     
->>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
     function mapScratch(eng_name){
     	var str = eng_name;
     	
