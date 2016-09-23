@@ -1,7 +1,5 @@
 package kr.spring.book.controller;
 
-import java.util.List;
-
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
@@ -49,13 +47,35 @@ public class BookDetailController {
 			bookCommand.setName(member.getName());
 			bookCommand.setPhone(member.getPhone());
 			
+			bookCommand.setCode(code);
+			
+			
+			//샵에 자리수(max)를 불러와서 로그인한 유저가 자리를 선택시 삭제하는 과정
+			int maxtable = bookService.shopTable(code);					
+			System.out.println("maxtable : " + maxtable);
+			System.out.println("계산값 : " + (maxtable - bookService.selectTime(bookCommand)));
 			if(log.isDebugEnabled()){
 				log.debug("bookCommand : " + bookCommand); 
-			}				
+			}		
+			int remainSeat1 = 0;
+			int remainSeat2 = 0;
+			//오전시간
+			if(maxtable - bookService.selectTime(bookCommand) > 0){
+			remainSeat1 = maxtable - bookService.selectTime(bookCommand);
+			System.out.println("remainSeat1 : " + remainSeat1);
+			}
+
+			//오후시간
+			if(maxtable - bookService.selectTime2(bookCommand) > 0){
+			remainSeat2 = maxtable - bookService.selectTime2(bookCommand);
+			System.out.println("remainSeat2 : " + remainSeat2);
+			}
 			
 			ModelAndView mav1 = new ModelAndView();
 			mav1.setViewName("bookDetail");
 			mav1.addObject("bookCommand",bookCommand);
+			mav1.addObject("remainSeat1", remainSeat1);
+			mav1.addObject("remainSeat2", remainSeat2);	
 			return mav1;
 					
 		}
@@ -66,17 +86,13 @@ public class BookDetailController {
 																 Model model,
 																 BindingResult result){
 
-			bookCommand.setCode(code);
-			
-			//샵에 자리수(max)를 불러와서 로그인한 유저가 자리를 선택시 삭제하는 과정
-			int maxtable = bookService.shopTable(code);					
-			System.out.println("maxtable : " + maxtable);
+			int maxtable = bookService.shopTable(code);		
 			
 			int remainSeat1 = 0;
 			int remainSeat2 = 0;
 			
 			System.out.println("계산값 : " + (maxtable - bookService.selectTime(bookCommand)));
-			
+						
 			//오전시간
 			if(maxtable - bookService.selectTime(bookCommand) > 0){
 			remainSeat1 = maxtable - bookService.selectTime(bookCommand);

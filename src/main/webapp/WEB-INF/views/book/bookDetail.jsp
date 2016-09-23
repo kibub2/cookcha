@@ -499,25 +499,16 @@
 									
 									<label>테이블</label>
 									<div class="form-group">
+									
 										<!-- Form drop down -->																		
+										<c:if test="${!empty remainSeat1 }">
 										<form:select class="form-control" path="seat" name="seat">	
-										<script type="text/javascript">
-											$(function(){
-												
-												$("select[name=seat]").attr("disable",true);
-											}) 										
-										</script>
-											<option value="1">1</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-											<option value="6">6</option>
-											<option value="7">7</option>
-											<option value="8">8</option>
-											<option value="9">9</option>
-											<option value="10">10</option>					
+											<c:forEach var="i" begin="1" end="${remainSeat1 }">											
+											<option value="${i}">${i}</option>
+											
+											</c:forEach>					
 										</form:select>										
+										</c:if>
 									</div>
 
 									<label>메시지</label>
