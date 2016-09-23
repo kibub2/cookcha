@@ -2,9 +2,12 @@
 <<<<<<< HEAD
 =======
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+
 <!-- 맛집 지도 시작(철현) -->
 >>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
 <!-- 참고 사이트 : http://bootsnipp.com/ -->
+
 <div class="container">
 	<div id="mapSearch-div">
 		<!-- Search Shop Start -->
@@ -176,6 +179,7 @@
 
 <!-- 맛집 사용자 추천폼 시작(기법) -->
 
+<<<<<<< HEAD:src/main/webapp/WEB-INF/views/member/searchShop.jsp
 <div class="inner-page padd">
 	<div class="shopping">
 		<div class="container">
@@ -236,3 +240,6 @@
 </div>
 <!-- 맛집 사용자 추천폼 끝(기법) -->
 >>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
+=======
+<!-- 맛집 사용자 추천폼 끝(기법) -->
+>>>>>>> 68a0655a52e0e14b290073da03eaef5cd97a4ea0:src/main/webapp/WEB-INF/views/recommend/searchShop.jsp

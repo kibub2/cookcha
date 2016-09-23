@@ -5,7 +5,8 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
-    <definition name="searchShop" extends="index">
+    <definition name="searchShop" extends="index" template="/WEB-INF/views/template/layout2.jsp">
     	<put-attribute name="body"   value="/WEB-INF/views/member/searchShop.jsp"/>
     </definition>
+    
 </tiles-definitions>
