@@ -1,20 +1,27 @@
 package kr.spring.shop.domain;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public class ShopCommand {
 	private int code;
 	private String name;
 	private String phone;
 	private String address;
 	private String sub_address;
-	private int shop_rating;
+	private double shop_rating;
+	private MultipartFile upload1;
 	private String main_picture;
+	private MultipartFile upload2;
 	private String back_picture;
 	private String introduction;
 	private int rater;
 	private int classify;
 	private int maxtable;
 	private int able_book;
-	private int albe_coupon;
+	private int able_coupon;
+	
+	
+	
 	public int getCode() {
 		return code;
 	}
@@ -45,10 +52,10 @@ public class ShopCommand {
 	public void setSub_address(String sub_address) {
 		this.sub_address = sub_address;
 	}
-	public int getShop_rating() {
+	public double getShop_rating() {
 		return shop_rating;
 	}
-	public void setShop_rating(int shop_rating) {
+	public void setShop_rating(double shop_rating) {
 		this.shop_rating = shop_rating;
 	}
 	public String getMain_picture() {
@@ -66,8 +73,8 @@ public class ShopCommand {
 	public String getIntroduction() {
 		return introduction;
 	}
-	public void setIntroduction(String introduce) {
-		this.introduction = introduce;
+	public void setIntroduction(String introduction) {
+		this.introduction = introduction;
 	}
 	public int getRater() {
 		return rater;
@@ -93,19 +100,23 @@ public class ShopCommand {
 	public void setAble_book(int able_book) {
 		this.able_book = able_book;
 	}
-	public int getAlbe_coupon() {
-		return albe_coupon;
+	public int getAble_coupon() {
+		return able_coupon;
 	}
-	public void setAlbe_coupon(int albe_coupon) {
-		this.albe_coupon = albe_coupon;
+	public void setAble_coupon(int able_coupon) {
+		this.able_coupon = able_coupon;
 	}
-	@Override
-	public String toString() {
-		return "ShopCommand [code=" + code + ", name=" + name + ", phone=" + phone + ", address=" + address
-				+ ", sub_address=" + sub_address + ", shop_rating=" + shop_rating + ", main_picture=" + main_picture
-				+ ", back_picture=" + back_picture + ", introduction=" + introduction + ", rater=" + rater + ", classify="
-				+ classify + ", maxtable=" + maxtable + ", able_book=" + able_book + ", albe_coupon=" + albe_coupon
-				+ "]";
+	public MultipartFile getUpload1() {
+		return upload1;
+	}
+	public void setUpload1(MultipartFile upload1) {
+		this.upload1 = upload1;
+	}
+	public MultipartFile getUpload2() {
+		return upload2;
+	}
+	public void setUpload2(MultipartFile upload2) {
+		this.upload2 = upload2;
 	}
 	
 }

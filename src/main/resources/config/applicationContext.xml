@@ -49,16 +49,20 @@
     <!-- mybatis 설정 <mybatis 생성>-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
     	<property name="dataSource" ref="dataSource"/>
-
-    	<property name="typeAliasesPackage" value="kr.spring.member.domain,
-    											   kr.spring.shop.domain,
+    	<property name="typeAliasesPackage" value="kr.spring.board.domain,
+    											   kr.spring.member.domain,
+    											   kr.spring.shop.domain
+    											   kr.spring.rate.domain
     											   kr.spring.book.domain"/>
     </bean>
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-    	<property name="basePackage" value="kr.spring.member.dao,
-    										kr.spring.shop.dao,
+    	<property name="basePackage" value="kr.spring.board.dao,
+    										kr.spring.member.dao,
+    										kr.spring.shop.dao
+    										kr.spring.rate.dao
     										kr.spring.book.dao"/>
-    	
+
+
     </bean>
     
 </beans>

@@ -2,10 +2,11 @@
  * 
  */
 
-$(window).ready(function(){
+
+$(document).ready(function(){
 	var width, height;
 	width = $("#findShop").width();
-	height = 500;
+	height = $("#findShop").height();
 	//height = $("#findShop").height();
 	
 	var coordinateX = 0, coordinateY = 0, mapScale = 1;
@@ -13,17 +14,42 @@ $(window).ready(function(){
     var proj, path;
     
     var svg = d3.select('#findShop').append("svg")
+
+    								.attr("id", "map_svg")
+
       								.attr("width", width)
       								.attr("height", height);
     
     svg.append("rect")
-    	.attr("id", "map_svg")
+
+
     	.attr("width", width)
     	.attr("height", height)
     	.on("click", mapScratch);
     
     mapScratch();
     
+
+    $(window).resize(function(){
+    	width = $("#findShop").width();
+    	svg.attr("width", width);
+    	svg.select('rect')
+    		.attr("width", width);
+    	//mapScratch();
+    });
+    
+    $(".likeButton").on("click", function(){
+    	var img = this.getElementsByTagName("img")[0];
+    	if(this.value == 0){
+    		img.src = "/final-kibeob2/resources/img/icon/heart.png";
+    		this.value = 1;
+    	}else{
+    		img.src = "/final-kibeob2//resources/img/icon/heart-empty.png";
+    		this.value = 0;
+    	}
+    });
+    
+
     function mapScratch(eng_name){
     	var str = eng_name;
     	
@@ -44,7 +70,7 @@ $(window).ready(function(){
     	
     	path = d3.geo.path().projection(proj);
     	
-	    d3.json("../resources/js/Korea.json", function(error, kor) {
+	    d3.json("/final-kibeob2/resources/mapdata/"+ str +".json", function(error, kor) {
     		if (error) return console.error(error);
     		
     		g=svg.append('g')

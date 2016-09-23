@@ -12,6 +12,10 @@ public class PagingUtil {
 	 * pageCount : 한 화면에 보여줄 페이지 수
 	 * pageUrl : 호출 페이지 url
 	 * addKey : 부가적인 key 없을 때는 null 처리 (&num=23형식으로 전달할 것)
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/test-mahout
 	 * */
 	public PagingUtil(int currentPage, int totalCount, int rowCount,
 			int pageCount, String pageUrl) {
@@ -27,10 +31,11 @@ public class PagingUtil {
 	}
 	public PagingUtil(String keyfield, String keyword, int currentPage, int totalCount, int rowCount,
 			int pageCount,String pageUrl,String addKey) {
-		
+
 		if(addKey == null) addKey = ""; //부가키가 null 일때 ""처리
 		
 		// 전체 페이지 수
+
 		int totalPage = (int) Math.ceil((double) totalCount / rowCount);
 		if (totalPage == 0) {
 			totalPage = 1;

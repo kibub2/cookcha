@@ -18,21 +18,15 @@ public class ShopServiceImpl implements ShopService{
 	private ShopMapper shopMapper;
 	
 	@Override
-	public void insert(ShopCommand shopCommand) {
-		shopMapper.insert(shopCommand);
-		
+	public List<ShopCommand> shopList(Map<String, Object> map) {
+		// TODO Auto-generated method stub
+		return shopMapper.shopList(map);
 	}
 
 	@Override
 	public ShopCommand select(int code) {
 		
 		return shopMapper.select(code);
-	}
-
-	@Override
-	public List<ShopCommand> list(Map<String, Object> map) {
-		
-		return shopMapper.list(map);
 	}
 
 	@Override
@@ -70,5 +64,33 @@ public class ShopServiceImpl implements ShopService{
 		// TODO Auto-generated method stub
 		return shopMapper.getRowCount(map);
 	}
+	
+	@Override
+	public int getTotalCount() {
+		// TODO Auto-generated method stub
+		return shopMapper.getTotalCount();
+	}
+
+	@Override
+	public void register(ShopCommand shop) {
+		
+		shopMapper.register(shop);
+	}
+
+	@Override
+	public int lastShopCode() {
+		// TODO Auto-generated method stub
+		return shopMapper.lastShopCode();
+	}
+
+	@Override
+	public String checkShop(String name) {
+		// TODO Auto-generated method stub
+		return shopMapper.checkShop(name);
+	}
+
+	
+
+	
 
 }
