@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="tiles" uri="http://tiles.apache.org/tags-tiles" %>
 <!DOCTYPE html>
 <html>
@@ -23,6 +24,7 @@
 <script src="${pageContext.request.contextPath}/resources/js/respond.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/html5shiv.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/addRating.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/home.js"></script>
 <!-- 지도 구현에 필요한 js -->
 <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -34,8 +36,7 @@
 <tiles:insertAttribute name="modal"/></div>
 <div class="wrapper">
 	<div class="header"><tiles:insertAttribute name="header"/></div>
-	<div class="tp-banner-container"><tiles:insertAttribute name="banner"/></div>
-	<div class="main-content"><tiles:insertAttribute name="body"/></div>	
+	<tiles:insertAttribute name="body"/>	
 	
 	<!-- Footer Start -->
 	

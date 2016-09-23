@@ -8,10 +8,10 @@
 				<div class="logo">
 					<img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/logo.png" alt="" />
 					<!-- Heading -->
-					<h1>CakeFactory</h1>
+					<h1>Cookcha</h1>
 				</div>
 				<!-- Paragraph -->
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</p>
+				<p>안녕하세요 쿡챠입니다.</p>
 				<hr />
 				<!-- Heading -->
 				<h6>On-line Payment Clients</h6>
@@ -92,6 +92,6 @@
 	<!-- Copyright -->
 	<div class="footer-copyright">
 		<!-- Paragraph -->
-		<p>&copy; Copyright 2014 <a href="#">Company Name</a></p>
+		<p>&copy; Copyright 1026<a href="#">Cookcha</a></p>
 	</div>
 </div>
