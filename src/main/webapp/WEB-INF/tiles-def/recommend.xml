@@ -6,7 +6,7 @@
 
 <tiles-definitions>
     <definition name="searchShop" extends="index" template="/WEB-INF/views/template/layout2.jsp">
-    	<put-attribute name="body"   value="/WEB-INF/views/rate/searchShop.jsp"/>
+    	<put-attribute name="body"   value="/WEB-INF/views/recommend/searchShop.jsp"/>
     </definition>
     
 </tiles-definitions>
