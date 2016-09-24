@@ -2170,8 +2170,7 @@ div.ppt { display:none !important; }
 	margin: 0 auto;
 }
 
-<<<<<<< HEAD
-=======
+
 
 /* ����ó�� (...) */
 .hideOverflow{
@@ -2260,7 +2259,7 @@ form .stars span {
 	visibility: hidden;
 }
 
->>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
+
 /* 맛집찾기 part */
 .container-fluid{
 	margin-top: 20px;
@@ -2297,7 +2296,7 @@ form .stars span {
     fill: orange;
 }
 
-<<<<<<< HEAD
+
 /* #shop-nav{
     list-style: none;
     margin: 0px;
@@ -2324,10 +2323,10 @@ form .stars span {
 } */
 
 .shopList {
-=======
+
 .shopList {
 	padding: 5px;
->>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
+
 	height: 280px;
 }
 
@@ -2335,25 +2334,21 @@ form .stars span {
 	height: 100%; 
 	background-image: url("../img/menu/menu1.jpg");
 	background-size: 100% 100%;
-<<<<<<< HEAD
-	/* background-color: yellow; */
-=======
->>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
+
 }
 
 .shop-introduction {
 	height: 100%;
-<<<<<<< HEAD
+
 	/* background-color: red; */
-=======
->>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
+
 }
 
 .panel-default{
 	border: none;
 }
 
-<<<<<<< HEAD
+
 .panel-default h4{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
@@ -2363,7 +2358,7 @@ form .stars span {
 .panel-default>.panel-heading {
 	border-radius: 10px;
 	border: 1px solid;
-=======
+
 .panel-default>.panel-heading {
 	border-radius: 10px;
 	border: 1px solid;
@@ -2374,7 +2369,7 @@ form .stars span {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 	font-weight: bold;
->>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
+
 }
 
 .shopList hr {
@@ -2386,12 +2381,12 @@ form .stars span {
 	margin-right: 5px;
 }
 
-<<<<<<< HEAD
+
 #collapseOneOfB {
 	float: right;
 }
 
-=======
+
 /* #collapseOneOfB {
 	float: right;
 } */
@@ -2408,7 +2403,7 @@ form .stars span {
 	font-weight: bold;
 } */
 
->>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
+
 .panel-title img{
 	margin-right: 10px;
 }
