@@ -28,11 +28,7 @@
 			<!-- 로그인 버튼 시작 ▼ -->
 			<c:if test="${empty userId}">
 			<div class="btn-login-md">
-				<a class="login-link" href="${pageContext.request.contextPath}/member/login.do">
-					<!-- Image -->
-					<img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" />
-
-				<!-- Image -->
+				
 				<a href="#"><img class="img-responsive loginIcon" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" /></a>
 				<a class="login-link" href="${pageContext.request.contextPath}/member/login.do">
 
@@ -143,7 +139,6 @@
 <div class="row">
 	<div class="col-md-4 col-sm-5">
 		<!-- Link -->
-		<a href="${pageContext.request.contextPath}/index.html">
 		<a href="${pageContext.request.contextPath}/index.do">
 			<!-- Logo area -->
 			<div class="logo">
@@ -173,7 +168,6 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li><a href="${pageContext.request.contextPath}/index.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Home</a></li>
-						<li><a href="index.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Home</a></li>
 						<li class="dropdown hidden-xs">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav2.jpg" class="img-responsive" alt="" /> Menu <b class="caret"></b></a>
 							<ul class="dropdown-menu dropdown-md">
@@ -231,10 +225,6 @@
 								<li><a href="${pageContext.request.contextPath}/menu.html">Special Menu</a></li>
 							</ul>
 						</li>
-						
-						<li><a href="${pageContext.request.contextPath}/member/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" />맛집찾기</a></li>
-
-						</li>		
 						<li><a href="${pageContext.request.contextPath}/member/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" />맛집찾기</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" /> Shop <b class="caret"></b></a>
