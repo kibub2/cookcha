@@ -7,12 +7,18 @@
 <!-- 맛집 지도 시작(철현) -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 =======
 >>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
+=======
+=======
+
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8
 <!-- 참고 사이트 : http://bootsnipp.com/ -->
 
 <div class="container">
@@ -57,9 +63,12 @@
 <<<<<<< HEAD
 
 >>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
+<<<<<<< HEAD
 =======
 >>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
+=======
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8
 							</div>
 						</div>
 					</div>
@@ -79,10 +88,15 @@
 							<div class="col-sm-8 col-md-8 shop-introduction"></div>>
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 >>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 =======
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
+=======
+
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8
 							<div class="col-sm-8 col-md-8 shop-introduction">
 								<p> (가게 이름)
 								<button type="button" id="collapseTwoOfB" class="btn btn-default btn-xs likeButton">
@@ -113,9 +127,13 @@
 							<div class="col-sm-8 col-md-8 shop-introduction"></div>
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 =======
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
+=======
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8
 							<div class="col-sm-8 col-md-8 shop-introduction">
 								<p> (가게 이름)
 								<button type="button" id="#collapseThreeOfB" class="btn btn-default btn-xs likeButton">
@@ -129,12 +147,18 @@
 							</div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 =======
 >>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
+=======
+=======
+
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8
 						</div>
 					</div>
                 </div>        
@@ -153,9 +177,13 @@
 							<div class="col-sm-8 col-md-8 shop-introduction"></div>
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 =======
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
+=======
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8
 							<div class="col-sm-8 col-md-8 shop-introduction">
 								<p> (가게 이름)
 								<button type="button" id="collapseFourOfB" class="btn btn-default btn-xs likeButton">
@@ -169,12 +197,18 @@
 							</div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 =======
 >>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
+=======
+=======
+
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8
 						</div>
 					</div>
                 </div>
@@ -193,9 +227,13 @@
 							<div class="col-sm-8 col-md-8 shop-introduction"></div>
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 =======
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
+=======
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8
 							<div class="col-sm-8 col-md-8 shop-introduction">
 								<p> (가게 이름)
 								<button type="button" id="collapseFiveOfB" class="btn btn-default btn-xs likeButton">
@@ -209,12 +247,18 @@
 							</div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 =======
 >>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
+=======
+=======
+
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8
 						</div>
 					</div>
                 </div>
@@ -228,6 +272,7 @@
 <!-- 맛집 지도 끝(철현) -->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <!-- 맛집 사용자 추천폼 시작(기법) -->
 <%-- <div class="inner-page padd">
@@ -238,6 +283,11 @@
 <<<<<<< HEAD:src/main/webapp/WEB-INF/views/member/searchShop.jsp
 <div class="inner-page padd">
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
+=======
+
+<!-- 맛집 사용자 추천폼 시작(기법) -->
+<%-- <div class="inner-page padd">
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8
 	<div class="shopping">
 		<div class="container">
 			<div class="row">
@@ -246,10 +296,14 @@
 						<div class="shopping-item">
 							<!-- Image -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 							<a href="#"><img class="img-responsive" src="${pageContext.request.contextPath}/upload/${shop.code }-1.jpg" alt="" /></a>
 =======
 							<a href="#"><img class="img-responsive" src="upload/${shop.code }-1.jpg" alt="" /></a>
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
+=======
+							<a href="#"><img class="img-responsive" src="${pageContext.request.contextPath}/upload/${shop.code }-1.jpg" alt="" /></a>
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8
 							<!-- Shopping item name / Heading -->
 							<h4 class="pull-left hideOverflow"><a href="#" >${shop.name }</a></h4>
 							<span class="item-price pull-right">
@@ -280,6 +334,7 @@
 									<input type="radio" name="star" class="star-5" id="${shop.code }-star-5">
 									<label class="star-5" id="${shop.code }-star-5">5</label>
 <<<<<<< HEAD
+<<<<<<< HEAD
 									<c:set var="shopCode" value="${shop.code }"></c:set>
 									<c:forEach var="rate" items="${ratingList }">
 									<c:set var="rateCode" value="${rate.shop_code }"></c:set>
@@ -288,6 +343,11 @@
 									<c:forEach var="rate" items="${ratingList }">
 									<%-- <c:set var="rateCode" value="${rate.shop_code }"></c:set> --%>
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
+=======
+									<c:set var="shopCode" value="${shop.code }"></c:set>
+									<c:forEach var="rate" items="${ratingList }">
+									<c:set var="rateCode" value="${rate.shop_code }"></c:set>
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8
 									<c:if test="${shop.code == rate.shop_code }">
 										<span style="width:${rate.private_rate*20}%" class="ratedShop"></span>
 									</c:if>
@@ -305,10 +365,14 @@
 		</div>
 	</div>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8
 </div> --%>
 <!-- 맛집 사용자 추천폼 끝(기법) -->
 =======
 >>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
+<<<<<<< HEAD
 =======
 </div>
 <!-- 맛집 사용자 추천폼 끝(기법) -->
@@ -317,3 +381,5 @@
 <!-- 맛집 사용자 추천폼 끝(기법) -->
 >>>>>>> 68a0655a52e0e14b290073da03eaef5cd97a4ea0:src/main/webapp/WEB-INF/views/recommend/searchShop.jsp
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
+=======
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8

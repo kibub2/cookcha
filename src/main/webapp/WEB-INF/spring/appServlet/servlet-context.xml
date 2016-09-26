@@ -43,6 +43,7 @@
 	   		</beans:list>
 =======
 <<<<<<< HEAD
+<<<<<<< HEAD
 	    		<beans:value>/WEB-INF/tiles-def/member.xml</beans:value>
 	   		</beans:list>
 
@@ -54,6 +55,12 @@
 
 >>>>>>> 68a0655a52e0e14b290073da03eaef5cd97a4ea0
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
+=======
+	    		<beans:value>/WEB-INF/tiles-def/member.xml</beans:value>
+	   		</beans:list>
+
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
+>>>>>>> 274fea9c6a69d11812968dbc82ec522308ec00a8
 		</beans:property>
 	</beans:bean>
 	<!-- tiles 뷰 설정 (tiles가 view를 생성하기 때문에 -> tiles만의 view resolver를 사용해야한다.) -->
