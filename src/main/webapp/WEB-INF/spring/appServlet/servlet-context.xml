@@ -39,6 +39,7 @@
 				<beans:value>/WEB-INF/tiles-def/rate.xml</beans:value>
 				<beans:value>/WEB-INF/tiles-def/board.xml</beans:value>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			   	<beans:value>/WEB-INF/tiles-def/member.xml</beans:value>
 	   		</beans:list>
 =======
@@ -57,6 +58,8 @@
 >>>>>>> parent of bec10e2... <<< HEAD,  >>>> asdfwer1234 다지움
 =======
 	    		<beans:value>/WEB-INF/tiles-def/member.xml</beans:value>
+=======
+>>>>>>> origin/test-mahout
 	   		</beans:list>
 
 >>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865

@@ -5,7 +5,11 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
+<<<<<<< HEAD
     <definition name="map-searchShop" extends="index" template="/WEB-INF/views/template/layout2.jsp">
+=======
+    <definition name="searchShop" extends="index" template="/WEB-INF/views/template/layout2.jsp">
+>>>>>>> origin/test-mahout
     	<put-attribute name="body"   value="/WEB-INF/views/recommend/searchShop.jsp"/>
     </definition>
     

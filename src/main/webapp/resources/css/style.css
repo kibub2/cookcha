@@ -2171,7 +2171,10 @@ div.ppt { display:none !important; }
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/test-mahout
 
 /* ����ó�� (...) */
 .hideOverflow{
@@ -2260,7 +2263,10 @@ form .stars span {
 	visibility: hidden;
 }
 
+<<<<<<< HEAD
 >>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
+=======
+>>>>>>> origin/test-mahout
 /* 맛집찾기 part */
 .container-fluid{
 	margin-top: 20px;
@@ -2324,10 +2330,14 @@ form .stars span {
 } */
 
 .shopList {
+<<<<<<< HEAD
 =======
 .shopList {
 	padding: 5px;
 >>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
+=======
+
+>>>>>>> origin/test-mahout
 	height: 280px;
 }
 
@@ -2336,9 +2346,15 @@ form .stars span {
 	background-image: url("../img/menu/menu1.jpg");
 	background-size: 100% 100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	/* background-color: yellow; */
 =======
 >>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
+=======
+
+	/* background-color: yellow; */
+
+>>>>>>> origin/test-mahout
 }
 
 .shop-introduction {
@@ -2354,6 +2370,7 @@ form .stars span {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .panel-default h4{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
@@ -2364,6 +2381,9 @@ form .stars span {
 	border-radius: 10px;
 	border: 1px solid;
 =======
+=======
+
+>>>>>>> origin/test-mahout
 .panel-default>.panel-heading {
 	border-radius: 10px;
 	border: 1px solid;
@@ -2387,11 +2407,15 @@ form .stars span {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #collapseOneOfB {
 	float: right;
 }
 
 =======
+=======
+
+>>>>>>> origin/test-mahout
 /* #collapseOneOfB {
 	float: right;
 } */
@@ -2408,7 +2432,10 @@ form .stars span {
 	font-weight: bold;
 } */
 
+<<<<<<< HEAD
 >>>>>>> 2f64b0acf6cbaa2e848ea8aaaaa3e7b0bbab6ce2
+=======
+>>>>>>> origin/test-mahout
 .panel-title img{
 	margin-right: 10px;
 }
