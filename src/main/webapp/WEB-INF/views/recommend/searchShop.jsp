@@ -3,15 +3,13 @@
 
 
 <!-- 맛집 지도 시작(철현) -->
-
 <!-- 참고 사이트 : http://bootsnipp.com/ -->
-
 <div class="container">
 	<div id="mapSearch-div">
 		<!-- Search Shop Start -->
 		<div id="findShop" class="col-sm-5 col-md-5 visible-md visible-lg"></div>
 		<!-- Accordion ShopList Start-->
-		<div id="findShop-result" class="col-sm-7 col-md-7">
+		<div id="findShop-result" class="col-sm-7 col-md-7 visible-md visible-lg">
 			<div class="panel-group" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -139,7 +137,6 @@
 								<hr>
 								<p> 음식점 소개
 							</div>
-
 						</div>
 					</div>
                 </div>
@@ -148,3 +145,22 @@
 	</div>
 </div>
 <!-- 맛집 지도 끝(철현) -->
+<div class="container" style="background-color: navy;">
+	<table class="popular-shop">
+		<tr>
+			<td><div style="background-image:url(../resources/img/menu/menu1.jpg); height: 400px;"><div style="width: 100%; height: 200px; background-color:yellow; position: relative; top: 200px;"></div></div></td>
+			<td><div style="background-image:url(../resources/img/menu/menu2.jpg); height: 400px;"><div style="width: 100%; height: 200px; background-color:yellow; position: relative; top: 200px;"></div></div></td>
+			<td><div style="background-image:url(../resources/img/menu/menu3.jpg); height: 400px;"><div style="width: 100%; height: 200px; background-color:yellow; position: relative; top: 200px;"></div></div></td>
+			<td><div style="background-image:url(../resources/img/menu/menu4.jpg); height: 400px;"><div style="width: 100%; height: 200px; background-color:yellow; position: relative; top: 200px;"></div></div></td>
+		</tr>
+		<!-- <tr>
+			<td><div style="background-image:url(../resources/img/menu/menu1.jpg); height: 400px;"></div></td>
+			<td><div style="background-image:url(../resources/img/menu/menu2.jpg); height: 400px;"></div></td>
+			<td><div style="background-image:url(../resources/img/menu/menu3.jpg); height: 400px;"></div></td>
+			<td><div style="background-image:url(../resources/img/menu/menu4.jpg); height: 400px;"></div></td>
+		</tr> -->
+	</table>
+</div>
+
+
+

@@ -225,7 +225,7 @@
 								<li><a href="${pageContext.request.contextPath}/menu.html">Special Menu</a></li>
 							</ul>
 						</li>
-						<li><a href="${pageContext.request.contextPath}/member/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" />맛집찾기</a></li>
+						<li><a href="${pageContext.request.contextPath}/recommend/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" />맛집찾기</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" /> Shop <b class="caret"></b></a>
 							<ul class="dropdown-menu">

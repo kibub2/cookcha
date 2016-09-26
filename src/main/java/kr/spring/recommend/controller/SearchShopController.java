@@ -30,10 +30,10 @@ public class SearchShopController {
 	private RecommendService recommendService;
 	
 	private DataModel model;
-	@RequestMapping("/member/searchShop.do")
+	@RequestMapping("/recommend/searchShop.do")
 	public String form() throws TasteException{
 		/* 기법 추천 구현부분 시작 */
-		if(recommendService.mahoutList().get(0) != null){
+		/*if(recommendService.mahoutList().get(0) != null){
 			if(log.isDebugEnabled()){
 				log.debug("@@@@@@@@@@@@@@@@@@"+recommendService.mahoutList().get(0).toString());
 				log.debug("@@@@@@@@@@@@@@@@@@"+1);
@@ -49,7 +49,7 @@ public class SearchShopController {
 			if(log.isDebugEnabled()){
 				log.debug("리스트가 없습니다.");
 			}
-		}
+		}*/
 		
 		/* 기법 추천 구현부분  끝*/
 		
