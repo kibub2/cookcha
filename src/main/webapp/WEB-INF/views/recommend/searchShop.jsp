@@ -3,6 +3,10 @@
 
 
 <!-- 맛집 지도 시작(철현) -->
+<<<<<<< HEAD
+=======
+
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 <!-- 참고 사이트 : http://bootsnipp.com/ -->
 
 <div class="container">
@@ -24,6 +28,7 @@
                     	<div class="panel-body shopList">
 							<div class="col-sm-4 col-md-4 photoZone"></div>
 							<div class="col-sm-8 col-md-8 shop-introduction">
+<<<<<<< HEAD
 							<p> (가게 이름)
 							<button type="button" id="collapseOneOfB" class="btn btn-default btn-xs">
   								<span><img src="${pageContext.request.contextPath}/resources/img/icon/heart-empty.png" class="hertIcon"></span>좋아요
@@ -33,6 +38,18 @@
 							<p> (가게 평점) | (참여자수)
 							<hr>
 							<p> 음식점 소개
+=======
+								<p> (가게 이름)
+								<button type="button" id="collapseOneOfB" class="btn btn-default btn-xs likeButton" value="0">
+	  								<span><img src="${pageContext.request.contextPath}/resources/img/icon/heart-empty.png" class="hertIcon"></span>좋아요
+	  							</button><hr>
+								<p> (음식 종류) | (주소) (시구동)
+								<hr>
+								<p> (가게 평점) | (참여자수)
+								<hr>
+								<p> 음식점 소개
+
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 							</div>
 						</div>
 					</div>
@@ -48,7 +65,11 @@
                     <div id="collapseTwo" class="panel-collapse collapse">
                     	<div class="panel-body shopList">
 							<div class="col-sm-4 col-md-4 photoZone"></div>
+<<<<<<< HEAD
 							<div class="col-sm-8 col-md-8 shop-introduction"></div>>
+=======
+
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 							<div class="col-sm-8 col-md-8 shop-introduction">
 								<p> (가게 이름)
 								<button type="button" id="collapseTwoOfB" class="btn btn-default btn-xs likeButton">
@@ -74,7 +95,10 @@
                     <div id="collapseThree" class="panel-collapse collapse">
                     	<div class="panel-body shopList">
 							<div class="col-sm-4 col-md-4 photoZone"></div>
+<<<<<<< HEAD
 							<div class="col-sm-8 col-md-8 shop-introduction"></div>
+=======
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 							<div class="col-sm-8 col-md-8 shop-introduction">
 								<p> (가게 이름)
 								<button type="button" id="#collapseThreeOfB" class="btn btn-default btn-xs likeButton">
@@ -86,6 +110,10 @@
 								<hr>
 								<p> 음식점 소개
 							</div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 						</div>
 					</div>
                 </div>        
@@ -100,7 +128,10 @@
                     <div id="collapseFour" class="panel-collapse collapse">
                     	<div class="panel-body shopList">
 							<div class="col-sm-4 col-md-4 photoZone"></div>
+<<<<<<< HEAD
 							<div class="col-sm-8 col-md-8 shop-introduction"></div>
+=======
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 							<div class="col-sm-8 col-md-8 shop-introduction">
 								<p> (가게 이름)
 								<button type="button" id="collapseFourOfB" class="btn btn-default btn-xs likeButton">
@@ -112,6 +143,10 @@
 								<hr>
 								<p> 음식점 소개
 							</div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 						</div>
 					</div>
                 </div>
@@ -126,7 +161,10 @@
                     <div id="collapseFive" class="panel-collapse collapse">
                     	<div class="panel-body shopList">
 							<div class="col-sm-4 col-md-4 photoZone"></div>
+<<<<<<< HEAD
 							<div class="col-sm-8 col-md-8 shop-introduction"></div>
+=======
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 							<div class="col-sm-8 col-md-8 shop-introduction">
 								<p> (가게 이름)
 								<button type="button" id="collapseFiveOfB" class="btn btn-default btn-xs likeButton">
@@ -138,6 +176,10 @@
 								<hr>
 								<p> 음식점 소개
 							</div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
 						</div>
 					</div>
                 </div>
@@ -146,6 +188,7 @@
 	</div>
 </div>
 <!-- 맛집 지도 끝(철현) -->
+<<<<<<< HEAD
 
 <!-- 맛집 사용자 추천폼 시작(기법) -->
 <%-- <div class="inner-page padd">
@@ -207,3 +250,5 @@
 	</div>
 </div> --%>
 <!-- 맛집 사용자 추천폼 끝(기법) -->
+=======
+>>>>>>> bec10e204abc36de1e66ee8c79147a2f81ade865
