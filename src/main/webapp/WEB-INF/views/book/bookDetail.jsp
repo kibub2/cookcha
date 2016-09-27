@@ -7,7 +7,7 @@
 <!DOCTYPE html>
 <html>
 <!-- Title here -->
-<title>상세정보 및 예약</title>
+<title>상세정보</title>
 <!-- Description, Keywords and Author -->
 <meta name="description" content="Your description">
 <meta name="keywords" content="Your,Keywords">
@@ -450,7 +450,7 @@
 						<!-- 가게 정보 -->
 
 						<!-- 예약 정보 -->
-						<div class="col-md-4">
+						<%-- <div class="col-md-4">
 							<!-- Booking form area -->
 							<div class="booking-form" >
 								<!-- Heading -->
@@ -483,6 +483,9 @@
 									<label>예약시간</label>
 									<div class="form-group">
 										<!-- Form drop down -->
+										<script type="text/javascript">
+											
+										</script>
 										<form:select class="form-control" path="book_time">
 											<option value="점심(12:00~15:00)">점심(12:00~15:00)</option>
 											<option value="저녁(18:00~21:00)">저녁(18:00~21:00)</option>
@@ -509,6 +512,15 @@
 											</c:forEach>					
 										</form:select>										
 										</c:if>
+										<input type="hidden" value="${remainSeat2 }">
+										<c:if test="${!empty remainSeat2 }">
+										<form:select class="form-control" path="seat" name="seat">	
+											<c:forEach var="i" begin="1" end="${remainSeat2 }">											
+											<option value="${i}">${i}</option>
+											
+											</c:forEach>					
+										</form:select>										
+										</c:if>
 									</div>
 
 									<label>메시지</label>
@@ -522,7 +534,7 @@
 									<button class="btn btn-default btn-sm" type="reset">예약취소</button>
 								</form:form>
 							</div>
-						</div>
+						</div> --%>
 						<!-- 예약 정보 -->
 					</div>
 				</div>
