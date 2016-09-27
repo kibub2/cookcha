@@ -24,15 +24,19 @@
 <script src="${pageContext.request.contextPath}/resources/js/respond.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/html5shiv.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/addRating.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/home.js"></script>
+<!-- 지도 구현에 필요한 js -->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v0.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/mapSearch.js"></script>
 </head>
 <body>
 <div class="modal fade" id="shoppingcart1" tabindex="-1" role="dialog" aria-hidden="true">
 <tiles:insertAttribute name="modal"/></div>
 <div class="wrapper">
 	<div class="header"><tiles:insertAttribute name="header"/></div>
-	<div class="tp-banner-container"><tiles:insertAttribute name="banner"/></div>
-	<div class="main-content"><tiles:insertAttribute name="body"/></div>	
+	<tiles:insertAttribute name="body"/>	
 	
 	<!-- Footer Start -->
 	

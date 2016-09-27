@@ -28,9 +28,10 @@
 			<!-- 로그인 버튼 시작 ▼ -->
 			<c:if test="${empty userId}">
 			<div class="btn-login-md">
-				<!-- Image -->
-				<a href="#"><img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" /></a>
+				
+				<a href="#"><img class="img-responsive loginIcon" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" /></a>
 				<a class="login-link" href="${pageContext.request.contextPath}/member/login.do">
+
 					<!-- Heading -->
 					<h4>Cookcha Login</h4>
 					<span>로그인</span>
@@ -44,7 +45,7 @@
 			<c:if test="${!empty userId}">
 			<div class="btn-login-md">
 				<!-- Image -->
-				<a href="#"><img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" /></a>
+				<a href="#"><img class="img-responsive loginIcon" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" /></a>
 				<a class="login-link" href="${pageContext.request.contextPath}/member/logout.do">
 					<!-- Heading -->
 					<h4 style="color: #FF9436;">${userId}님 환영합니다.</h4>
@@ -90,7 +91,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Home</a></li>
+						<li><a href="${pageContext.request.contextPath}/index.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Home</a></li>
 						<li class="dropdown hidden-xs">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav2.jpg" class="img-responsive" alt="" /> Menu <b class="caret"></b></a>
 							<ul class="dropdown-menu dropdown-md">
@@ -106,7 +107,7 @@
 												<!-- Paragraph -->
 												<p>Sea nut perspicacity under omni piste natures mirror of there with consequent.</p>
 												<!-- Button -->
-												<a href="menu.html" class="btn btn-danger btn-xs">View Menu</a>
+												<a href="${pageContext.request.contextPath}/menu.html" class="btn btn-danger btn-xs">View Menu</a>
 											</div>
 										</div>
 										<div class="col-md-4 col-sm-6">
@@ -139,20 +140,21 @@
 								</li>
 							</ul>
 						</li>
+						
 						<li class="dropdown visible-xs">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="menu.html">Vegetarian</a></li>
-								<li><a href="menu.html">Non Vegetarian</a></li>
-								<li><a href="menu.html">Special Menu</a></li>
+								<li><a href="${pageContext.request.contextPath}/menu.html">Vegetarian</a></li>
+								<li><a href="${pageContext.request.contextPath}/menu.html">Non Vegetarian</a></li>
+								<li><a href="${pageContext.request.contextPath}/menu.html">Special Menu</a></li>
 							</ul>
 						</li>
-						<li><a href="gallery.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" /> Gallery</a></li>
+						<li><a href="${pageContext.request.contextPath}/member/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" />맛집찾기</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" /> Shop <b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="items.html">Shopping</a></li>
-								<li><a href="item-single.html">Order Now</a></li>
+								<li><a href="${pageContext.request.contextPath}/recommend.do">맞춤추천</a></li>
+								<li><a href="${pageContext.request.contextPath}/rate.do">추가평가</a></li>
 								<li><a href="checkout.html">Checkout</a></li>
 								<li><a href="reserve-seats.html">Reservation</a></li>
 								<li><a href="contact.html">Contact Us</a></li>
@@ -164,6 +166,7 @@
 								<li><a href="recipe.html">Recipes</a></li>
 							</ul>
 						</li>
+						<li><a href="aboutus.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav6.jpg" class="img-responsive" alt="" /> About</a></li>
 						<!-- 게시판, 공지사항 ▼ -->
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" />게시판/공지사항<b class="caret"></b></a>
