@@ -1,4 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<h3>비슷한 사용자 아이디 : ${similarUserID[0] } <br>
+비슷한 정도 : </h3>
 <div class="inner-page padd">
 	<div class="shopping">
 		<div class="container">
