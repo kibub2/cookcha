@@ -36,44 +36,6 @@
 					<span>로그인</span>
 					<div class="clearfix"></div>
 				</a>
-				<!-- 드롭다운 시작 -->
-				<!--
-				<ul class="login-dropdown" role="menu">
-					<li>
-						<div class="login-item">
-							<a href="#"><i class="fa fa-times"></i></a>
-							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav1.jpg" alt="" />
-							<span class="login-title"><a href="#">Exception Reins Evocative</a></span>
-							<span class="cart-price pull-right red">$200/-</span>
-							<div class="clearfix"></div>
-						</div>
-					</li>
-					<li>
-						<div class="login-item">
-							<a href="#"><i class="fa fa-times"></i></a>
-							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav2.jpg" alt="" />
-							<span class="login-title"><a href="#">Taut Mayoress Alias Appendicitis</a></span>
-							<span class="cart-price pull-right red">$190/-</span>
-							<div class="clearfix"></div>
-						</div>
-					</li>
-					<li>
-						<div class="login-item">
-							<a href="#"><i class="fa fa-times"></i></a>
-							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav3.jpg" alt="" />
-							<span class="login-title"><a href="#">Sinter et Molests Perfectionist</a></span>
-							<span class="cart-price pull-right red">$99/-</span>
-							<div class="clearfix"></div>
-						</div>
-					</li>
-					<li>
-						<div class="login-item">
-							<a class="btn btn-danger" data-toggle="modal" href="#shoppingcart1">Checkout</a>
-						</div>
-					</li>
-				</ul>
-				-->
-				<!-- 드롭다운 끝 -->
 				<div class="clearfix"></div>
 			</div>
 			</c:if>
@@ -89,44 +51,6 @@
 					<span>로그아웃</span>
 					<div class="clearfix"></div>
 				</a>
-				<!-- 드롭다운 시작 -->
-				<!--
-				<ul class="login-dropdown" role="menu">
-					<li>
-						<div class="login-item">
-							<a href="#"><i class="fa fa-times"></i></a>
-							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav1.jpg" alt="" />
-							<span class="login-title"><a href="#">Exception Reins Evocative</a></span>
-							<span class="cart-price pull-right red">$200/-</span>
-							<div class="clearfix"></div>
-						</div>
-					</li>
-					<li>
-						<div class="login-item">
-							<a href="#"><i class="fa fa-times"></i></a>
-							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav2.jpg" alt="" />
-							<span class="login-title"><a href="#">Taut Mayoress Alias Appendicitis</a></span>
-							<span class="cart-price pull-right red">$190/-</span>
-							<div class="clearfix"></div>
-						</div>
-					</li>
-					<li>
-						<div class="login-item">
-							<a href="#"><i class="fa fa-times"></i></a>
-							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav3.jpg" alt="" />
-							<span class="login-title"><a href="#">Sinter et Molests Perfectionist</a></span>
-							<span class="cart-price pull-right red">$99/-</span>
-							<div class="clearfix"></div>
-						</div>
-					</li>
-					<li>
-						<div class="login-item">
-							<a class="btn btn-danger" data-toggle="modal" href="#shoppingcart1">Checkout</a>
-						</div>
-					</li>
-				</ul>
-				-->
-				<!-- 드롭다운 끝 -->
 				<div class="clearfix"></div>
 			</div>
 			</c:if>

@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<div align="center" class="container-fluid" style="margin-top: 20px;padding-bottom: 50px;width: 900px;background-color: white;box-shadow: #D5D5D5 0 1px 5px;">
+<div align="center" class="container-fluid" style="margin-top: 20px;padding-bottom: 50px;width: 95%;background-color: white;box-shadow: #D5D5D5 0 1px 5px;">
 	<h2 style="margin-top: 50px;font-family: 나눔고딕;">${board.subject}</h2>
-	<div style="width: 700px; margin-top: 50px;">
+	<div style="width: 55.5%; margin-top: 50px;">
 		<table>
 			<tbody>
 				<tr>
@@ -31,9 +31,9 @@
 		<div align="left">
 			${board.content}
 		</div>
-		<div>
+		<div style="margin-top: 20px;">
 			<button type="button" class="btn btn-primary" onclick="location.href='${pageContext.request.contextPath}/board/boardUpdate.do'">수정</button>
-			<button type="button" class="btn btn-success" onclick="location.href='${pageContext.request.contextPath}/index.do'">홈으로</button>
+			<button type="button" class="btn btn-success" onclick="location.href='${pageContext.request.contextPath}/board/boardList.do'">목록으로</button>
 		</div>
 	</div>
 </div>

@@ -32,8 +32,8 @@ public class BoardListController {
 	
 	@RequestMapping(value="/board/boardList.do", method=RequestMethod.GET)
 	public ModelAndView form(@RequestParam(value="pageNum", defaultValue="1") int currentPage,
-					   @RequestParam(value="keyfield", defaultValue="") String keyfield,
-					   @RequestParam(value="keyword", defaultValue="") String keyword) {
+					   		 @RequestParam(value="keyfield", defaultValue="") String keyfield,
+					   		 @RequestParam(value="keyword", defaultValue="") String keyword) {
 		
 		
 		if(log.isDebugEnabled()) {
