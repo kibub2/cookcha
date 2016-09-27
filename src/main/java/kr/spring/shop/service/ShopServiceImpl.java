@@ -44,4 +44,10 @@ public class ShopServiceImpl implements ShopService {
 		// TODO Auto-generated method stub
 		return shopMapper.getTotalCount();
 	}
+
+	@Override
+	public ShopCommand selectShop(int code) {
+		// TODO Auto-generated method stub
+		return shopMapper.selectShop(code);
+	}
 }

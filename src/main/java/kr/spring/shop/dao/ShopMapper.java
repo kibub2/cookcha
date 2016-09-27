@@ -26,6 +26,8 @@ public interface ShopMapper {
 	@Select("SELECT COUNT(*) FROM shop")
 	public int getTotalCount();
 	
-	/*@Select("SELECT * FROM shop WHERE code=#{code}")
-	public ShopCommand selectShop(int code);*/
+	@Select("SELECT * FROM shop WHERE code=#{code}")
+	public ShopCommand selectShop(int code);
+	
+	
 }

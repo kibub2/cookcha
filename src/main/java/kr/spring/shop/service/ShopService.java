@@ -14,4 +14,5 @@ public interface ShopService {
 	public String checkShop(String name);
 	public List<ShopCommand> shopList(Map<String, Object> map);
 	public int getTotalCount();
+	public ShopCommand selectShop(int code);
 }
