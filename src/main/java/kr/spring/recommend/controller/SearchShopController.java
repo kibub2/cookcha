@@ -1,6 +1,8 @@
 package kr.spring.recommend.controller;
 
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -41,7 +43,7 @@ public class SearchShopController {
 	@RequestMapping("/member/searchShop.do")
 	public ModelAndView form(HttpSession session) throws TasteException{
 		/* 기법 추천 구현부분 시작 */
-		
+	
 		String userId=(String) session.getAttribute("userId");
 		int id_num=recommendService.getMem_id_num(userId);
 	
@@ -50,30 +52,6 @@ public class SearchShopController {
 		FastByIDMap<PreferenceArray> preferences = new FastByIDMap<PreferenceArray>();
 		
 		
-		/*prefA.setUserID(0, list.get(0).getMem_id_num());
-		prefA.setItemID(0, list.get(0).getShop_code());
-		prefA.setValue(0, list.get(0).getPrivate_rate());
-		
-		prefA.setUserID(1, 21L);
-		prefA.setItemID(1, 22L);
-		prefA.setValue(1, 23.0f);
-		
-		Preference pref=prefA.get(1);
-		System.out.println(pref.getItemID());*/
-		
-		/*for (MahoutRecommendCommand i : list){
-			
-			
-			prefA.setUserID(index, i.getMem_id_num());
-			prefA.setItemID(index, i.getShop_code());
-			prefA.setValue(index, i.getPrivate_rate());
-			
-			preferences.put(i.getMem_id_num(), prefA);
-			index++;
-		}
-		DataModel model=new GenericDataModel(preferences);
-		
-		System.out.println(model.getPreferencesFromUser(1L))*/;
 		
 		//아이디별로 정보 불러오기
 		//불러와서 리스트에 넣기
@@ -84,13 +62,13 @@ public class SearchShopController {
 			for(int i=0; i < maxMem_id_num; i++ ){
 				list=recommendService.mahoutList(i);
 				int privateCount=recommendService.privateCount(i);
-				System.out.println("i : "+i);
+				
 				if(privateCount > 0){
 					
 					PreferenceArray prefA = new GenericUserPreferenceArray(privateCount);
 					prefA.setUserID(0, i);
 					for(int j=0; j<privateCount; j++){
-						System.out.println("j : "+j);
+						
 						prefA.setItemID(j, list.get(j).getShop_code());
 						prefA.setValue(j, list.get(j).getPrivate_rate());
 					}
@@ -108,14 +86,23 @@ public class SearchShopController {
 		UserBasedRecommender recommander=new GenericUserBasedRecommender(model, neighborhood, similarity);
 		
 		//가장 유사한 아이디 5개 표출
-		long similarUserId[] = recommander.mostSimilarUserIDs(id_num, 5);
+		long[] kkk = recommander.mostSimilarUserIDs(1L, 3);
+		HashMap<String, Object> map=new HashMap<String, Object>();
+		if(kkk.length >2){
+			for(int i=0; i < kkk.length ; i++){
+				map.put(Integer.toString(i), kkk[i]);
+			}
+			map.put("result", "평가 정보가 충분하여 추천결과 도출");
+		}else{
+			map.put("result", "더많은 평가정보가 필요합니다.");
+		}
 		
-		
+		System.out.println("similarUserId : "+map.get("0"));
 		/* 기법 추천 구현부분  끝*/
 		
 		ModelAndView mav=new ModelAndView();
 		mav.setViewName("searchShop");
-		mav.addObject("similarUserId", similarUserId);
+		mav.addObject("map", map);
 		
 		return mav;
 	}
