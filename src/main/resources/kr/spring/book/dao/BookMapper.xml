@@ -10,7 +10,7 @@
 		FROM book 
 		WHERE book_time= '점심(12:00~15:00)' AND code=#{code} 
 		<if test="book_date != null">
-		AND book_date=#{book_date}	
+		AND book_date=#{book_date}
 		</if>
 	</select>
 

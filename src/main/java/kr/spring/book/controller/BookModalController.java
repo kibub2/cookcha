@@ -8,7 +8,6 @@ import javax.validation.Valid;
 
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +20,7 @@ import kr.spring.book.Service.BookService;
 import kr.spring.book.domain.BookCommand;
 import kr.spring.member.domain.MemberCommand;
 import kr.spring.member.service.MemberService;
+import kr.spring.shop.domain.ShopCommand;
 import kr.spring.shop.service.ShopService;
 
 @Controller
@@ -57,6 +57,9 @@ public class BookModalController {
 			bookCommand.setBook_date(book_date);
 			bookCommand.setBook_time(book_time);
 			
+			ShopCommand shop = new ShopCommand();
+			shop = shopService.select(code);
+			
 			
 			//샵에 자리수(max)를 불러와서 로그인한 유저가 자리를 선택시 삭제하는 과정
 			int maxtable = bookService.shopTable(code);					
@@ -84,6 +87,7 @@ public class BookModalController {
 			mav1.addObject("bookCommand",bookCommand);
 			mav1.addObject("remainSeat1", remainSeat1);
 			mav1.addObject("remainSeat2", remainSeat2);	
+			mav1.addObject("shop", shop);
 			return mav1;
 					
 		}
@@ -93,12 +97,13 @@ public class BookModalController {
 																 @RequestParam("code") int code,
 																 @RequestParam("book_time") String book_time,
 																  @RequestParam("book_date") Date book_date,
-															
-																 
-																
 																 BindingResult result){
 			
-			int maxtable = bookService.shopTable(code);		
+			int maxtable = bookService.shopTable(code);	
+			
+			bookCommand.setCode(code);
+			bookCommand.setBook_date(book_date);
+			bookCommand.setBook_time(book_time);
 			
 			int remainSeat1 = 0;
 			int remainSeat2 = 0;
@@ -128,6 +133,7 @@ public class BookModalController {
 			mav.setViewName("index");
 			mav.addObject("remainSeat1", remainSeat1);
 			mav.addObject("remainSeat2", remainSeat2);	
+			mav.addObject("book_time", book_time);
 			
 			//유효성 체크
 			if(result.hasErrors()){				

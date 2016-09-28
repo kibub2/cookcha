@@ -22,11 +22,9 @@
 				<!-- Shopping items content -->
 				<div class="shopping-content">
 					<div class="row">
-
 						<h3 align="center">Test Page</h3>
-						<form action="bookModal.do">
-							<c:forEach var="shop" items="${shop}">
-
+						<c:forEach var="shop" items="${shop}">
+							<form action="bookModal.do">
 								<tr>
 									<th><a
 										href="${pageContext.request.contextPath }/shop/bookModal.do?code=${shop.code}">${shop.name}</a></th>
@@ -88,11 +86,7 @@
 														</ul>
 														<div class="clearfix"></div>
 													</div>
-
-
-
 												</div>
-
 											</div>
 										</div>
 										<!-- 모달 끝 -->
@@ -102,13 +96,11 @@
 										<h4 class="pull-left" style="overflow: hidden;">
 											<a>${shop.name }</a>
 											<!-- modal 구동 버튼 (trigger) -->
-											<button type="button" class="btn btn-primary"
+											<button type="button" class="btn btn-primary" 
 												data-toggle="modal" data-target="#myModal"
 												data-code="${shop.code}" data-name="${shop.name}">예약</button>
 										</h4>
-
 										<!-- Modal -->
-
 										<div class="modal fade" id="myModal" tabindex="-1"
 											role="dialog" aria-labelledby="myModalLabel">
 											<div class="modal-dialog" role="document">
@@ -126,9 +118,9 @@
 													</div>
 
 													<input type="hidden" name="code" id="code"> <input
-														type="text" name="name" id="name">
+														type="text" name="name" id="name" readonly="true" class="form-control">
 													<div class="modal-body">
-														<label>예약날짜</label> <input type="date" name="book_date">
+														<label>예약날짜</label> <input type="date" name="book_date" class="form-control">
 													</div>
 													<div class="modal-body">
 														<label>예약시간</label>
@@ -141,9 +133,7 @@
 																id="book_time">
 																<option value="점심(12:00~15:00)">점심(12:00~15:00)</option>
 																<option value="저녁(18:00~21:00)">저녁(18:00~21:00)</option>
-
 															</select> <input type="submit" class="btn btn-default" value="다음">
-
 														</div>
 													</div>
 													<div class="modal-footer"></div>
@@ -151,15 +141,10 @@
 												</div>
 											</div>
 										</div>
-
-										<!-- 
-						<span class="item-price pull-right">$49</span>
-						 -->
 										<div class="clearfix">
 											<%-- <input type="button" value="예약"
 											onclick="location.href='${pageContext.request.contextPath }/views/book/bookModal.do' "> --%>
 										</div>
-
 										<!-- 예약 모달 끝 -->
 
 										<!-- Paragraph -->
@@ -174,8 +159,8 @@
 									</div>
 								</div>
 
-							</c:forEach>
-						</form>
+							</form>
+						</c:forEach>
 					</div>
 				</div>
 			</div>
