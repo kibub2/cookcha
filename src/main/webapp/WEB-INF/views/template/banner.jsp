@@ -15,7 +15,7 @@
 				data-easing="Power4.easeOut"
 				data-endspeed="500"
 				data-endeasing="Power4.easeIn"
-				style="z-index: 3">We Make Delicious...
+				style="z-index: 3">솔직한 평가들이 모여 만들어지는 쿡챠 
 			</div>
 			<!-- LAYER NR. 2.0 -->
 			<div class="tp-caption lfl medium_bg_darkblue br-green"
