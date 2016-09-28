@@ -1,6 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<!-- 배너 -->
+<div class="banner padd">
+	<div class="container">
+		<!-- Image -->
+		<img class="img-responsive" src="${pageContext.request.contextPath }/resources/img/crown-white.png" alt="">
+		<!-- Heading -->
+		<h2 class="white">맛집 지도</h2>
+		<ol class="breadcrumb">
+			<li><a href="index.html">Home</a></li>
+			<li class="active">searchShop</li>
+		</ol>
+		<div class="clearfix"></div>
+	</div>
+</div>
 
 <!-- 맛집 지도 시작(철현) -->
 

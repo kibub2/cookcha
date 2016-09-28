@@ -16,7 +16,9 @@ import org.apache.mahout.cf.taste.impl.common.FastByIDMap;
 import org.apache.mahout.cf.taste.impl.model.GenericDataModel;
 import org.apache.mahout.cf.taste.impl.model.GenericUserPreferenceArray;
 import org.apache.mahout.cf.taste.impl.neighborhood.ThresholdUserNeighborhood;
+import org.apache.mahout.cf.taste.impl.recommender.GenericItemBasedRecommender;
 import org.apache.mahout.cf.taste.impl.recommender.GenericUserBasedRecommender;
+import org.apache.mahout.cf.taste.impl.similarity.GenericItemSimilarity.ItemItemSimilarity;
 import org.apache.mahout.cf.taste.impl.similarity.PearsonCorrelationSimilarity;
 import org.apache.mahout.cf.taste.model.DataModel;
 import org.apache.mahout.cf.taste.model.Preference;
@@ -26,6 +28,7 @@ import org.apache.mahout.cf.taste.recommender.IDRescorer;
 import org.apache.mahout.cf.taste.recommender.ItemBasedRecommender;
 import org.apache.mahout.cf.taste.recommender.RecommendedItem;
 import org.apache.mahout.cf.taste.recommender.UserBasedRecommender;
+import org.apache.mahout.cf.taste.similarity.ItemSimilarity;
 import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -95,16 +98,19 @@ public class SearchShopController {
 		System.out.println(model.getPreferencesFromUser(1));
 		
 		//DataModel객체의 정보를 가지고 유사도, 관계도, 추천 매서드 생성
-		UserSimilarity similarity=new PearsonCorrelationSimilarity(model);
-		UserNeighborhood neighborhood=new ThresholdUserNeighborhood(0.1, similarity, model);
-		UserBasedRecommender userRecommander=new GenericUserBasedRecommender(model, neighborhood, similarity);
+		UserSimilarity userSimilarity=new PearsonCorrelationSimilarity(model);
+		UserNeighborhood neighborhood=new ThresholdUserNeighborhood(0.1, userSimilarity, model);
+		UserBasedRecommender userRecommander=new GenericUserBasedRecommender(model, neighborhood, userSimilarity);
+		
+		/*ItemSimilarity itemSimilarity = new 
+		ItemBasedRecommender itemRecommander=new GenericItemBasedRecommender(model, itemSimilarity);*/
 		
 		//가장 유사한 아이디 5개 표출
 		List<RecommendedItem> kkk = userRecommander.recommend(id_num, 4);
 		List<ShopCommand> shopList=new ArrayList<ShopCommand>();
 		HashMap<String, Object> map=new HashMap<String, Object>();
-		
-		if(kkk.size()>8){
+		System.out.println("kkk.size() : "+kkk.size());
+		if(kkk.size()>3){
 			for(int i=0;i<4;i++){
 				int shopCode=0;
 				
@@ -117,7 +123,7 @@ public class SearchShopController {
 				
 			}
 			map.put("result", "enough");
-		}else{
+		}else if(kkk.size()<4){
 			map.put("result", "notEnough");
 		}
 		
