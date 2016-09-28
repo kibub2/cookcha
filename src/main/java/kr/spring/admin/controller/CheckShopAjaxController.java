@@ -23,12 +23,12 @@ public class CheckShopAjaxController {
 	@RequestMapping("/admin/checkShop.do")
 	public @ResponseBody Map<String, String> process(@RequestParam("name")String name){
 		if(log.isDebugEnabled()){
-			log.debug("name : "+name);
+			log.debug("name : " + name);
 		}
 		
-		Map<String, String> map=new HashMap<String, String>();
+		Map<String, String> map = new HashMap<String, String>();
 		try{
-			String duplicatedName= shopService.checkShop(name);
+			String duplicatedName = shopService.checkShop(name);
 			//가게이름 중복 O
 			if(duplicatedName!=null){
 				map.put("result", "nameDuplicated");

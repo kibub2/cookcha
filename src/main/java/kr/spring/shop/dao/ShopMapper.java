@@ -20,7 +20,7 @@ public interface ShopMapper {
 	
 	@Select("SELECT name FROM shop WHERE name LIKE '%'||#{name}||'%'")
 	public String checkShop(String name);
-	
+
 	public List<ShopCommand> shopList(Map<String, Object> map);
 	
 	@Select("SELECT COUNT(*) FROM shop")

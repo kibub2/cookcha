@@ -33,6 +33,7 @@ public class ShopServiceImpl implements ShopService {
 		return shopMapper.checkShop(name);
 	}
 
+
 	@Override
 	public List<ShopCommand> shopList(Map<String, Object> map) {
 		// TODO Auto-generated method stub
@@ -45,9 +46,11 @@ public class ShopServiceImpl implements ShopService {
 		return shopMapper.getTotalCount();
 	}
 
+
 	@Override
 	public ShopCommand selectShop(int code) {
 		// TODO Auto-generated method stub
 		return shopMapper.selectShop(code);
 	}
+
 }

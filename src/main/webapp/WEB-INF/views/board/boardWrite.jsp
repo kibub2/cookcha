@@ -27,7 +27,7 @@
 			<form:hidden path="code" value="2"/>
 			<div class="form-group text-center">
 				<button type="submit" class="btn btn-primary">작성</button>
-				<button type="button" class="btn btn-success" onclick="location.href='${pageContext.request.contextPath}/index.do'">홈으로</button>
+				<button type="button" class="btn btn-success" onclick="location.href='${pageContext.request.contextPath}/board/boardList.do'">목록으로</button>
 			</div>
 		</form:form>
 	</div>
