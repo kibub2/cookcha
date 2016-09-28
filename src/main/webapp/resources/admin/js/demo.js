@@ -31,7 +31,7 @@ $(document).ready(function(){
     //가게이름 중복체크
     $('#name').focusout(function(){
 		$.ajax({
-			url:'checkShop.do',
+			url:'/checkShop.do',
 			type:'post',
 			data:{name:$('#name').val()},
 			dataType:'json',

@@ -103,7 +103,8 @@ public class SearchShopController {
 		List<RecommendedItem> kkk = userRecommander.recommend(id_num, 4);
 		List<ShopCommand> shopList=new ArrayList<ShopCommand>();
 		HashMap<String, Object> map=new HashMap<String, Object>();
-		if(kkk.size()>3){
+		
+		if(kkk.size()>8){
 			for(int i=0;i<4;i++){
 				int shopCode=0;
 				
