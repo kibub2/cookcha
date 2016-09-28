@@ -17,6 +17,7 @@
 	<div class="wrapper">
 	<div class="inner-page padd">
 	<div class="booking">
+	<div class="showcase">
 	<div class="container">
 	<div class="row">
 
@@ -147,7 +148,7 @@
 						</form:form>
 						</div>
 					</div>
-		</div></div></div></div></div>
+		</div></div></div></div></div></div>
 	<!-- 상세예약 -->
 </body>
 </html>
