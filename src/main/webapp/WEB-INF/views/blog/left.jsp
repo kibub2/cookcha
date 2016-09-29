@@ -9,7 +9,7 @@
 		<br> <br> <br> <br> <br>
 		<!-- Image -->
 		<img class="img-responsive img-thumbnail"
-			src="${pageContext.request.contextPath }/resources/img/bono.jpg"
+			src="${pageContext.request.contextPath }/resources/img/${member.picture}"
 			alt="">
 		<h4>보노보노님의 담벼락 (20대,남)</h4>
 		<!-- 프로필글 -->

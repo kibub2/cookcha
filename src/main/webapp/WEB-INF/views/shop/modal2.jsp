@@ -12,9 +12,9 @@
 				<h3 align="center">Test Page</h3>
 				
 				<c:forEach var="shop" items="${shop }">
-					<tr>
+					<%-- <tr>
 						<th><a href="${pageContext.request.contextPath }/shop/bookDetail.do?code=${shop.code}">${shop.name}</a></th>
-					</tr>
+					</tr> --%>
 				<div class="col-md-3 col-sm-6" id="item-${shop.code}">
 					
 					<!-- Shopping items -->
@@ -22,7 +22,7 @@
 						<!-- Image -->
 						<a data-toggle="modal" data-target=".bs-example-modal-lg-${shop.code}"><img
 							class="img-responsive"
-							src="${pageContext.request.contextPath }/resources/img/shopping/shop1.jpg"
+							src="${pageContext.request.contextPath }/upload/${shop.main_picture}"
 							alt="" /></a>
 						<!-- 모달에 띄울 내용 -->
 						<div class="modal fade bs-example-modal-lg-${shop.code}" tabindex="-1"
@@ -34,7 +34,7 @@
 									<!-- 가게이름, 카테고리 -->
 									<div><h3>${shop.name }  <span class="item-price pull-right">(Classify(${shop.classify })</span></h3></div>
 									<!-- 가게 메인 이미지 -->
-									<div><img src="${pageContext.request.contextPath }/resources/img/shopping/shop1.jpg" style="width:895px; max-height:400px; margin:0 auto;"></div>
+									<div><img src="${pageContext.request.contextPath }/upload/${shop.back_picture}" style="width:895px; max-height:400px; margin:0 auto;"></div>
 									<!-- 평가점수, 평가자수 -->
 									<div>rating(${shop.shop_rating})(rater${shop.rater })</div>
 									<!-- 주소와 소개글 -->
@@ -45,7 +45,7 @@
 										</span>
 									</div>
 									<!-- 코멘트 시작 -->
-									 <div class="comments-${comm.code }">
+									 <%-- <div class="comments-${comm.code }">
 										<ul class="comment-list">
 											<li class="comment">
 												<a class="pull-left" href="#">
@@ -58,8 +58,42 @@
 											</li>
 										</ul>
 										<div class="clearfix"></div>
-									</div>		
-									
+									</div>		 --%>
+									<span class="reply-title">댓글 달기</span>
+	<form class="re_form">
+		<input type="hidden" name="code" value="${shop.code}" id="code" class="code-${shop.code }">
+		<input type="hidden" name="mem_id" value="${userId}" id="mem_Id">
+		<textarea rows="3" cols="50" name="content" id="content" maxlength="300" class="rep-content"
+		<c:if test="${empty userId}">disabled="disabled"</c:if>
+		><c:if test="${empty userId}">로그인해야 작성할 수 있습니다.</c:if></textarea>
+		<c:if test="${!empty userId}">
+		<div id="re_first">
+			<span class="letter-count">300/300</span>
+		</div>
+		<div id="re_second" class="align-right">
+			<input type="submit" value="전송">
+		</div>
+		</c:if>
+	</form>
+	<!-- 목록 출력 -->
+	<div id="output"></div>
+	<div class="paging_button" style="display:none;">
+		<input type="button" value="다음글 보기">
+	</div>
+	<!-- 수정폼 -->
+	<div id="modify_div" style="display:none;">
+		<form id="mre_form">
+			<input type="hidden" name="re_no" id="mre_no">
+			<input type="hidden" name="id" id="muserId">
+			<textarea rows="3" cols="50" name="re_content" id="mre_content" class="rep-content"></textarea>
+			<div id="mre_first"><span class="letter-count">300/300</span></div>
+			<div id="mre_second" class="align-right">
+				<input type="submit" value="수정">
+				<input type="button" value="취소" class="re-reset">
+			</div>
+			<hr size="1" noshade width="96%">
+		</form>
+	</div>
 	
 															
 								</div>

@@ -89,6 +89,12 @@ public class ShopServiceImpl implements ShopService{
 		return shopMapper.checkShop(name);
 	}
 
+	@Override
+	public ShopCommand selectShop(int code) {
+		// TODO Auto-generated method stub
+		return shopMapper.selectShop(code);
+	}
+
 	
 
 	

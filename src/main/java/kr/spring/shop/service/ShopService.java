@@ -5,6 +5,7 @@ import java.util.Map;
 
 import org.springframework.transaction.annotation.Transactional;
 
+import kr.spring.board.domain.BoardCommand;
 import kr.spring.shop.domain.ShopCommand;
 import kr.spring.shop.domain.ShopReplyCommand;
 
@@ -19,6 +20,7 @@ public interface ShopService {
 	public int lastShopCode();
 	public String checkShop(String name);
 	public int getTotalCount();
+	public ShopCommand selectShop(int code);
 	
 	
 	//가게댓글
