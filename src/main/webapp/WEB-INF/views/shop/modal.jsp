@@ -4,7 +4,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath }/resources/js/shopDetailReply.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/jquery-1.12.4.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/jquery-ui.min.js"></script>
-<script src="${pageContext.request.contextPath}/resources/css/jquery-ui.min.css"></script>
+<script src="${pageContext.request.contextPath}/resources/css/jquery-ui.css"></script>
 <script>
 $(document).ready(function() {
 		$(".btn-primary").click(function() {
@@ -19,6 +19,14 @@ $(document).ready(function() {
 				dateFormat:'yy-mm-dd',
 				monthNamesShort:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
 				dayNamesMin:['일','월','화','수','목','금','토','일']
+		});
+
+		$('#next_button').click(function(){
+			if($('#datepicker').val() == ""){
+				alert("날짜를 선택하세요");
+				$('#datepicker').focus();
+				return false;
+			}
 		});
 
 });
@@ -145,7 +153,12 @@ $(document).ready(function() {
 																id="book_time">
 																<option value="점심(12:00~15:00)">점심(12:00~15:00)</option>
 																<option value="저녁(18:00~21:00)">저녁(18:00~21:00)</option>
-															</select> <input type="submit" class="btn btn-default" value="다음">
+															</select>
+															<div align="center">
+																<br>
+																<input type="submit" class="btn btn-default" id="next_button" value="다음">
+															</div>
+															
 														</div>
 													</div>
 													<div class="modal-footer"></div>

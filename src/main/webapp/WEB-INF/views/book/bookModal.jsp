@@ -23,39 +23,13 @@
 
 						<div class="col-md-7">
 							<!-- Heading -->
-							<h3>${shop.name }</h3>
-							<!-- Paragraph -->
-							<p>Loren gypsum dolour sit amet, conjecture listing elite,
-								sed do eiusmod tempor incident ut laboured et magna onjecture
-								listing elite, sed do eiusmod tempo aliqua.</p>
-							<!-- Image Slider -->
-							<div id="carousel-example-generic" class="carousel slide"
-								data-ride="carousel">
-								<!-- Wrapper for slides -->
-								<div class="carousel-inner">
-									<div class="item active">
-										<img class="img-responsive" src="img/booking/table1.jpg"
-											alt="" />
-									</div>
-									<div class="item">
-										<img class="img-responsive" src="img/booking/table2.jpg"
-											alt="" />
-									</div>
-									<div class="item">
-										<img class="img-responsive" src="img/booking/table3.jpg"
-											alt="" />
-									</div>
-								</div>
-
-								<!-- Controls -->
-								<a class="left carousel-control"
-									href="#carousel-example-generic" data-slide="prev"> <span
-									class="fa fa-chevron-left"></span>
-								</a> <a class="right carousel-control"
-									href="#carousel-example-generic" data-slide="next"> <span
-									class="fa fa-chevron-right"></span>
-								</a>
+							<h3>${shop.name}</h3>
+							<!-- Image -->
+							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+								<img src="${pageContext.request.contextPath }/upload/${shop.main_picture}" width="655" height="500"/>
 							</div>
+							<h2>가게설명</h2>
+							<p><b>${shop.introduction}</b></p>
 						</div>
 						
 						<!-- 상세예약 -->
@@ -142,9 +116,10 @@
 								path="content"></form:textarea>
 						</div>
 						<!-- Form button -->
-						<button class="btn btn-danger btn-sm" type="submit">예약확인</button>
-						<!-- 	&nbsp;
-													<button class="btn btn-default btn-sm" type="reset">예약취소</button> -->
+						<div align="right">
+							<button class="btn btn-primary btn-sm" type="submit" >예약확인</button>
+							<button class="btn btn-danger btn-sm" type="button" onclick="location.href='${pageContext.request.contextPath}/shop/test.do'">예약취소</button>
+						</div>
 						</form:form>
 						</div>
 					</div>

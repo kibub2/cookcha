@@ -37,8 +37,8 @@ public class BookModalController {
 	
 		@RequestMapping(value="/shop/bookModal.do", method=RequestMethod.GET)
 		public ModelAndView form(HttpSession session,@RequestParam("book_time") String book_time,
-																  @RequestParam("book_date") Date book_date,
-																  @RequestParam("code")int code){
+													 @RequestParam("book_date") Date book_date,
+													 @RequestParam("code") int code){
 			
 			String id = (String)session.getAttribute("userId");
 			
@@ -82,12 +82,16 @@ public class BookModalController {
 			System.out.println("remainSeat2 : " + remainSeat2);
 			}
 			
+			String main_picture = shop.getMain_picture();
 			ModelAndView mav1 = new ModelAndView();
+			System.out.println("main : " + shop.getMain_picture());
 			mav1.setViewName("bookModal");
 			mav1.addObject("bookCommand",bookCommand);
 			mav1.addObject("remainSeat1", remainSeat1);
 			mav1.addObject("remainSeat2", remainSeat2);	
 			mav1.addObject("shop", shop);
+			mav1.addObject("code", code);
+			mav1.addObject("main_picture", main_picture);
 			return mav1;
 					
 		}
