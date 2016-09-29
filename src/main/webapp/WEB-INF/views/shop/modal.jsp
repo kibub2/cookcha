@@ -1,19 +1,27 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<script type="text/javascript"
-	src="${pageContext.request.contextPath }/resources/js/shopDetailReply.js">
-	
-</script>
-<script type="text/javascript"
-	src="${pageContext.request.contextPath}/resources/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/resources/js/shopDetailReply.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/jquery-1.12.4.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/jquery-ui.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/css/jquery-ui.min.css"></script>
 <script>
-	$(document).ready(function() {
+$(document).ready(function() {
 		$(".btn-primary").click(function() {
 			$('#code').val($(this).attr('data-code'));
 			$('#name').val($(this).attr('data-name'));
 		});
-	});
+		
+		$('#datepicker').datepicker({
+				showMonthAfterYear:true,
+				changeYear:true,
+				changeMonth:true,//연->월 순으로
+				dateFormat:'yy-mm-dd',
+				monthNamesShort:['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+				dayNamesMin:['일','월','화','수','목','금','토','일']
+		});
+
+});
 </script>
 <div class="container">
 	<div class="row">
@@ -25,10 +33,12 @@
 						<h3 align="center">Test Page</h3>
 						<c:forEach var="shop" items="${shop}">
 							<form action="${pageContext.request.contextPath }/shop/bookModal.do">
+								<table>
 								<tr>
 									<th><a
 										href="${pageContext.request.contextPath }/shop/bookModal.do?code=${shop.code}">${shop.name}</a></th>
 								</tr>
+								</table>
 								<div class="col-md-3 col-sm-6" id="item-${shop.code}">
 
 									<!-- Shopping items -->
@@ -121,7 +131,7 @@
 													<input type="text" name="name" id="name" readonly="true" class="form-control">
 													<div class="modal-body">
 														<label>예약날짜</label>
-														<input type="date" name="book_date" class="form-control">
+														<input type="text" id="datepicker" name="book_date" class="form-control">
 														
 													</div>
 													<div class="modal-body">
