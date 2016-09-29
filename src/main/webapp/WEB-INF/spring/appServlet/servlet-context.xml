@@ -20,9 +20,12 @@
 	<context:component-scan base-package="kr.spring.admin.controller"/>
 	<context:component-scan base-package="kr.spring.rate.controller"/>
 	<context:component-scan base-package="kr.spring.board.controller" />
+	<context:component-scan base-package="kr.spring.blog.controller" />
+	<context:component-scan base-package="kr.spring.shop.controller" />
 	
 	
 	<mvc:resources location="/resources" mapping="/resources/**"/>
+
 	<!-- tiles 설정-->
 	<beans:bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
 		<beans:property name="definitions">
@@ -34,14 +37,19 @@
 
 			<beans:list>
 				<beans:value>/WEB-INF/tiles-def/main.xml</beans:value>
+
 				<beans:value>/WEB-INF/tiles-def/admin.xml</beans:value>
 				<beans:value>/WEB-INF/tiles-def/recommend.xml</beans:value>
 				<beans:value>/WEB-INF/tiles-def/rate.xml</beans:value>
 				<beans:value>/WEB-INF/tiles-def/board.xml</beans:value>
+				<beans:value>/WEB-INF/tiles-def/blog.xml</beans:value>
+				<beans:value>/WEB-INF/tiles-def/shop.xml</beans:value>
+				<!-- <beans:value>/WEB-INF/tiles-def/member.xml</beans:value> -->
+				<beans:value>/WEB-INF/tiles-def/book.xml</beans:value>
 	   		</beans:list>
 
 		</beans:property>
-	</beans:bean>
+	</beans:bean> 
 	<!-- tiles 뷰 설정 (tiles가 view를 생성하기 때문에 -> tiles만의 view resolver를 사용해야한다.) -->
 	<beans:bean id="viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
 		<beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"/>

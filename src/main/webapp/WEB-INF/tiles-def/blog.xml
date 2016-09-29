@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="blogMain" template="/WEB-INF/views/blog/template/layout.jsp">
+        <put-attribute name="title"  value="블로그 메인"/>
+        <put-attribute name="modal"  value="/WEB-INF/views/template/modal.jsp"/>
+        <put-attribute name="header" value="/WEB-INF/views/template/header.jsp"/>
+        <put-attribute name="banner" value="/WEB-INF/views/blog/left.jsp"/>
+        <put-attribute name="body"   value="/WEB-INF/views/blog/main.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/views/template/footer.jsp"/>
+        <put-attribute name="footer2" value="/WEB-INF/views/blog/footer2.jsp"/>
+    </definition> 
+    <!-- 
+    <definition name="menu1" extends="index">
+        <put-attribute name="body"   value="/WEB-INF/views/body-menu1.jsp"/>
+    </definition>
+	<definition name="menu2" extends="index">
+        <put-attribute name="body"   value="/WEB-INF/views/body-menu2.jsp"/>
+    </definition>
+    <definition name="index2" extends="index">
+        <put-attribute name="body"   value="/WEB-INF/views/body-index2.jsp"/>
+    </definition>
+     -->
+</tiles-definitions>

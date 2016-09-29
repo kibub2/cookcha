@@ -18,4 +18,4 @@ public interface MemberMapper {
 	@Select("SELECT count(*) FROM board")
 	public int getRowCount(Map<String, Object> map);
 
-}
+} 

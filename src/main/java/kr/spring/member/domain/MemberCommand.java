@@ -20,7 +20,7 @@ public class MemberCommand {
 	@Size(min=4, max=10, message="4자 이상 10자 이하로 입력하세요")
 	private String passwd;
 	private int rate_count;
-	private Date register;
+	private Date register; 
 	@NotEmpty
 	private String birth;
 	@NotEmpty

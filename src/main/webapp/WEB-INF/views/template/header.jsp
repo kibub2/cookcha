@@ -8,7 +8,7 @@
 			<!-- Header top left content contact -->
 			<div class="header-contact">
 				<!-- Contact number -->
-				<span><i class="fa fa-phone red"></i>010-5882-5882</span>
+				<span><i class="fa fa-phone red"></i>010-5882-588</span>
 			</div>
 		</div>
 		<div class="col-md-4 col-sm-4">
@@ -32,6 +32,7 @@
 				<a href="#"><img class="loginIcon" src="${pageContext.request.contextPath}/resources/img/login_icon.png" alt="" /></a>
 				<a class="login-link" href="${pageContext.request.contextPath}/member/login.do">
 
+
 					<!-- Heading -->
 					<h4>Cookcha Login</h4>
 					<span>로그인</span>
@@ -47,6 +48,7 @@
 				<!-- Image -->
 				<a href="#"><img class="img-responsive loginIcon" src="${pageContext.request.contextPath}/resources/img/login_icon.png" alt="" /></a>
 				<a class="login-link" href="${pageContext.request.contextPath}/member/logout.do">
+
 					<!-- Heading -->
 					<h4 style="color: #FF9436;">${userId}님 환영합니다.</h4>
 					<span>로그아웃</span>
@@ -109,22 +111,23 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.png" class="img-responsive" alt="" /> 이벤트<b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="recipe.html">Recipes</a></li>
+								<li><a href="${pageContext.request.contextPath}/shop/test.do">Recipes</a></li>
 							</ul>
 						</li>
 
 						<!-- 게시판, 공지사항  -->
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav5.png" class="img-responsive" alt="" /> 커뮤니티<b class="caret"></b></a>
+
 							<ul class="dropdown-menu">
 								<li><a href="#">공지사항</a></li>
 								<li><a href="${pageContext.request.contextPath}/board/boardList.do">자유게시판</a></li>
 							</ul>
 						</li>
+
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 			</nav>
 		</div>
-	</div>
 </div> <!-- / .container -->

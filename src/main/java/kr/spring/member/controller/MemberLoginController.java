@@ -25,7 +25,7 @@ public class MemberLoginController {
 	public MemberCommand initCommand() {
 		return new MemberCommand();
 	}
-	
+	 
 	@RequestMapping(value="/member/login.do", method=RequestMethod.GET)
 	public String form() {
 		return "/member/memberLogin";
