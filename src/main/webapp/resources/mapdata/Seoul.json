@@ -447,6 +447,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11200",
+			"eng_name": "Seongdong-gu",
 			"name": "성동구"
 		},
 		"geometry": {
@@ -554,6 +555,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11590",
+			"eng_name": "Dongjak-gu",
 			"name": "동작구"
 		},
 		"geometry": {
@@ -752,6 +754,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11170",
+			"eng_name": "Yongsan-gu",
 			"name": "용산구"
 		},
 		"geometry": {
@@ -887,6 +890,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11740",
+			"eng_name": "Gangdong-gu",
 			"name": "강동구"
 		},
 		"geometry": {
@@ -1019,6 +1023,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11320",
+			"eng_name": "Dobong-gu",
 			"name": "도봉구"
 		},
 		"geometry": {
@@ -1197,6 +1202,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11545",
+			"eng_name": "Geumcheon-gu",
 			"name": "금천구"
 		},
 		"geometry": {
@@ -1420,6 +1426,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11380",
+			"eng_name": "Eunpyeong-gu",
 			"name": "은평구"
 		},
 		"geometry": {
@@ -1651,6 +1658,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11260",
+			"eng_name": "Jungnang-gu",
 			"name": "중랑구"
 		},
 		"geometry": {
@@ -2003,6 +2011,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11680",
+			"eng_name": "Gangnam-gu",
 			"name": "강남구"
 		},
 		"geometry": {
@@ -2184,6 +2193,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11560",
+			"eng_name": "Yeongdeungpo-gu",
 			"name": "영등포구"
 		},
 		"geometry": {
@@ -2565,6 +2575,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11440",
+			"eng_name": "Mapo-gu",
 			"name": "마포구"
 		},
 		"geometry": {
@@ -2710,6 +2721,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11215",
+			"eng_name": "Gwangjin-gu",
 			"name": "광진구"
 		},
 		"geometry": {
@@ -2805,6 +2817,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11140",
+			"eng_name": "SJung-gu",
 			"name": "중구"
 		},
 		"geometry": {
@@ -2988,6 +3001,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11410",
+			"eng_name": "Seodaemun-gu",
 			"name": "서대문구"
 		},
 		"geometry": {
@@ -3155,6 +3169,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11650",
+			"eng_name": "Seocho-gu",
 			"name": "서초구"
 		},
 		"geometry": {
@@ -3460,6 +3475,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11230",
+			"eng_name": "Dongdaemun-gu",
 			"name": "동대문구"
 		},
 		"geometry": {
@@ -3764,6 +3780,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11530",
+			"eng_name": "Guro-gu",
 			"name": "구로구"
 		},
 		"geometry": {
@@ -4243,6 +4260,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11710",
+			"eng_name": "Songpa-gu",
 			"name": "송파구"
 		},
 		"geometry": {
@@ -4405,6 +4423,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11470",
+			"eng_name": "Yangcheon-gu",
 			"name": "양천구"
 		},
 		"geometry": {
@@ -4891,6 +4910,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11350",
+			"eng_name": "Nowon-gu",
 			"name": "노원구"
 		},
 		"geometry": {
@@ -5304,6 +5324,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11290",
+			"eng_name": "Seongbuk-gu",
 			"name": "성북구"
 		},
 		"geometry": {
@@ -5895,6 +5916,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11500",
+			"eng_name": "Gangseo-gu",
 			"name": "강서구"
 		},
 		"geometry": {
@@ -6148,6 +6170,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11620",
+			"eng_name": "Gwanak-gu",
 			"name": "관악구"
 		},
 		"geometry": {
@@ -6447,6 +6470,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "11305",
+			"eng_name": "Gangbuk-gu",
 			"name": "강북구"
 		},
 		"geometry": {
