@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <!-- ################## Banner Start -->
 <div class="tp-banner-container">
@@ -394,6 +395,7 @@
 		</ul>
 		Banner Timer
 		<div class="tp-bannertimer"></div> -->
+		</ul>
 	</div>
 </div>
 <!-- Slider End -->
@@ -437,119 +439,93 @@
 
 <!-- Showcase End -->
 
-<!-- Dishes Start -->
+<!-- 이번주 베스트 맛집 Start -->
 	
-<div class="dishes padd">
-	<div class="container">
-		<!-- Default Heading -->
-		<div class="default-heading">
-			<!-- Crown image -->
-			<img class="img-responsive" src="resources/img/crown.png" alt="" />
-			<!-- Heading -->
-			<h2>이번주 베스트 맛집</h2>
-			<!-- Paragraph -->
-			<p>매주 베스트 맛집을 선정하여 쿡챠 여러분께 소개해드립니다.</p>
-			<!-- Border -->
-			<div class="border"></div>
+<div class="inner-page padd">
+	<div class="shopping">
+		<div class="container">
+			<!-- Default Heading -->
+			<div class="default-heading">
+				<!-- Crown image -->
+				<img class="img-responsive" src="resources/img/crown.png" alt="" />
+				<!-- Heading -->
+				<h2>이번주 베스트 맛집</h2>
+				<!-- Paragraph -->
+				<p>매주 베스트 맛집을 선정하여 쿡챠 여러분께 소개해드립니다.</p>
+				<!-- Border -->
+				<div class="border"></div>
+			</div>
+		
+			<div class="shopping-content">
+				<div class="row">
+				<c:forEach var="shop" items="${shopList }">
+						<div class="col-md-3 col-sm-6">
+							<div class="shopping-item">
+								<!-- Image -->
+								<a href="#">
+									<object class="img-responsive" data="${pageContext.request.contextPath}/upload/${shop.code }-1.jpg" type="image/jpg">
+	    							<img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/noImage.jpg" />
+	  							</object>
+								</a>
+								<!-- Shopping item name / Heading -->
+								<h4 class="pull-left hideOverflow"><a href="#" >${shop.name }</a></h4>
+								<span class="item-price pull-right">
+								
+									${shop.shop_rating }</span>
+								<div class="clearfix"></div>
+								<!-- Paragraph -->
+								<p>${shop.address }</p>
+								<!-- Buy now button -->
+								<div class="visible-xs">
+									<a class="btn btn-red btn-sm" href="#">
+									
+									 Buy Now
+									</a>
+								</div>
+								<!-- Shopping item hover block & link -->
+								<div class="item-hover br-red hidden-xs">
+								<form id="ratingsForm">
+									<div class="stars">
+										<input type="radio" name="star" class="star-1" id="${shop.code }-star-1">
+										<label class="star-1" id="${shop.code }-star-1">1</label>
+										<input type="radio" name="star" class="star-2" id="${shop.code }-star-2">
+										<label class="star-2" id="${shop.code }-star-2">2</label>
+										<input type="radio" name="star" class="star-3" id="${shop.code }-star-3">
+										<label class="star-3" id="${shop.code }-star-3">3</label>
+										<input type="radio" name="star" class="star-4" id="${shop.code }-star-4">
+										<label class="star-4" id="${shop.code }-star-4">4</label>
+										<input type="radio" name="star" class="star-5" id="${shop.code }-star-5">
+										<label class="star-5" id="${shop.code }-star-5">5</label>
+										<%-- <c:set var="shopCode" value="${shop.code }"></c:set> --%>
+										<c:forEach var="rate" items="${ratingList }">
+										<%-- <c:set var="rateCode" value="${rate.shop_code }"></c:set> --%>
+										<c:if test="${shop.code == rate.shop_code }">
+											<span style="width:${rate.private_rate*20}%" class="ratedShop"></span>
+										</c:if>
+										</c:forEach>
+										<span></span>
+									</div>
+								</form>
+								</div>
+								<!-- Hot tag -->
+								<c:forEach var="rate" items="${ratingList }">
+										<%-- <c:set var="rateCode" value="${rate.shop_code }"></c:set> --%>
+										<c:if test="${shop.code == rate.shop_code }">
+											<span class="hot-tag br-red">rated</span>
+										</c:if>
+								</c:forEach>
+							</div>
+						</div>	
+					</c:forEach>
+				</div>
+			</div>
+		
+		
 		</div>
-		<div class="row">
-			<div class="col-md-3 col-sm-6">	
-				<div class="dishes-item-container">
-					<!-- Image Frame -->
-					<div class="img-frame">
-						<!-- Image -->
-						<img src="resources/img/dish/dish5.jpg" class="img-responsive" alt="" />
-						<!-- Block for on hover effect to image -->
-						<div class="img-frame-hover">
-							<!-- Hover Icon -->
-							<a href="#"><i class="fa fa-cutlery"></i></a>
-						</div>
-					</div>
-					<!-- Dish Details -->
-					<div class="dish-details">
-						<!-- Heading -->
-						<h3>Delicious Chinese</h3>
-						<!-- Paragraph -->
-						<p>At vero eos et accusal gusto for ides residuum lores.</p>
-						<!-- Button -->
-						<a href="#" class="btn btn-danger btn-sm">Read more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="dishes-item-container">
-					<!-- Image Frame -->
-					<div class="img-frame">
-						<!-- Image -->
-						<img src="resources/img/dish/dish6.jpg" class="img-responsive" alt="" />
-						<!-- Block for on hover effect to image -->
-						<div class="img-frame-hover">
-							<!-- Hover Icon -->
-							<a href="#"><i class="fa fa-cutlery"></i></a>
-						</div>
-					</div>
-					<!-- Dish Details -->
-					<div class="dish-details">
-						<!-- Heading -->
-						<h3>Spicy Onion Rings</h3>
-						<!-- Paragraph -->
-						<p>At vero eos et accusal gusto for ides residuum lores.</p>
-						<!-- Button -->
-						<a href="#" class="btn btn-danger btn-sm">Read more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="dishes-item-container">
-					<!-- Image Frame -->
-					<div class="img-frame">
-						<!-- Image -->
-						<img src="resources/img/dish/dish7.jpg" class="img-responsive" alt="" />
-						<!-- Block for on hover effect to image -->
-						<div class="img-frame-hover">
-							<!-- Hover Icon -->
-							<a href="#"><i class="fa fa-cutlery"></i></a>
-						</div>
-					</div>
-					<!-- Dish Details -->
-					<div class="dish-details">
-						<!-- Heading -->
-						<h3>Cream Cheese Cup</h3>
-						<!-- Paragraph -->
-						<p>At vero eos et accusal gusto for ides residuum lores.</p>
-						<!-- Button -->
-						<a href="#" class="btn btn-danger btn-sm">Read more</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="dishes-item-container">
-					<!-- Image Frame -->
-					<div class="img-frame">
-						<!-- Image -->
-						<img src="resources/img/dish/dish8.jpg" class="img-responsive" alt="" />
-						<!-- Block for on hover effect to image -->
-						<div class="img-frame-hover">
-							<!-- Hover Icon -->
-							<a href="#"><i class="fa fa-cutlery"></i></a>
-						</div>
-					</div>
-					<!-- Dish Details -->
-					<div class="dish-details">
-						<!-- Heading -->
-						<h3>Spicy Cheese Pizza</h3>
-						<!-- Paragraph -->
-						<p>At vero eos et accusal gusto for ides residuum lores.</p>
-						<!-- Button -->
-						<a href="#" class="btn btn-danger btn-sm">Read more</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>					
+	</div>
 </div>
 
-<!-- Dishes End -->
+<!-- 이번주 베스트 맛집 End -->
 
 <!-- menu Start -->
 

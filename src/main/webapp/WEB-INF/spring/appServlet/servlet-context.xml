@@ -23,7 +23,6 @@
 	<context:component-scan base-package="kr.spring.blog.controller" />
 	<context:component-scan base-package="kr.spring.shop.controller" />
 	<context:component-scan base-package="kr.spring.book.controller" />
-	<context:component-scan base-package="kr.spring.shop.controller" />
 	
 	<mvc:resources location="/resources" mapping="/resources/**"/>
 

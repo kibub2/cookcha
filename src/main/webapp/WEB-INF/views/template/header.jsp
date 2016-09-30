@@ -92,7 +92,7 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<!-- 홈 -->
-						<li><a href="${pageContext.request.contextPath}/index.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.png" class="img-responsive" alt="" /> 홈</a></li>
+						<li><a href="${pageContext.request.contextPath}/index.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.png" class="img-responsive" alt="" /> 홈</a></li>
 				
 						<!-- 맛집찾기 -->
 						<li><a href="${pageContext.request.contextPath}/member/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav2.png" class="img-responsive" alt="" /> 맛집찾기</a></li>

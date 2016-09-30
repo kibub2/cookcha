@@ -1,10 +1,12 @@
 package kr.spring.recommend.dao;
 
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 import kr.spring.recommend.domain.MahoutRecommendCommand;
+import kr.spring.shop.domain.ShopCommand;
 
 @Repository("recommendMapper")
 public interface RecommendMapper {
@@ -23,6 +25,10 @@ public interface RecommendMapper {
 	
 	@Select("SELECT id_num FROM member WHERE id=#{id}")
 	public int getMem_id_num(String id);
+
+	public List<ShopCommand> weeklyShop(Map<String, Object> map);
+	
+	public int weeklyShopCount(Map<String, Object> map);
 	
 	
 }

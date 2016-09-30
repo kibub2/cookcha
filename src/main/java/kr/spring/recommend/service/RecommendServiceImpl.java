@@ -1,6 +1,7 @@
 package kr.spring.recommend.service;
 
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
 
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import kr.spring.recommend.dao.RecommendMapper;
 import kr.spring.recommend.domain.MahoutRecommendCommand;
+import kr.spring.shop.domain.ShopCommand;
 
 @Service("recommendService")
 public class RecommendServiceImpl implements RecommendService {
@@ -38,5 +40,13 @@ public class RecommendServiceImpl implements RecommendService {
 	public int getMem_id_num(String id) {
 		
 		return recommendMapper.getMem_id_num(id);
+	}
+	@Override
+	public List<ShopCommand> weeklyShop(Map<String, Object> map) {
+		return recommendMapper.weeklyShop(map);
+	}
+	@Override
+	public int weeklyShopCount(Map<String, Object> map) {
+		return recommendMapper.weeklyShopCount(map);
 	}
 }
