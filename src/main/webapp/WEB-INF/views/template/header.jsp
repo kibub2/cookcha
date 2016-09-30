@@ -28,54 +28,16 @@
 			<!-- 로그인 버튼 시작 ▼ -->
 			<c:if test="${empty userId}">
 			<div class="btn-login-md">
-
-				<!-- Image -->
-				<a href="#"><img class="img-responsive loginIcon" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" /></a>
+				
+				<a href="#"><img class="loginIcon" src="${pageContext.request.contextPath}/resources/img/login_icon.png" alt="" /></a>
 				<a class="login-link" href="${pageContext.request.contextPath}/member/login.do">
+
 
 					<!-- Heading -->
 					<h4>Cookcha Login</h4>
 					<span>로그인</span>
 					<div class="clearfix"></div>
 				</a>
-				<!-- 드롭다운 시작 -->
-				<!--
-				<ul class="login-dropdown" role="menu">
-					<li>
-						<div class="login-item">
-							<a href="#"><i class="fa fa-times"></i></a>
-							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav1.jpg" alt="" />
-							<span class="login-title"><a href="#">Exception Reins Evocative</a></span>
-							<span class="cart-price pull-right red">$200/-</span>
-							<div class="clearfix"></div>
-						</div>
-					</li>
-					<li>
-						<div class="login-item">
-							<a href="#"><i class="fa fa-times"></i></a>
-							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav2.jpg" alt="" />
-							<span class="login-title"><a href="#">Taut Mayoress Alias Appendicitis</a></span>
-							<span class="cart-price pull-right red">$190/-</span>
-							<div class="clearfix"></div>
-						</div>
-					</li>
-					<li>
-						<div class="login-item">
-							<a href="#"><i class="fa fa-times"></i></a>
-							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav3.jpg" alt="" />
-							<span class="login-title"><a href="#">Sinter et Molests Perfectionist</a></span>
-							<span class="cart-price pull-right red">$99/-</span>
-							<div class="clearfix"></div>
-						</div>
-					</li>
-					<li>
-						<div class="login-item">
-							<a class="btn btn-danger" data-toggle="modal" href="#shoppingcart1">Checkout</a>
-						</div>
-					</li>
-				</ul>
-				-->
-				<!-- 드롭다운 끝 -->
 				<div class="clearfix"></div>
 			</div>
 			</c:if>
@@ -84,51 +46,14 @@
 			<c:if test="${!empty userId}">
 			<div class="btn-login-md">
 				<!-- Image -->
-				<a href="#"><img class="img-responsive loginIcon" src="${pageContext.request.contextPath}/resources/img/login_icon_black.png" alt="" /></a>
+				<a href="#"><img class="img-responsive loginIcon" src="${pageContext.request.contextPath}/resources/img/login_icon.png" alt="" /></a>
 				<a class="login-link" href="${pageContext.request.contextPath}/member/logout.do">
+
 					<!-- Heading -->
 					<h4 style="color: #FF9436;">${userId}님 환영합니다.</h4>
 					<span>로그아웃</span>
 					<div class="clearfix"></div>
 				</a>
-				<!-- 드롭다운 시작 -->
-				<!--
-				<ul class="login-dropdown" role="menu">
-					<li>
-						<div class="login-item">
-							<a href="#"><i class="fa fa-times"></i></a>
-							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav1.jpg" alt="" />
-							<span class="login-title"><a href="#">Exception Reins Evocative</a></span>
-							<span class="cart-price pull-right red">$200/-</span>
-							<div class="clearfix"></div>
-						</div>
-					</li>
-					<li>
-						<div class="login-item">
-							<a href="#"><i class="fa fa-times"></i></a>
-							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav2.jpg" alt="" />
-							<span class="login-title"><a href="#">Taut Mayoress Alias Appendicitis</a></span>
-							<span class="cart-price pull-right red">$190/-</span>
-							<div class="clearfix"></div>
-						</div>
-					</li>
-					<li>
-						<div class="login-item">
-							<a href="#"><i class="fa fa-times"></i></a>
-							<img class="img-responsive img-rounded" src="resources/img/nav-menu/nav3.jpg" alt="" />
-							<span class="login-title"><a href="#">Sinter et Molests Perfectionist</a></span>
-							<span class="cart-price pull-right red">$99/-</span>
-							<div class="clearfix"></div>
-						</div>
-					</li>
-					<li>
-						<div class="login-item">
-							<a class="btn btn-danger" data-toggle="modal" href="#shoppingcart1">Checkout</a>
-						</div>
-					</li>
-				</ul>
-				-->
-				<!-- 드롭다운 끝 -->
 				<div class="clearfix"></div>
 			</div>
 			</c:if>
@@ -140,16 +65,14 @@
 <div class="row">
 	<div class="col-md-4 col-sm-5">
 		<!-- Link -->
-
 		<a href="${pageContext.request.contextPath}/index.do">
-
 			<!-- Logo area -->
 			<div class="logo">
 				<img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/logo.png" alt="" />
 				<!-- Heading -->
-				<h1>Cookcha</h1>
+				<h1>쿡챠</h1>
 				<!-- Paragraph -->
-				<p>Delicious Food</p>
+				<p>솔직한 평가들이 모여 만들어진 쿡챠♥</p>
 			</div>
 		</a>
 	</div>
@@ -170,90 +93,38 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="index.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.jpg" class="img-responsive" alt="" /> Home</a></li>
-						<li class="dropdown hidden-xs">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav2.jpg" class="img-responsive" alt="" /> Menu <b class="caret"></b></a>
-							<ul class="dropdown-menu dropdown-md">
-								<li>
-									<div class="row">
-										<div class="col-md-4 col-sm-6">
-											<!-- Menu Item -->
-											<div class="menu-item">
-												<!-- Heading -->
-												<h3>Vegetarian</h3>
-												<!-- Image -->
-												<img src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" class="img-responsive" alt="" />
-												<!-- Paragraph -->
-												<p>Sea nut perspicacity under omni piste natures mirror of there with consequent.</p>
-												<!-- Button -->
-												<a href="${pageContext.request.contextPath}/menu.html" class="btn btn-danger btn-xs">View Menu</a>
-											</div>
-										</div>
-										<div class="col-md-4 col-sm-6">
-											<!-- Menu Item -->
-											<div class="menu-item">
-												<!-- Heading -->
-												<h3>Non-Vegetarian</h3>
-												<!-- Image -->
-												<img src="${pageContext.request.contextPath}/resources/img/dish/dish2.jpg" class="img-responsive" alt="" />
-												<!-- Paragraph -->
-												<p>Sea nut perspicacity under omni piste natures mirror as precode consequent.</p>
-												<!-- Button -->
-												<a href="menu.html" class="btn btn-danger btn-xs">View Menu</a>
-											</div>
-										</div>
-										<div class="col-md-4">
-											<!-- Menu Item -->
-											<div class="menu-item">
-												<!-- Heading -->
-												<h3>Special Menu</h3>
-												<!-- Image -->
-												<img src="${pageContext.request.contextPath}/resources/img/dish/dish3.jpg" class="img-responsive" alt="" />
-												<!-- Paragraph -->
-												<p>Sea nut perspicacity under omni piste natures mirror consequent.</p>
-												<!-- Button -->
-												<a href="menu.html" class="btn btn-danger btn-xs">View Menu</a>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</li>
-						
-						<li class="dropdown visible-xs">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Menu <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="${pageContext.request.contextPath}/menu.html">Vegetarian</a></li>
-								<li><a href="${pageContext.request.contextPath}/menu.html">Non Vegetarian</a></li>
-								<li><a href="${pageContext.request.contextPath}/menu.html">Special Menu</a></li>
-							</ul>
-						</li>		
-						<li><a href="${pageContext.request.contextPath}/member/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.jpg" class="img-responsive" alt="" />맛집찾기</a></li>
+						<!-- 홈 -->
+						<li><a href="${pageContext.request.contextPath}/index.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.png" class="img-responsive" alt="" /> 홈</a></li>
+				
+						<!-- 맛집찾기 -->
+						<li><a href="${pageContext.request.contextPath}/member/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav2.png" class="img-responsive" alt="" /> 맛집찾기</a></li>
+
+						<!-- 샵 -->
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" /> Shop <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.png" class="img-responsive" alt="" /> 샵<b class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<li><a href="${pageContext.request.contextPath}/recommend.do">맞춤추천</a></li>
 								<li><a href="${pageContext.request.contextPath}/rate.do">추가평가</a></li>
-								<li><a href="checkout.html">Checkout</a></li>
-								<li><a href="reserve-seats.html">Reservation</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
 							</ul>
 						</li>
+						<!-- 이벤트 -->
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav5.jpg" class="img-responsive" alt="" /> Pages <b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.png" class="img-responsive" alt="" /> 이벤트<b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="recipe.html">Recipes</a></li>
+								<li><a href="${pageContext.request.contextPath}/shop/test.do">Recipes</a></li>
 							</ul>
 						</li>
-						<!-- 게시판, 공지사항 ▼ -->
+
+						<!-- 게시판, 공지사항  -->
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.jpg" class="img-responsive" alt="" />게시판/공지사항<b class="caret"></b></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav5.png" class="img-responsive" alt="" /> 커뮤니티<b class="caret"></b></a>
+
 							<ul class="dropdown-menu">
 								<li><a href="#">공지사항</a></li>
 								<li><a href="${pageContext.request.contextPath}/board/boardList.do">자유게시판</a></li>
 							</ul>
 						</li>
-						<!-- 게시판, 공지사항 ▲ -->
+
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->

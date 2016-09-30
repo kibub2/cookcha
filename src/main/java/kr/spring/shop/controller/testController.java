@@ -58,7 +58,7 @@ public class testController {
 		
 		List<ShopCommand> shop = null;
 		if(count > 0){
-			shop = shopService.shopList(map);
+			shop = shopService.list(map);
 		}else{
 			shop = Collections.emptyList();
 		}

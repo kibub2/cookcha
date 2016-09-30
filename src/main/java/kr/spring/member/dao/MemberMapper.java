@@ -11,7 +11,7 @@ import kr.spring.member.domain.MemberCommand;
 @Repository("memberMapper")
 public interface MemberMapper {
 	
-	@Insert("INSERT INTO member(id, id_num, name, passwd, register, birth, sex, phone) VALUES (#{id}, member_seq.nextval, #{name}, #{passwd}, sysdate, #{birth}, #{sex}, #{phone})")
+	@Insert("INSERT INTO member(id, id_num, name, passwd, register, birth, sex, phone, grade) VALUES (#{id}, member_seq.nextval, #{name}, #{passwd}, sysdate, #{birth}, #{sex}, #{phone}, 2)")
 	public void insert(MemberCommand member);
 	@Select("SELECT * FROM member WHERE id = #{id}")
 	public MemberCommand select(String id);

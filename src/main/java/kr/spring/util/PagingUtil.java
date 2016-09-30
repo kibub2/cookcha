@@ -12,10 +12,7 @@ public class PagingUtil {
 	 * pageCount : 한 화면에 보여줄 페이지 수
 	 * pageUrl : 호출 페이지 url
 	 * addKey : 부가적인 key 없을 때는 null 처리 (&num=23형식으로 전달할 것)
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/test-mahout
 	 * */
 	public PagingUtil(int currentPage, int totalCount, int rowCount,
 			int pageCount, String pageUrl) {
@@ -36,10 +33,12 @@ public class PagingUtil {
 		
 		// 전체 페이지 수
 
+
 		int totalPage = (int) Math.ceil((double) totalCount / rowCount);
 		if (totalPage == 0) {
 			totalPage = 1;
 		}
+
 		// 현재 페이지가 전체 페이지 수보다 크면 전체 페이지 수로 설정
 		if (currentPage > totalPage) {
 			currentPage = totalPage;
@@ -58,15 +57,18 @@ public class PagingUtil {
 		pagingHtml = new StringBuffer();
 		if (currentPage > pageCount) {
 			if(keyword==null){//검색 미사용시
+
 				pagingHtml.append("<a href="+pageUrl+"?pageNum="+ (startPage - 1) + addKey +">");
 			}else{
 				pagingHtml.append("<a href="+pageUrl+"?keyfield="+keyfield+"&keyword="+keyword+"&pageNum="+ (startPage - 1) + addKey +">");
 			}
+
 			pagingHtml.append("이전");
 			pagingHtml.append("</a>");
 		}
 		pagingHtml.append("&nbsp;|&nbsp;");
 		//페이지 번호.현재 페이지는 빨간색으로 강조하고 링크를 제거.
+
 		for (int i = startPage; i <= endPage; i++) {
 			if (i > totalPage) {
 				break;
@@ -76,6 +78,7 @@ public class PagingUtil {
 				pagingHtml.append(i);
 				pagingHtml.append("</font></b>");
 			} else {
+
 				if(keyword==null){//검색 미사용시
 					pagingHtml.append("&nbsp;<a href='"+pageUrl+"?pageNum=");
 				}else{
@@ -89,6 +92,7 @@ public class PagingUtil {
 			pagingHtml.append("&nbsp;");
 		}
 		pagingHtml.append("&nbsp;&nbsp;|&nbsp;&nbsp;");
+
 		// 다음 block 페이지
 		if (totalPage - startPage >= pageCount) {
 			if(keyword==null){//검색 미사용시

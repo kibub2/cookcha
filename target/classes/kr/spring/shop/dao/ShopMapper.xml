@@ -1,18 +1,36 @@
-<?xml version="1.0" encoding="UTF-8" ?>  
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!DOCTYPE mapper   
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
-    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
-<mapper namespace="kr.spring.shop.dao.ShopMapper">  
-	<select id="shopList" parameterType="map" resultType="shopCommand">
-	SELECT * FROM (SELECT * FROM shop order by code desc) shop 
-	<![CDATA[
-	WHERE rownum >= #{start} AND rownum <= #{end}
-	]]>
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.spring.shop.dao.ShopMapper">
+	
+	<select id="list" parameterType="map" resultType="shopCommand">
+	SELECT * FROM (SELECT
+		  a.*,
+		  rownum rnum
+		  FROM (SELECT
+		  		*
+		  		FROM shop ORDER BY code DESC)a)
+		  		<![CDATA[
+				WHERE rnum >= #{start} AND rnum <= #{end}
+				]]>
+	
+	
 	</select>
+	
 	<select id="getRowCount" parameterType="map" resultType="Integer">
 	SELECT
 	count(*)
 	FROM shop
 	</select>
-</mapper>
 
+
+	<select id="shopList" parameterType="map" resultType="shopCommand">
+	SELECT * FROM (SELECT shop.*, rownum rnum FROM (SELECT * FROM shop order by code desc) shop) 
+		<![CDATA[
+		WHERE rnum >= #{start} AND rnum <= #{end}
+		]]>
+	</select>
+
+</mapper>

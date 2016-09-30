@@ -2,11 +2,11 @@
  * 
  */
 
-
 $(document).ready(function(){
 	var width, height;
 	width = $("#findShop").width();
 	height = $("#findShop").height();
+
 	//height = $("#findShop").height();
 	
 	var coordinateX = 0, coordinateY = 0, mapScale = 1;
@@ -14,22 +14,17 @@ $(document).ready(function(){
     var proj, path;
     
     var svg = d3.select('#findShop').append("svg")
-
     								.attr("id", "map_svg")
-
       								.attr("width", width)
       								.attr("height", height);
     
     svg.append("rect")
-
-
     	.attr("width", width)
     	.attr("height", height)
     	.on("click", mapScratch);
     
     mapScratch();
-    
-
+ 
     $(window).resize(function(){
     	width = $("#findShop").width();
     	svg.attr("width", width);
@@ -48,7 +43,6 @@ $(document).ready(function(){
     		this.value = 0;
     	}
     });
-    
 
     function mapScratch(eng_name){
     	var str = eng_name;
@@ -71,6 +65,7 @@ $(document).ready(function(){
     	path = d3.geo.path().projection(proj);
     	
 	    d3.json("/final-kibeob2/resources/mapdata/"+ str +".json", function(error, kor) {
+
     		if (error) return console.error(error);
     		
     		g=svg.append('g')

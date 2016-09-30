@@ -19,12 +19,13 @@
 	        <div class="row">
 	        
 	            <div class="col-sm-6">                       
-	                <div class="input-group" id="validation">
+	                <div class="input-group">
 	                    <span class="input-group-addon"><i class="md md-account-box"></i></span>
 	                    <div class="fg-line">
-	                            <input type="text" class="form-control" name="name" id="name" placeholder="가게 이름"/>
+	                    	<input type="text" class="form-control" name="name" id="name" placeholder="가게 이름"/>
 	                    </div>
 	                </div>
+                    <div id="validation"></div>
 	                
 	                <br/>
 	                
@@ -62,7 +63,7 @@
 	                           <div class="select">
 	                          
 	                               <select name="classify" id="classify" class="form-control">
-	                                   <option>가게 분류</option>
+	                                   <option value="">가게 분류</option>
 	                                   <option value="1">한식</option>
 	                                   <option value="2">일식</option>
 	                                   <option value="3">중식</option>
@@ -85,7 +86,7 @@
 	                       <div class="fg-line">
 	                           <div class="select">
 	                               <form:select path="able_coupon" name="able_coupon" id="able_coupon" class="form-control">
-	                                   <option>쿠폰 가능 여부</option>
+	                                   <option value="">쿠폰 가능 여부</option>
 	                                   <option value="1">가능</option>
 	                                   <option value="0">불가능</option>
 	                               </form:select>
@@ -98,7 +99,7 @@
 	                       <div class="fg-line">
 	                           <div class="select">
 	                               <select name="able_book" id="able_book" class="form-control">
-	                                   <option>예약 가능 여부</option>
+	                                   <option value="">예약 가능 여부</option>
 	                                   <option value="1">가능</option>
 	                                   <option value="0">불가능</option>
 	                               </select>

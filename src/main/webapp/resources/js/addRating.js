@@ -5,7 +5,7 @@ $(document).ready(function() {
 	$("label[id*='-star-']").click(function(){
 		alert($(this).attr("id"));
 		$.ajax({
-			url:'addRating.do',
+			url:'../addRating.do',
 			type:'post',
 			data:{id:$(this).attr("id")},
 			dataType:'json',

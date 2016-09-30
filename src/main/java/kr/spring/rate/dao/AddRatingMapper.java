@@ -11,8 +11,8 @@ import kr.spring.rate.domain.RateCommand;
 
 @Repository("addRatingMapper")
 public interface AddRatingMapper {
-	@Insert("INSERT INTO rate (no, shop_code, mem_id, private_rate, rate_date)"
-			+ " VALUES (rate_seq.nextval, #{shop_code}, #{mem_id}, #{private_rate}, sysdate)")
+	@Insert("INSERT INTO rate (no, shop_code, mem_id, private_rate, rate_date, mem_id_num)"
+			+ " VALUES (rate_seq.nextval, #{shop_code}, #{mem_id}, #{private_rate}, sysdate, #{mem_id_num})")
 	public void addRating(RateCommand rateCommand);
 	
 	@Select("SELECT * FROM rate WHERE shop_code = #{shop_code}")
@@ -38,4 +38,6 @@ public interface AddRatingMapper {
 	
 	@Select("SELECT * FROM rate WHERE mem_id=#{mem_id}")
 	public List<RateCommand> ratedShopList(String mem_id);
+	
+	
 }
