@@ -4,28 +4,15 @@
 <!-- Header top area content -->
 <div class="header-top">
 	<div class="row">
-		<div class="col-md-4 col-sm-4">
+		<div class="col-md-6 col-sm-6">
 			<!-- Header top left content contact -->
 			<div class="header-contact">
 				<!-- Contact number -->
-				<span><i class="fa fa-phone red"></i>010-5882-588</span>
+				<span><i class="fa fa-phone red"></i>112</span>
 			</div>
 		</div>
-		<div class="col-md-4 col-sm-4">
-			<!-- Header top right content search box -->	
-			<div class=" header-search">
-				<form class="form" role="form">
-					<div class="input-group">
-					  <input type="text" class="form-control" placeholder="Search...">
-					  <span class="input-group-btn">
-						<button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
-					  </span>
-					</div>
-				</form>
-			</div>
-		</div>
-		<div class="col-md-4 col-sm-4">
-			<!-- 로그인 버튼 시작 ▼ -->
+		<!-- 로그인 버튼 시작 ▼ -->
+		<div class="col-md-6 col-sm-6">
 			<c:if test="${empty userId}">
 			<div class="btn-login-md">
 				
@@ -57,9 +44,9 @@
 				<div class="clearfix"></div>
 			</div>
 			</c:if>
-			<!-- 로그아웃 버튼 끝 ▲ -->
 			<div class="clearfix"></div>
 		</div>
+			<!-- 로그아웃 버튼 끝 ▲ -->
 	</div>
 </div>
 <div class="row">
@@ -94,7 +81,7 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<!-- 홈 -->
-						<li><a href="${pageContext.request.contextPath}/index.html"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.png" class="img-responsive" alt="" /> 홈</a></li>
+						<li><a href="${pageContext.request.contextPath}/index.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.png" class="img-responsive" alt="" /> 홈</a></li>
 				
 						<!-- 맛집찾기 -->
 						<li><a href="${pageContext.request.contextPath}/member/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav2.png" class="img-responsive" alt="" /> 맛집찾기</a></li>
@@ -120,7 +107,7 @@
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav5.png" class="img-responsive" alt="" /> 커뮤니티<b class="caret"></b></a>
 
 							<ul class="dropdown-menu">
-								<li><a href="#">공지사항</a></li>
+								<li><a href="${pageContext.request.contextPath}/board2/boardList2.do">공지사항</a></li>
 								<li><a href="${pageContext.request.contextPath}/board/boardList.do">자유게시판</a></li>
 							</ul>
 						</li>

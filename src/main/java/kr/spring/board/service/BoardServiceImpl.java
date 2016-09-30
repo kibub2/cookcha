@@ -20,10 +20,18 @@ public class BoardServiceImpl implements BoardService {
 	public BoardCommand selectBoard(int seq) {
 		return boardMapper.selectBoard(seq);
 	}
+	@Override
+	public BoardCommand selectBoard2(int seq) {
+		return boardMapper.selectBoard2(seq);
+	}
 
 	@Override
 	public void insertBoard(BoardCommand board) {
 		boardMapper.insertBoard(board);
+	}
+	@Override
+	public void insertBoard2(BoardCommand board2) {
+		boardMapper.insertBoard2(board2);
 	}
 
 	@Override
@@ -35,5 +43,13 @@ public class BoardServiceImpl implements BoardService {
 	public int getRowCount(Map<String, Object> map) {
 		return boardMapper.getRowCount(map);
 	}
+
+	@Override
+	public List<BoardCommand> list2(Map<String, Object> map) {
+		return boardMapper.list2(map);
+	}
+	
+
+	
 
 }

@@ -129,7 +129,7 @@ public class SearchShopController {
 		
 		
 		/* 기법 추천 구현부분  끝*/
-		
+
 		List<RateCommand> ratingList=null;
 		ratingList=rateService.ratedShopList(userId);
 		ModelAndView mav=new ModelAndView();
@@ -139,5 +139,6 @@ public class SearchShopController {
 		mav.addObject("ratingList",ratingList);
 		
 		return mav;
+		
 	}
 }

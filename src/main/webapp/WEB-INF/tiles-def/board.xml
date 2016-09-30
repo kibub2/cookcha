@@ -20,4 +20,20 @@
     	<put-attribute name="banner" value="/WEB-INF/views/board/bannerInit.jsp"/>
     	<put-attribute name="body" value="/WEB-INF/views/board/boardDetail.jsp"/>
     </definition>
+    
+     <definition name="boardList2" extends="index">
+    	<put-attribute name="title" value="게시판/공지사항"/>
+    	<put-attribute name="banner" value="/WEB-INF/views/board2/bannerInit2.jsp"/>
+    	<put-attribute name="body" value="/WEB-INF/views/board2/boardList2.jsp"/>
+    </definition>
+    <definition name="boardWrite2" extends="index">
+    	<put-attribute name="title" value="글쓰기"/>
+    	<put-attribute name="banner" value="/WEB-INF/views/board2/bannerInit2.jsp"/>
+    	<put-attribute name="body" value="/WEB-INF/views/board2/boardWrite2.jsp"/>
+    </definition>
+    <definition name="boardDetail2" extends="index">
+    	<put-attribute name="title" value="글 상세보기"/>
+    	<put-attribute name="banner" value="/WEB-INF/views/board2/bannerInit2.jsp"/>
+    	<put-attribute name="body" value="/WEB-INF/views/board2/boardDetail2.jsp"/>
+    </definition>
 </tiles-definitions>

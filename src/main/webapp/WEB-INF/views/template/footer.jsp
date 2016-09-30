@@ -73,7 +73,7 @@
 					<i class="fa fa-map-marker br-red"></i> <span>서울시 서초구 역삼동<br />kh정보교육원<br />4층 O-Class</span>
 					<div class="clearfix"></div>
 					<!-- Contact Number / Icon -->
-					<i class="fa fa-phone br-green"></i> <span>010-5882-5882</span>
+					<i class="fa fa-phone br-green"></i> <span>112</span>
 					<div class="clearfix"></div>
 					<!-- Email / Icon -->
 					<i class="fa fa-envelope-o br-lblue"></i> <span><a href="#">abc@example.com</a></span>

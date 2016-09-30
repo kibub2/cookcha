@@ -23,3 +23,13 @@ create table board (
  constraint board_member_fk1 foreign key(id) references member(id)
 );
 
+create table board2 (
+ seq int not null primary key,
+ code number(1,0),
+ subject varchar2(40) not null,
+ content clob not null,
+ reg_date date not null,
+ id varchar2(40) not null,
+ constraint board_member_fk2 foreign key(id) references member(id)
+);
+

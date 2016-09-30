@@ -88,4 +88,17 @@
 
 	</beans:bean>
 	
+	<!-- 로그인 여부 체크 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/member/detail.do"/>
+			<mvc:mapping path="/member/update.do"/>
+			<mvc:mapping path="/member/delete.do"/>
+			<mvc:mapping path="/member/searchShop.do"/>
+			<mvc:mapping path="/board/boardWrite.do"/>
+			<mvc:mapping path="/board2/boardWrite2.do"/>
+			<beans:bean class="kr.spring.member.interceptor.LogonCheckInterceptor"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
 </beans:beans>

@@ -41,6 +41,42 @@
   		WHERE rnum >= #{start} AND rnum <= #{end}
   		]]>
 	</select>
+	<select id="list2" parameterType="map" resultType="boardCommand">
+		SELECT
+		seq,
+		id,
+  		<![CDATA[
+  		REPLACE(REPLACE(subject,'<','&lt;'),'>','&gt;') subject,
+  		]]>
+		content,
+		reg_date
+		FROM (SELECT
+		a.*,
+		rownum rnum
+		FROM (SELECT
+		*
+		FROM board2
+		<where>
+			<if test="keyword !='' and keyfield == 'subject'">
+				subject like '%' || #{keyword} || '%'
+			</if>
+			<if test="keyword !='' and keyfield == 'id'">
+				id like '%' || #{keyword} || '%'
+			</if>
+			<if test="keyword !='' and keyfield == 'content'">
+				content like '%' || #{keyword} || '%'
+			</if>
+			<if test="keyword !='' and keyfield == 'all'">
+				subject like '%' || #{keyword} || '%'
+				id like '%' || #{keyword} || '%'
+				content like '%' || #{keyword} || '%'
+			</if>
+		</where>
+		ORDER BY seq DESC)a)
+  		<![CDATA[
+  		WHERE rnum >= #{start} AND rnum <= #{end}
+  		]]>
+	</select>
 	<select id="getRowCount" parameterType="map" resultType="Integer">
 		SELECT
 		count(*)
