@@ -11,6 +11,7 @@ import kr.spring.shop.dao.ShopMapper;
 import kr.spring.shop.domain.ShopCommand;
 import kr.spring.shop.domain.ShopReplyCommand;
 
+
 @Service("shopService")
 public class ShopServiceImpl implements ShopService {
 	@Resource
@@ -48,28 +49,18 @@ public class ShopServiceImpl implements ShopService {
 	}
 
 
+
 	@Override
 	public ShopCommand selectShop(int code) {
 	// TODO Auto-generated method stub
 	return shopMapper.selectShop(code);
 	}
 	
-	@Override
-	public void insert(ShopCommand shopCommand) {
-		shopMapper.insert(shopCommand);
-		
-	}
 
 	@Override
 	public ShopCommand select(int code) {
 		
 		return shopMapper.select(code);
-	}
-
-	@Override
-	public List<ShopCommand> list(Map<String, Object> map) {
-		
-		return shopMapper.list(map);
 	}
 
 	@Override
@@ -108,5 +99,8 @@ public class ShopServiceImpl implements ShopService {
 		return shopMapper.getRowCount(map);
 
 	}
+	
+
+	
 
 }

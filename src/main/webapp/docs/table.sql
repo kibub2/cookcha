@@ -10,6 +10,18 @@ CREATE TABLE book (
   content clob not null,
   constraint book_member_fk1 foreign key(id) references member(id),
   constraint book_shop_fk1 foreign key(code) references shop(code)
+
+);
+create sequence book_seq;
+  passwd varchar2(15) not null,
+  rate_count number(5),
+  register date not null,
+  birth date not null,
+  sex varchar2(3) not null,
+  grade number(1),
+  point number(4),
+  picture varchar2(100),
+  phone varchar2(20) not null
 );
 create sequence book_seq;
 

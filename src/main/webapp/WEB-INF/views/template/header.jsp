@@ -32,7 +32,6 @@
 				<a href="#"><img class="loginIcon" src="${pageContext.request.contextPath}/resources/img/login_icon.png" alt="" /></a>
 				<a class="login-link" href="${pageContext.request.contextPath}/member/login.do">
 
-
 					<!-- Heading -->
 					<h4>Cookcha Login</h4>
 					<span>로그인</span>
@@ -48,7 +47,6 @@
 				<!-- Image -->
 				<a href="#"><img class="img-responsive loginIcon" src="${pageContext.request.contextPath}/resources/img/login_icon.png" alt="" /></a>
 				<a class="login-link" href="${pageContext.request.contextPath}/member/logout.do">
-
 					<!-- Heading -->
 					<h4 style="color: #FF9436;">${userId}님 환영합니다.</h4>
 					<span>로그아웃</span>
@@ -100,6 +98,7 @@
 						<li><a href="${pageContext.request.contextPath}/member/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav2.png" class="img-responsive" alt="" /> 맛집찾기</a></li>
 
 						<!-- 샵 -->
+
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.png" class="img-responsive" alt="" /> 샵<b class="caret"></b></a>
 							<ul class="dropdown-menu">
@@ -114,7 +113,6 @@
 								<li><a href="${pageContext.request.contextPath}/shop/test.do">Recipes</a></li>
 							</ul>
 						</li>
-
 						<!-- 게시판, 공지사항  -->
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav5.png" class="img-responsive" alt="" /> 커뮤니티<b class="caret"></b></a>
@@ -125,6 +123,7 @@
 							</ul>
 						</li>
 
+						<!-- 게시판, 공지사항 ▲ -->
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->

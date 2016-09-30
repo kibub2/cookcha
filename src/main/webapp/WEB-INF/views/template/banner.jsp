@@ -5,7 +5,6 @@
 			<!-- MAIN IMAGE -->
 
 			<img src="${pageContext.request.contextPath }/resources/img/slider/slide2.jpg"  alt=""  data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat">
-
 			
 			<!-- LAYERS -->
 			<!-- LAYER NR. 1 -->
@@ -74,7 +73,6 @@
 				data-easing="Power3.easeInOut"
 				data-endspeed="300"
 				style="z-index: 5"><img class="slide-img img-responsive" src="${pageContext.request.contextPath}/resources/img/slider/s21.png" alt="" />
-
 			</div>
 			<!-- LAYER NR. 3.1 -->
 			<div class="tp-caption customin customout"
@@ -87,8 +85,7 @@
 				data-easing="Power3.easeInOut"
 				data-endspeed="300"
 
-				style="z-index: 6"><img class="slide-img img-responsive" src="${pageContext.request.contextPath }/resources/img/slider/s22.png" alt="" />
-
+				style="z-index: 6"><img class="slide-img img-responsive" src="${pageContext.request.contextPath}/resources/img/slider/s22.png" alt="" />
 			</div>
 			<!-- LAYER NR. 3.2 -->
 			<div class="tp-caption customin customout"
@@ -101,7 +98,7 @@
 				data-easing="Power3.easeInOut"
 				data-endspeed="300"
 
-				style="z-index: 7"><img class="slide-img img-responsive" src="${pageContext.request.contextPath }/resources/img/slider/s23.png" alt="" />
+				style="z-index: 7"><img class="slide-img img-responsive" src="${pageContext.request.contextPath}/resources/img/slider/s23.png" alt="" />
 
 			</div>
 			<!-- LAYER NR. 3.3 -->
@@ -121,7 +118,6 @@
 		<li data-transition="zoomin" data-slotamount="6" data-masterspeed="400" >
 			<!-- MAIN IMAGE -->
 			<img src="${pageContext.request.contextPath}/resources/img/slider/transparent.png" style="background-color:#fff" alt=""  data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat">
-
 			
 			<!-- LAYERS -->
 			<!-- LAYER NR. 1 -->
@@ -192,7 +188,6 @@
 				data-endspeed="500"
 				data-endeasing="Power4.easeIn"
 				style="z-index: 3"><img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/slider/s13.png" alt="" />
-
 			</div>
 			<!-- LAYER NR. 2.3 -->
 			<div class="tp-caption sft"
@@ -247,7 +242,6 @@
 				data-endspeed="300"
 				data-endeasing="Linear.easeNone"
 				data-captionhidden="off"><img class="img-responsive" src="${pageContext.request.contextPath}/resources/img/slider/s35.png" alt="" />
-
 			</div>
 			<!-- LAYERS NR. 2 -->
 			<div class="tp-caption lfr large_bold_grey heading white"
@@ -344,7 +338,8 @@
 				data-start="2700"
 				data-easing="Power4.easeOut"
 				data-endspeed="300"
-				data-endeasing="Power4.easeIn"S
+
+				data-endeasing="Power4.easeIn"
 				data-captionhidden="off"><img src="${pageContext.request.contextPath}/resources/img/slider/s34.png" class="img-responsive" alt="" />
 
 			</div>

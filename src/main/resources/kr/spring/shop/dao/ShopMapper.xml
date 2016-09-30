@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?> 
 
 <!DOCTYPE mapper   
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
@@ -19,12 +19,11 @@
 	
 	</select>
 	
-	<select id="getRowCount" parameterType="map" resultType="Integer">
+	<select id="getRowCount" parameterType="map" resultType="int">
 	SELECT
 	count(*)
 	FROM shop
 	</select>
-
 
 	<select id="shopList" parameterType="map" resultType="shopCommand">
 	SELECT * FROM (SELECT shop.*, rownum rnum FROM (SELECT * FROM shop order by code desc) shop) 
@@ -34,3 +33,4 @@
 	</select>
 
 </mapper>
+

@@ -157,8 +157,7 @@ $(document).ready(function() {
 															<div align="center">
 																<br>
 																<input type="submit" class="btn btn-default" id="next_button" value="다음">
-															</div>
-															
+															</div>															
 														</div>
 													</div>
 													<div class="modal-footer"></div>

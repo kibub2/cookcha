@@ -1,6 +1,5 @@
 package kr.spring.shop.domain;
 
-
 import org.springframework.web.multipart.MultipartFile;
 
 public class ShopCommand {
@@ -19,7 +18,6 @@ public class ShopCommand {
 	private int classify;
 	private int maxtable;
 	private int able_book;
-
 	private int able_coupon;
 
 	public int getCode() {
@@ -52,12 +50,10 @@ public class ShopCommand {
 	public void setSub_address(String sub_address) {
 		this.sub_address = sub_address;
 	}
-
 	public double getShop_rating() {
 		return shop_rating;
 	}
 	public void setShop_rating(double shop_rating) {
-
 		this.shop_rating = shop_rating;
 	}
 	public String getMain_picture() {
@@ -77,7 +73,6 @@ public class ShopCommand {
 	}
 	public void setIntroduction(String introduction) {
 		this.introduction = introduction;
-
 	}
 	public int getRater() {
 		return rater;
@@ -120,7 +115,6 @@ public class ShopCommand {
 	}
 	public void setUpload2(MultipartFile upload2) {
 		this.upload2 = upload2;
-
 	}
 	
 }
