@@ -30,17 +30,17 @@
 			<!-- Footer widget -->
 			<div class="footer-widget">
 				<!-- Heading -->
-				<h4>다양한 음식 사진</h4>
+				<h4>Famous Dishes</h4>
 				<!-- Images -->
 				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish2.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish3.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish4.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish9.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish10.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish11.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish12.jpg" alt="" /></a>
-				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish13.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
+				<a href="#"><img class="dish img-responsive" src="${pageContext.request.contextPath}/resources/img/dish/dish1.jpg" alt="" /></a>
 			</div> <!--/ Footer widget end -->
 		</div>
 		<div class="clearfix visible-sm"></div>
@@ -48,9 +48,9 @@
 			<!-- Footer widget -->
 			<div class="footer-widget">
 				<!-- Heading -->
-				<h4>상담문의</h4>
+				<h4>Join Us Today</h4>
 				<!-- Paragraph -->
-				<p>이름, 이메일주소를 적어 보내주시면 해당 이메일로 연락처가 발송됩니다.</p>
+				<p>There is no one who loves pain itself, who seeks after it and wants to have it.</p>
 				<!-- Subscribe form -->
 				<form role="form">
 					<div class="form-group">
@@ -59,7 +59,7 @@
 					<div class="form-group">
 						<input class="form-control" type="email" placeholder="Your email" />
 					</div>
-					<button class="btn btn-danger" type="button" onclick="location.href='${pageContext.request.contextPath}/index.do'">보내기</button>
+					<button class="btn btn-danger" type="button">Subscribe</button>
 				</form>
 			</div> <!--/ Footer widget end -->
 		</div>
@@ -67,13 +67,13 @@
 			<!-- Footer widget -->
 			<div class="footer-widget">
 				<!-- Heading -->
-				<h4>연락처 및 주소 </h4>
+				<h4>Contact Us</h4>
 				<div class="contact-details">
 					<!-- Address / Icon -->
-					<i class="fa fa-map-marker br-red"></i> <span>서울시 서초구 역삼동<br />kh정보교육원<br />4층 O-Class</span>
+					<i class="fa fa-map-marker br-red"></i> <span>#768, 5th floor, N S Building,<br />Csm Block, Park Road,<br /> Bangalore - 234567</span>
 					<div class="clearfix"></div>
 					<!-- Contact Number / Icon -->
-					<i class="fa fa-phone br-green"></i> <span>010-5882-5882</span>
+					<i class="fa fa-phone br-green"></i> <span>+91 88-88-888888</span>
 					<div class="clearfix"></div>
 					<!-- Email / Icon -->
 					<i class="fa fa-envelope-o br-lblue"></i> <span><a href="#">abc@example.com</a></span>

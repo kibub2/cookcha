@@ -60,6 +60,7 @@ public class RateController {
 		
 		//현재 사용자가 평가한 가게의 가게 평가정보 불러오기
 		String mem_id=(String)session.getAttribute("userId");
+		rateService.ratedShopList(mem_id);
 		List<RateCommand> ratingList=null;
 		ratingList=rateService.ratedShopList(mem_id);
 		

@@ -1,6 +1,4 @@
-package kr.spring.util;
-
-
+package kr.util;
 
 public class PagingUtilAjax {
 	private int startCount;	 // 한 페이지에서 보여줄 게시글의 시작 번호

@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import javax.annotation.Resource;
+import javax.annotation.Resources;
 import javax.servlet.http.HttpSession;
 
 import org.apache.log4j.Logger;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import kr.spring.rate.domain.RateCommand;
 import kr.spring.rate.service.RateService;
-
+import kr.spring.shop.service.ShopService;
 
 
 @Controller
@@ -43,9 +44,6 @@ public class AddRatingController {
 			String str=id;
 			String [] values=str.split("-");
 			String mem_id=(String)session.getAttribute("userId");
-			String mem_id2=mem_id;
-			String [] values2=mem_id2.split("@");
-			int mem_id_num=Integer.parseInt(values2[0]);
 			
 			//로그인이 안되어 있을 경우
 			if(mem_id==null){
@@ -64,7 +62,7 @@ public class AddRatingController {
 				rateCommand.setMem_id(mem_id);
 				rateCommand.setPrivate_rate(rating);
 				rateCommand.setShop_code(code);
-				rateCommand.setMem_id_num(mem_id_num);
+				
 				
 				
 				//rate 테이블에 등록

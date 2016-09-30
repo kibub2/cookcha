@@ -9,8 +9,6 @@ public class RateCommand {
 	private int private_rate;
 	private Date rate_date;
 	private double shop_rating;
-	private int mem_id_num;
-	
 	public int getNo() {
 		return no;
 	}
@@ -46,11 +44,5 @@ public class RateCommand {
 	}
 	public void setShop_rating(double shop_rating) {
 		this.shop_rating = shop_rating;
-	}
-	public int getMem_id_num() {
-		return mem_id_num;
-	}
-	public void setMem_id_num(int mem_id_num) {
-		this.mem_id_num = mem_id_num;
 	}	
 }

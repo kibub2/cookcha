@@ -11,51 +11,17 @@ import kr.spring.shop.dao.ShopMapper;
 import kr.spring.shop.domain.ShopCommand;
 import kr.spring.shop.domain.ShopReplyCommand;
 
-
 @Service("shopService")
-public class ShopServiceImpl implements ShopService {
+public class ShopServiceImpl implements ShopService{
+	
 	@Resource
 	private ShopMapper shopMapper;
-
-	@Override
-	public void register(ShopCommand shop) {
-		
-		shopMapper.register(shop);
-	}
-
-	@Override
-	public int lastShopCode() {
-		// TODO Auto-generated method stub
-		return shopMapper.lastShopCode();
-	}
-
-	@Override
-	public String checkShop(String name) {
-		// TODO Auto-generated method stub
-		return shopMapper.checkShop(name);
-	}
-
-
+	
 	@Override
 	public List<ShopCommand> shopList(Map<String, Object> map) {
 		// TODO Auto-generated method stub
 		return shopMapper.shopList(map);
 	}
-
-	@Override
-	public int getTotalCount() {
-		// TODO Auto-generated method stub
-		return shopMapper.getTotalCount();
-	}
-
-
-
-	@Override
-	public ShopCommand selectShop(int code) {
-	// TODO Auto-generated method stub
-	return shopMapper.selectShop(code);
-	}
-	
 
 	@Override
 	public ShopCommand select(int code) {
@@ -97,8 +63,38 @@ public class ShopServiceImpl implements ShopService {
 	public int getRowCount(Map<String, Object> map) {
 		// TODO Auto-generated method stub
 		return shopMapper.getRowCount(map);
-
 	}
+	
+	@Override
+	public int getTotalCount() {
+		// TODO Auto-generated method stub
+		return shopMapper.getTotalCount();
+	}
+
+	@Override
+	public void register(ShopCommand shop) {
+		
+		shopMapper.register(shop);
+	}
+
+	@Override
+	public int lastShopCode() {
+		// TODO Auto-generated method stub
+		return shopMapper.lastShopCode();
+	}
+
+	@Override
+	public String checkShop(String name) {
+		// TODO Auto-generated method stub
+		return shopMapper.checkShop(name);
+	}
+
+	@Override
+	public ShopCommand selectShop(int code) {
+		// TODO Auto-generated method stub
+		return shopMapper.selectShop(code);
+	}
+
 	
 
 	

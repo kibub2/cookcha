@@ -51,18 +51,17 @@
     	<property name="dataSource" ref="dataSource"/>
     	<property name="typeAliasesPackage" value="kr.spring.board.domain,
     											   kr.spring.member.domain,
-    											   kr.spring.shop.domain,
-    											   kr.spring.rate.domain,
-    											   kr.spring.recommend.domain,
+    											   kr.spring.shop.domain
+    											   kr.spring.rate.domain
     											   kr.spring.book.domain"/>
     </bean>
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
     	<property name="basePackage" value="kr.spring.board.dao,
     										kr.spring.member.dao,
-    										kr.spring.shop.dao,
-    										kr.spring.rate.dao,
-    										kr.spring.recommend.dao,
+    										kr.spring.shop.dao
+    										kr.spring.rate.dao
     										kr.spring.book.dao"/>
+
 
     </bean>
     

@@ -53,13 +53,12 @@ public class MemberLoginController {
 				check = member.isCheckedPasswd(memberCommand.getPasswd());
 			}
 			//위 자바빈의 passwd 값이 일치해 true를 반환하였을 경우 session에 입력한 자바빈 id를 userId값으로 생성
-			if(check && member.getGrade()==2){
+			if(check){
+				System.out.println("true");
 				session.setAttribute("userId", memberCommand.getId());
 				return "redirect:/index.do";
-			}else if(check && member.getGrade()==1){
-				session.setAttribute("userId", memberCommand.getId());
-				return "redirect:/admin.do";
 			}else{
+				System.out.println("esle");
 				throw new Exception();
 			}
 		}catch(Exception e){

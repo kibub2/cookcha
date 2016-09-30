@@ -30,7 +30,11 @@ public interface BookMapper {
 	
 	@Select("SELECT * FROM book WHERE code = #{code}")
 	public List<BookCommand> selectShop(int code);
+	/*null로 값이 나올 경우 다른 기본값으로 변경하기 위해서는 = nvl  AND book_date=#{book_date}*/
+	@Select("SELECT nvl(SUM(seat),0) FROM book WHERE book_time= '점심(12:00~15:00)' AND code=#{code} ")
 	public int selectTime(BookCommand bookCommand);
+	
+	@Select("SELECT nvl(SUM(seat),0) FROM book WHERE book_time= '저녁(18:00~21:00)' AND code=#{code} ")
 	public int selectTime2(BookCommand bookCommand);
 	
 	@Select("SELECT maxtable FROM shop WHERE code = #{code}")

@@ -12,6 +12,10 @@ public class PagingUtil {
 	 * pageCount : 한 화면에 보여줄 페이지 수
 	 * pageUrl : 호출 페이지 url
 	 * addKey : 부가적인 key 없을 때는 null 처리 (&num=23형식으로 전달할 것)
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/test-mahout
 	 * */
 	public PagingUtil(int currentPage, int totalCount, int rowCount,
 			int pageCount, String pageUrl) {

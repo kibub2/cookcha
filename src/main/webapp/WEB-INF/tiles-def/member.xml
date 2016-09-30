@@ -5,8 +5,7 @@
        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
-    <definition name="recommend" extends="index">
-        <put-attribute name="title"  value="맞춤추천"/>
-        <put-attribute name="body"   value="/WEB-INF/views/recommend/recommend.jsp"/>
-    </definition> 
+    <definition name="searchShop" extends="index">
+    	<put-attribute name="body"   value="/WEB-INF/views/member/searchShop.jsp"/>
+    </definition>
 </tiles-definitions>

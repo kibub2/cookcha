@@ -19,7 +19,9 @@ public class ShopCommand {
 	private int maxtable;
 	private int able_book;
 	private int able_coupon;
-
+	
+	
+	
 	public int getCode() {
 		return code;
 	}

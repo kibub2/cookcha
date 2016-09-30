@@ -5,9 +5,9 @@ import java.util.Map;
 
 import org.springframework.transaction.annotation.Transactional;
 
+import kr.spring.board.domain.BoardCommand;
 import kr.spring.shop.domain.ShopCommand;
 import kr.spring.shop.domain.ShopReplyCommand;
-
 
 @Transactional
 public interface ShopService {
@@ -29,4 +29,5 @@ public interface ShopService {
 	public void insertReply(ShopReplyCommand shopReplyCommand);
 	public void updateReply(ShopReplyCommand shopReplyCommand);
 	public void deleteReply(Integer no);
+	
 }
