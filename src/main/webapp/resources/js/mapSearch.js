@@ -111,6 +111,25 @@ $(document).ready(function(){
     
     //지역 내의 맛집 추천
     function rec_localShop(id){
-    	
+    	console.log(id);
+    	$.ajax({
+			url:'/final-kibeob2/recommend/districtShop.do',
+			type:'post',
+			data:{id: id},
+			dataType:'json',
+			cache:false,
+			timeout:30000,
+			success:function(data){
+				
+			},
+			error:function(){
+				alert('네트워크 오류 발생!');
+			}
+		});
     }
+    
+    function getContextPath() {
+		var hostIndex = location.href.indexOf( location.host ) + location.host.length;
+		return location.href.substring( hostIndex, location.href.indexOf('/', hostIndex + 1) );
+	};
 });

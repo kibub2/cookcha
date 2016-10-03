@@ -13,5 +13,6 @@ public interface ShopService {
 	public int lastShopCode();
 	public String checkShop(String name);
 	public List<ShopCommand> shopList(Map<String, Object> map);
+	public List<ShopCommand> recommendShopList(String districtName);
 	public int getTotalCount();
 }

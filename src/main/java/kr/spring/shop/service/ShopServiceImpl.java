@@ -38,6 +38,10 @@ public class ShopServiceImpl implements ShopService {
 		// TODO Auto-generated method stub
 		return shopMapper.shopList(map);
 	}
+	@Override
+	public List<ShopCommand> recommendShopList(String districtName){
+		return shopMapper.recommendShopList(districtName);
+	}
 
 	@Override
 	public int getTotalCount() {
