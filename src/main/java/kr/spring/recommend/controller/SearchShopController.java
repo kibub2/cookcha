@@ -105,7 +105,7 @@ public class SearchShopController {
 		/*ItemSimilarity itemSimilarity = new 
 		ItemBasedRecommender itemRecommander=new GenericItemBasedRecommender(model, itemSimilarity);*/
 		
-		//가장 유사한 아이디 5개 표출
+		//가장 유사한 아이디 4개 표출
 		List<RecommendedItem> kkk = userRecommander.recommend(id_num, 4);
 		List<ShopCommand> shopList=new ArrayList<ShopCommand>();
 		HashMap<String, Object> map=new HashMap<String, Object>();

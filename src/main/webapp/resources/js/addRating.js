@@ -2,6 +2,7 @@
  * 별점추가시 평가 반영
  */
 $(document).ready(function() {
+	$('.alert.alert-success.fade.in').css('visibility','visible').fadeOut(3000);
 	$("label[id*='-star-']").click(function(){
 		alert($(this).attr("id"));
 		$.ajax({
@@ -14,8 +15,7 @@ $(document).ready(function() {
 			success:function(data){
 				
 				if(data.result=='success'){
-					alert('평가가 완료되었습니다!');
-					alert(data.shop_rating+$(this).attr('class'));
+					$('.alert.alert-success.fade.in').css('visibility','visible').fadeIn(400);
 					
 					/*if($(this).next('span').attr('class')=='ratedShop')
 					{

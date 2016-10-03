@@ -2394,3 +2394,14 @@ form .stars span {
 	height: 20px;
 	background-image: url("../img/icon/glyphicons-20-heart-empty.png");
 } */
+
+/* alert 메시지 창 */
+.alert.alert-success.fade.in{
+	position:fixed;
+	top:5%;
+	z-index:1;
+	opacity:0.9;
+	left:20%;
+	right:20%;
+	visibility:hidden;
+}
