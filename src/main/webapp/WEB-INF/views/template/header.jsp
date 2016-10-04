@@ -99,13 +99,7 @@
 
 						<!-- 샵 -->
 
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.png" class="img-responsive" alt="" /> 샵<b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="${pageContext.request.contextPath}/recommend.do">맞춤추천</a></li>
-								<li><a href="${pageContext.request.contextPath}/rate.do">추가평가</a></li>
-							</ul>
-						</li>
+						<li><a href="${pageContext.request.contextPath}/rate.do" class="img-responsive"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav3.png" class="img-responsive" alt="" /> 추가평가</a></li>
 						<!-- 이벤트 -->
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav4.png" class="img-responsive" alt="" /> 이벤트<b class="caret"></b></a>
@@ -129,4 +123,5 @@
 			</div><!-- /.container-fluid -->
 			</nav>
 		</div>
+</div>
 </div> <!-- / .container -->
