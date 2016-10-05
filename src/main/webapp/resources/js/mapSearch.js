@@ -112,17 +112,19 @@ $(document).ready(function(){
     //지역 내의 맛집 추천
     function rec_localShop(id){
     	$.ajax({
-			url:'recommend/districtShop.do',
+			url:'../recommend/districtShop.do',
+			/*contentType: 'application/json',*/
 			type:'post',
 			data:{id: id},
-			dataType:'json',
+			dataType:'text',
 			cache:false,
 			timeout:30000,
 			success:function(data){
-				alert('test');
+				console.log(data);
 			},
-			error:function(){
-				alert('네트워크 오류 발생!');
+			error:function(e){
+				console.log(e);
+				/*alert('네트워크 오류 발생!');*/
 			}
 		});
     }

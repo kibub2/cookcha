@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//src/main/java/kr/spring/recommend/controller/SearchShopController.java=UTF-8
 encoding//src/main/java/kr/spring/util/FileUtil.java=UTF-8
 encoding//src/main/java/kr/spring/util/PagingUtil.java=UTF-8
 encoding//src/main/webapp/resources/mapdata=UTF-8

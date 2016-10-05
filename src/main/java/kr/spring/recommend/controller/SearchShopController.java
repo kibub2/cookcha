@@ -1,6 +1,8 @@
 package kr.spring.recommend.controller;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.annotation.Resource;
 
@@ -15,9 +17,15 @@ import org.apache.mahout.cf.taste.recommender.UserBasedRecommender;
 import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import kr.spring.recommend.domain.MahoutRecommendCommand;
 import kr.spring.recommend.service.RecommendService;
+import kr.spring.shop.domain.ShopCommand;
+import kr.spring.shop.service.ShopService;
 
 
 @Controller
@@ -25,6 +33,7 @@ public class SearchShopController {
 	
 	private Logger log=Logger.getLogger(this.getClass());
 	
+	@Resource private ShopService shopService;
 	
 	@Resource
 	private RecommendService recommendService;
@@ -32,7 +41,6 @@ public class SearchShopController {
 	private DataModel model;
 	@RequestMapping("/recommend/searchShop.do")
 	public String form() throws TasteException{
-		/* 기법 추천 구현부분 시작 */
 		/*if(recommendService.mahoutList().get(0) != null){
 			if(log.isDebugEnabled()){
 				log.debug("@@@@@@@@@@@@@@@@@@"+recommendService.mahoutList().get(0).toString());
@@ -47,12 +55,31 @@ public class SearchShopController {
 			UserBasedRecommender recommander=new GenericUserBasedRecommender(model, neighborhood, similarity);
 		}else{
 			if(log.isDebugEnabled()){
-				log.debug("리스트가 없습니다.");
+				log.debug("由ъ�ㅽ�멸� ���듬����.");
 			}
 		}*/
 		
-		/* 기법 추천 구현부분  끝*/
-		
 		return "searchShop";
+	}
+	
+	@ResponseBody
+	@RequestMapping(value="/recommend/districtShop.do", method=RequestMethod.POST)
+	public Map<String, Object> process(@RequestParam("id") String id){
+	    
+	    if(log.isDebugEnabled()){
+			log.debug("id : " + id);
+		}
+	    Map<String, Object> map = new HashMap<String, Object>();
+	    
+	    List<ShopCommand> list = null;
+	      
+	    list = shopService.recommendShopList(id);
+	  
+	    /*ModelAndView mav = new ModelAndView();
+		mav.setViewName("searchShop");
+		mav.addObject("list", list);*/
+	    map.put("list", list);
+	    
+	    return map;
 	}
 }
