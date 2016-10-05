@@ -77,7 +77,7 @@ $(document).ready(function(){
        	 	 	.attr('class', 'municipality')
        	 	 	.attr('id', function(d){
        	 	 		return d.properties['eng_name'];
-       	 	});
+       	 	 	});
     		
     		if(str == 'Korea'){
     			g.on('click', function(d){
@@ -92,7 +92,7 @@ $(document).ready(function(){
     			
     			//구역에서 가장 맛이 있는 음식점 추천
     			g.on('click', function(d){
-    				rec_localShop(this.id);
+    				rec_localShop(d.properties['name']);
     			});
     		}
     	});
@@ -111,16 +111,15 @@ $(document).ready(function(){
     
     //지역 내의 맛집 추천
     function rec_localShop(id){
-    	console.log(id);
     	$.ajax({
-			url:'/final-kibeob2/recommend/districtShop.do',
+			url:'recommend/districtShop.do',
 			type:'post',
 			data:{id: id},
 			dataType:'json',
 			cache:false,
 			timeout:30000,
 			success:function(data){
-				
+				alert('test');
 			},
 			error:function(){
 				alert('네트워크 오류 발생!');

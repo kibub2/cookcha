@@ -9,6 +9,7 @@ import javax.annotation.Resource;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
@@ -23,10 +24,9 @@ public class DistrictShopSearchController {
 	
 	@Resource private ShopService shopService;
 	
-	@RequestMapping(value="/recommend/districtShop.do")
+	@RequestMapping(value="/recommend/districtShop.do", method = RequestMethod.POST, produces = "application/json")
 	@ResponseBody
 	public ModelAndView process(@RequestParam("id") String id)  {
-	    System.out.println("들어옵니다!!");
 	    
 	    if(log.isDebugEnabled()){
 			log.debug("id : " + id);
@@ -34,13 +34,14 @@ public class DistrictShopSearchController {
 	    
 	    List<ShopCommand> list = null;
 	    
+	    /*System.out.println(id);
+	    System.out.println(shopService.recommendShopList(id));*/
+	    
 	    list = shopService.recommendShopList(id);
 	    
 	    ModelAndView mav = new ModelAndView();
 		mav.setViewName("recommendList");
 		mav.addObject("list", list);
-	    
-		System.out.println(mav);
 		
 	    return mav;
 	}
