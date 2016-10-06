@@ -23,7 +23,7 @@ public interface ShopMapper {
 	
 	public List<ShopCommand> shopList(Map<String, Object> map);
 	
-	@Select("SELECT * FROM (SELECT * FROM shop WHERE address LIKE '%'||#{districtName}||'%' order by rater desc) WHERE ROWNUM <= 5")
+	@Select("SELECT * FROM (SELECT * FROM shop WHERE address LIKE '%'||#{districtName}||'%' ORDER BY rater desc) WHERE ROWNUM <= 5")
 	public List<ShopCommand> recommendShopList(String districtName);
 	
 	@Select("SELECT COUNT(*) FROM shop")

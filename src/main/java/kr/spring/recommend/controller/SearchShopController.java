@@ -74,11 +74,11 @@ public class SearchShopController {
 	    List<ShopCommand> list = null;
 	      
 	    list = shopService.recommendShopList(id);
-	  
 	    /*ModelAndView mav = new ModelAndView();
 		mav.setViewName("searchShop");
 		mav.addObject("list", list);*/
 	    map.put("list", list);
+	    map.put("size", list.size());
 	    
 	    return map;
 	}

@@ -109,25 +109,35 @@ $(document).ready(function(){
 		}  
    }
     
-    //지역 내의 맛집 추천
-    function rec_localShop(id){
-    	$.ajax({
-			url:'../recommend/districtShop.do',
-			/*contentType: 'application/json',*/
-			type:'post',
-			data:{id: id},
-			dataType:'text',
-			cache:false,
-			timeout:30000,
-			success:function(data){
-				console.log(data.list);
-			},
-			error:function(e){
-				console.log(e);
-				/*alert('네트워크 오류 발생!');*/
-			}
-		});
-    }
+   //지역 내의 맛집 추천
+   function rec_localShop(id){
+	   $.ajax({
+		   url:'../recommend/districtShop.do',
+		   /*contentType: 'application/json',*/
+		   type:'post',
+		   data:{id: id},
+		   dataType:'json',
+		   cache:false,
+		   timeout:30000,
+		   success:function(data){
+			   var size = data.size;
+			   var list = data.list;
+			   
+			   if(size != 0){
+				   $(list).each(function(index, item){
+					   $('#panel'+index).children('a').html('');
+					   
+				   });
+			   }else{
+				   alert('목록 호출 오류 발생!');
+			   }
+		   },
+		   error:function(e){
+			   console.log(e);
+			   /*alert('네트워크 오류 발생!');*/
+		   }
+	   });
+   }
     
     function getContextPath() {
 		var hostIndex = location.href.indexOf( location.host ) + location.host.length;
