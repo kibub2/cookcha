@@ -120,7 +120,7 @@ $(document).ready(function(){
 			cache:false,
 			timeout:30000,
 			success:function(data){
-				console.log(data);
+				console.log(data.list);
 			},
 			error:function(e){
 				console.log(e);
