@@ -1,10 +1,13 @@
 package kr.spring.recommend.controller;
 
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.function.ToIntBiFunction;
+import java.util.Map;
+
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
@@ -32,6 +35,11 @@ import org.apache.mahout.cf.taste.similarity.ItemSimilarity;
 import org.apache.mahout.cf.taste.similarity.UserSimilarity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
 import org.springframework.web.servlet.ModelAndView;
 
 import kr.spring.rate.domain.RateCommand;
@@ -47,7 +55,6 @@ public class SearchShopController {
 	
 	private Logger log=Logger.getLogger(this.getClass());
 	
-	
 	@Resource
 	private RecommendService recommendService;
 	@Resource
@@ -56,7 +63,8 @@ public class SearchShopController {
 	private RateService rateService;
 	
 	
-	@RequestMapping("/member/searchShop.do")
+
+	@RequestMapping("/recommend/searchShop.do")
 	public ModelAndView form(HttpSession session) throws TasteException{
 		/* 기법 추천 구현부분 시작 */
 		
@@ -129,6 +137,7 @@ public class SearchShopController {
 		
 		
 		/* 기법 추천 구현부분  끝*/
+
 		
 		List<RateCommand> ratingList=null;
 		ratingList=rateService.ratedShopList(userId);
@@ -139,5 +148,26 @@ public class SearchShopController {
 		mav.addObject("ratingList",ratingList);
 		
 		return mav;
+	}
+	
+	@ResponseBody
+	@RequestMapping(value="/recommend/districtShop.do", method=RequestMethod.POST)
+	public Map<String, Object> process(@RequestParam("id") String id){
+	    
+	    if(log.isDebugEnabled()){
+			log.debug("id : " + id);
+		}
+	    Map<String, Object> map = new HashMap<String, Object>();
+	    
+	    List<ShopCommand> list = null;
+	      
+	    list = shopService.recommendShopList(id);
+	    /*ModelAndView mav = new ModelAndView();
+		mav.setViewName("searchShop");
+		mav.addObject("list", list);*/
+	    map.put("list", list);
+	    map.put("size", list.size());
+	    
+	    return map;
 	}
 }

@@ -12,6 +12,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "29110",
+			"eng_name": "GJDong-gu",
 			"name": "동구"
 		},
 		"geometry": {
@@ -296,6 +297,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "29170",
+			"eng_name": "GJBuk-gu",
 			"name": "북구"
 		},
 		"geometry": {
@@ -745,6 +747,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "29200",
+			"eng_name": "Gwangsan-gu",
 			"name": "광산구"
 		},
 		"geometry": {
@@ -1188,6 +1191,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "29140",
+			"eng_name": "GJSeo-gu",
 			"name": "서구"
 		},
 		"geometry": {
@@ -1615,6 +1619,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "29155",
+			"eng_name": "GJNam-gu",
 			"name": "남구"
 		},
 		"geometry": {

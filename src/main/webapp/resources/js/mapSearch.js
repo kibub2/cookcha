@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 
  */
 
@@ -32,6 +32,7 @@ $(document).ready(function(){
     	//mapScratch();
     });
     
+    //좋아요 버튼
     $(".likeButton").on("click", function(){
     	var img = this.getElementsByTagName("img")[0];
     	if(this.value == 0){
@@ -78,7 +79,7 @@ $(document).ready(function(){
        	 	 	.attr('class', 'municipality')
        	 	 	.attr('id', function(d){
        	 	 		return d.properties['eng_name'];
-       	 	});
+       	 	 	});
     		
     		if(str == 'Korea'){
     			g.on('click', function(d){
@@ -91,8 +92,10 @@ $(document).ready(function(){
     			 .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")scale(" + mapScale + ")translate(" + -coordinateX + "," + -coordinateY + ")")
     			 .style("stroke-width", 1.5 / mapScale + "px");
     			
-    			/*//구역에서 가장 맛이 있는 음식점 추천
-    			g.on('',);*/
+    			//구역에서 가장 맛이 있는 음식점 추천
+    			g.on('click', function(d){
+    				rec_localShop(d.properties['name']);
+    			});
     		}
     	});
     }
@@ -105,6 +108,41 @@ $(document).ready(function(){
 			coordinateY = centroid[1];
 			mapScale = 3;
 		    //centered = d;
-		} 
-    }
+		}  
+   }
+    
+   //지역 내의 맛집 추천
+   function rec_localShop(id){
+	   $.ajax({
+		   url:'../recommend/districtShop.do',
+		   /*contentType: 'application/json',*/
+		   type:'post',
+		   data:{id: id},
+		   dataType:'json',
+		   cache:false,
+		   timeout:30000,
+		   success:function(data){
+			   var size = data.size;
+			   var list = data.list;
+			   
+			   if(size != 0){
+				   $(list).each(function(index, item){
+					   $('#panel'+index).children('a').html('');
+					   
+				   });
+			   }else{
+				   alert('목록 호출 오류 발생!');
+			   }
+		   },
+		   error:function(e){
+			   console.log(e);
+			   /*alert('네트워크 오류 발생!');*/
+		   }
+	   });
+   }
+    
+    function getContextPath() {
+		var hostIndex = location.href.indexOf( location.host ) + location.host.length;
+		return location.href.substring( hostIndex, location.href.indexOf('/', hostIndex + 1) );
+	};
 });

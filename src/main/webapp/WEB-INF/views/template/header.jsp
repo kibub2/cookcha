@@ -95,7 +95,7 @@
 						<li><a href="${pageContext.request.contextPath}/index.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav1.png" class="img-responsive" alt="" /> 홈</a></li>
 				
 						<!-- 맛집찾기 -->
-						<li><a href="${pageContext.request.contextPath}/member/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav2.png" class="img-responsive" alt="" /> 맛집찾기</a></li>
+						<li><a href="${pageContext.request.contextPath}/recommend/searchShop.do"><img src="${pageContext.request.contextPath}/resources/img/nav-menu/nav2.png" class="img-responsive" alt="" /> 맛집찾기</a></li>
 
 						<!-- 샵 -->
 
@@ -129,4 +129,5 @@
 			</div><!-- /.container-fluid -->
 			</nav>
 		</div>
+	</div>
 </div> <!-- / .container -->

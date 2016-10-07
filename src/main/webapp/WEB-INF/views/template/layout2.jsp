@@ -36,9 +36,9 @@
 <tiles:insertAttribute name="modal"/></div>
 <div class="wrapper">
 	<div class="header"><tiles:insertAttribute name="header"/></div>
-	
 	<tiles:insertAttribute name="recommend"/>
 	<tiles:insertAttribute name="body"/>
+	
 		
 	
 	<!-- Footer Start -->

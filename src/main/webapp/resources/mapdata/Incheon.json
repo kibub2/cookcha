@@ -12,6 +12,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "28200",
+			"eng_name": "Namdong-gu",
 			"name": "남동구"
 		},
 		"geometry": {
@@ -284,6 +285,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "28720",
+			"eng_name": "Ongiin-gun",
 			"name": "옹진군"
 		},
 		"geometry": {
@@ -3814,6 +3816,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "28237",
+			"eng_name": "Bupyeong-gu",
 			"name": "부평구"
 		},
 		"geometry": {
@@ -4014,6 +4017,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "28110",
+			"eng_name": "ICJung-gu",
 			"name": "중구"
 		},
 		"geometry": {
@@ -4771,6 +4775,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "28140",
+			"eng_name": "ICDong-gu",
 			"name": "동구"
 		},
 		"geometry": {
@@ -4873,6 +4878,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "28245",
+			"eng_name": "Gyeyang-gu",
 			"name": "계양구"
 		},
 		"geometry": {
@@ -5149,6 +5155,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "28710",
+			"eng_name": "Ganghwa-gun",
 			"name": "강화군"
 		},
 		"geometry": {
@@ -6758,6 +6765,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "28260",
+			"eng_name": "ICSeo-gu",
 			"name": "서구"
 		},
 		"geometry": {
@@ -7336,6 +7344,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "28185",
+			"eng_name": "Yeonsu-gu",
 			"name": "연수구"
 		},
 		"geometry": {
@@ -7471,6 +7480,7 @@
 		"type": "Feature",
 		"properties": {
 			"code": "28170",
+			"eng_name": "ICNam-gu",
 			"name": "남구"
 		},
 		"geometry": {

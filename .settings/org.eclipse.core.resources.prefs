@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+<<<<<<< HEAD
 
 
 encoding//src/main/java/kr/spring/util/FileUtil.java=UTF-8
@@ -7,3 +8,9 @@ encoding//src/main/webapp/WEB-INF/views/book/bookDetail.jsp=UTF-8
 encoding/<project>=UTF-8
 separateDerivedEncodings=true
 
+=======
+encoding//src/main/java/kr/spring/recommend/controller/SearchShopController.java=UTF-8
+encoding//src/main/java/kr/spring/util/FileUtil.java=UTF-8
+encoding//src/main/java/kr/spring/util/PagingUtil.java=UTF-8
+encoding//src/main/webapp/resources/mapdata=UTF-8
+>>>>>>> origin/search

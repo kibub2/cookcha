@@ -19,6 +19,7 @@ public interface ShopService {
 	public ShopCommand select(int code);
 	public int lastShopCode();
 	public String checkShop(String name);
+	public List<ShopCommand> recommendShopList(String districtName);
 	public int getTotalCount();
 	public ShopCommand selectShop(int code);
 	

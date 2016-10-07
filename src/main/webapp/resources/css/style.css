@@ -2272,10 +2272,6 @@ form .stars span {
 	overflow: hidden;
 }
 
-/* #findShop-result {
-	border: 1px solid black;
-} */
-
 #map_svg {
 	fill: none;
     background-color: lightskyblue;
@@ -2294,15 +2290,6 @@ form .stars span {
     fill: orange;
 }
 
-
-/* #shop-nav{
-    list-style: none;
-    margin: 0px;
-    padding: 0;
-    width: 100%;
-    font-size: 20px;
-} */
-
 #shop-nav li{
 	padding-left: 10px;
     border-bottom: 1px solid #efefef;
@@ -2316,10 +2303,6 @@ form .stars span {
     padding: 0px 5px 6px 0px;
 }
 
-/* #shop-nav li:ACTIVE {
-	
-} */
-
 .shopList {
 
 	height: 280px;
@@ -2327,18 +2310,11 @@ form .stars span {
 
 .photoZone {
 	height: 100%; 
-	background-image: url("../img/menu/menu1.jpg");
 	background-size: 100% 100%;
-
-	/* background-color: yellow; */
-
 }
 
 .shop-introduction {
 	height: 100%;
-
-	/* background-color: red; */
-
 }
 
 .panel-default{
@@ -2368,11 +2344,6 @@ form .stars span {
 	margin-right: 5px;
 }
 
-
-/* #collapseOneOfB {
-	float: right;
-} */
-
 .likeButton {
 	float: right;
 	font-family: 'Open Sans', sans-serif;
@@ -2380,14 +2351,10 @@ form .stars span {
 	font-weight: bold;
 }
 
-/* .likeButton span {
-	font-size: 13px;
-	font-weight: bold;
-} */
-
 .panel-title img{
 	margin-right: 10px;
 }
+
 
 /* .glyphicon-heart-empty {
 	width: 20px;
@@ -2404,4 +2371,21 @@ form .stars span {
 	left:20%;
 	right:20%;
 	visibility:hidden;
+
+/* 맛집Part 주/월 추천 맛집 테이블 */
+.popular-shop{
+	width: 100%;
+}
+
+.popular-shop td{
+	width: 24%;
+	height: 400px;
+	padding: 5px;
+	
+}
+
+.popular-shop img{
+	width: 100%;
+	height: 100%;
+
 }
